@@ -1,0 +1,14 @@
+# NXTDeal Hub dependencies.
+#
+# Added session 87 -- this file didn't exist before, which would have silently blocked
+# Coolify/Nixpacks from ever recognizing hub/ as a Python app when it's deployed as its
+# own resource (Base Directory `hub/`) at hub.dealeros.xyz. hub/app.py only needs
+# FastAPI/uvicorn/pydantic directly; it reuses backend/core/auth.py at runtime via a
+# sys.path shim (see hub/core/provisioning.py) rather than importing it as a separate
+# package, so no extra entries are needed for that. Pinned to the same versions as
+# backend/requirements.txt for consistency -- not independently verified against a
+# fresh hub/venv, same caveat as that file.
+
+fastapi==0.139.0
+uvicorn[standard]==0.49.0
+pydantic==2.13.4

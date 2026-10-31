@@ -1,0 +1,242 @@
+[
+  {
+    "key": "marketing.oem_incentive",
+    "tabs": [
+      "OEM Incentives & Offers",
+      "Campaign Builder",
+      "Channel Deployment",
+      "Attribution & Analytics",
+      "Optimization Center"
+    ]
+  },
+  {
+    "key": "marketing.database_mining",
+    "tabs": [
+      "Customer Intelligence",
+      "Opportunity Scoring",
+      "Equity & Lease Mining",
+      "Outreach Assignment",
+      "Conversion Tracking"
+    ]
+  },
+  {
+    "key": "marketing.website_merchandising",
+    "tabs": [
+      "Website Builder",
+      "Landing Pages & Forms",
+      "Conversion Optimization",
+      "Review Management",
+      "Reputation Recovery"
+    ]
+  },
+  {
+    "key": "marketing.reputation",
+    "tabs": [
+      "Event Configuration",
+      "Audience & Invitations",
+      "RSVP Management",
+      "Event Operations",
+      "Revenue & Follow-Up"
+    ]
+  },
+  {
+    "key": "inventory.auction_acquisition",
+    "tabs": [
+      "Acquisition Source",
+      "Purchase Management",
+      "Transport Tracking",
+      "Arrival Processing",
+      "Floorplan Funding"
+    ]
+  },
+  {
+    "key": "inventory.lot_audit",
+    "tabs": [
+      "Vehicle Placement",
+      "Key Management",
+      "Lot Audits",
+      "Damage & Exception Tracking",
+      "Resolution Center"
+    ]
+  },
+  {
+    "key": "inventory.aging_pricing",
+    "tabs": [
+      "Aging Management",
+      "Market Pricing",
+      "Price Adjustments",
+      "Merchandising Refresh",
+      "Velocity Analysis"
+    ]
+  },
+  {
+    "key": "inventory.wholesale_disposition",
+    "tabs": [
+      "Wholesale Assignment",
+      "Condition Reports",
+      "Auction Management",
+      "Bid Tracking",
+      "Settlement & Titles"
+    ]
+  },
+  {
+    "key": "service.intake",
+    "tabs": [
+      "Appointment Intake",
+      "Customer & Vehicle Review",
+      "Walkaround Inspection",
+      "Authorization & Signatures",
+      "Dispatch Assignment"
+    ]
+  },
+  {
+    "key": "service.mpi",
+    "tabs": [
+      "MPI Checklist",
+      "Photos & Videos",
+      "Parts & Pricing",
+      "Recommendation Builder",
+      "Approval Tracking"
+    ]
+  },
+  {
+    "key": "service.warranty_claims",
+    "tabs": [
+      "Warranty Eligibility",
+      "Technician Documentation",
+      "Labor Verification",
+      "Claim Submission",
+      "Claim Tracking"
+    ]
+  },
+  {
+    "key": "service.quality_control",
+    "tabs": [
+      "Quality Control",
+      "Valet & Detail",
+      "Invoice Review",
+      "Checkout & Delivery",
+      "CSI Follow-Up"
+    ]
+  },
+  {
+    "key": "finance.cit_funding",
+    "tabs": [
+      "Lender Assignment",
+      "Stipulation Tracking",
+      "Paperwork Audit",
+      "Submission Queue",
+      "Funding Reconciliation"
+    ]
+  },
+  {
+    "key": "finance.compliance",
+    "tabs": [
+      "Identity Verification",
+      "OFAC & Red Flags",
+      "Secure Document Storage",
+      "Regulatory Filings",
+      "Compliance Approval"
+    ]
+  },
+  {
+    "key": "finance.floorplan_payoff",
+    "tabs": [
+      "Payoff Requests",
+      "Wire Authorization",
+      "Title Tracking",
+      "Floorplan Reduction",
+      "Reconciliation"
+    ]
+  },
+  {
+    "key": "finance.deal_accounting",
+    "tabs": [
+      "Deal Posting",
+      "Gross Reconciliation",
+      "Pay Plans",
+      "Commission Approval",
+      "Financial Close"
+    ]
+  },
+  {
+    "key": "administration.onboarding",
+    "tabs": [
+      "Employee Profile",
+      "Role Assignment",
+      "System Access",
+      "Activity Monitoring",
+      "Offboarding"
+    ]
+  },
+  {
+    "key": "administration.audit_monitoring",
+    "tabs": [
+      "Activity Logs",
+      "Security Alerts",
+      "Investigation Tools",
+      "Resolution Workflow",
+      "Audit Archive"
+    ]
+  },
+  {
+    "key": "administration.vendor_management",
+    "tabs": [
+      "Connected Systems",
+      "API Management",
+      "Data Mapping",
+      "Health Monitoring",
+      "Optimization"
+    ]
+  },
+  {
+    "key": "administration.executive_approval",
+    "tabs": [
+      "Approval Queue",
+      "Policy Review",
+      "Impact Analysis",
+      "Executive Decision",
+      "Audit Trail"
+    ]
+  },
+  {
+    "key": "readiness.data_connection",
+    "tabs": [
+      "Integration Setup",
+      "Schema Mapping",
+      "Pipeline Monitoring",
+      "Data Validation",
+      "Readiness Activation"
+    ]
+  },
+  {
+    "key": "readiness.data_maturity",
+    "tabs": [
+      "Historical Data Review",
+      "Density Analysis",
+      "Ledger Validation",
+      "Verification Thresholds",
+      "Confidence Scoring"
+    ]
+  },
+  {
+    "key": "readiness.forecasting",
+    "tabs": [
+      "Tomorrow",
+      "This Week",
+      "This Month",
+      "This Quarter",
+      "Scenario Modeling"
+    ]
+  },
+  {
+    "key": "readiness.exception_escalation",
+    "tabs": [
+      "Active Alerts",
+      "Root Cause Analysis",
+      "Impact Assessment",
+      "Resolution Workflow",
+      "Readiness Recovery"
+    ]
+  }
+]

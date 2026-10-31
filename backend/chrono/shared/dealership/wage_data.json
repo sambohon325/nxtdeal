@@ -1,0 +1,3285 @@
+{
+  "United States": {
+    "management": {
+      "occupation": "General and Operations Managers",
+      "source": "https://cloudfront.careeronestop.org/Toolkit/Wages/find-salary.aspx?dataview=table&hourly=False&keyword=General+and+Operations+Managers&location=Kentucky&national=True&onet=&soccode=111021",
+      "period": "May 2025",
+      "statistic": "Median hourly wage; all industries, not dealership-only",
+      "regions": {
+        "United States": {
+          "low": 24.08,
+          "median": 50.85,
+          "high": 121.82
+        },
+        "South Carolina": {
+          "low": 27.17,
+          "median": 51.0,
+          "high": 105.46
+        },
+        "Maryland": {
+          "low": 27.98,
+          "median": 56.7,
+          "high": 113.39
+        },
+        "Guam": {
+          "low": 18.65,
+          "median": 32.54,
+          "high": 63.97
+        },
+        "Florida": {
+          "low": 23.4,
+          "median": 48.84,
+          "high": 108.69
+        },
+        "North Dakota": {
+          "low": 25.0,
+          "median": 47.2,
+          "high": 88.81
+        },
+        "Puerto Rico": {
+          "low": 17.41,
+          "median": 35.37,
+          "high": 87.42
+        },
+        "Washington": {
+          "low": 37.35,
+          "median": 64.3,
+          "high": 129.48
+        },
+        "Idaho": {
+          "low": 20.15,
+          "median": 38.65,
+          "high": 82.21
+        },
+        "New Hampshire": {
+          "low": 29.38,
+          "median": 59.94,
+          "high": 127.05
+        },
+        "New Mexico": {
+          "low": 22.94,
+          "median": 47.42,
+          "high": 103.17
+        },
+        "North Carolina": {
+          "low": 23.24,
+          "median": 49.01,
+          "high": 114.54
+        },
+        "Ohio": {
+          "low": 22.79,
+          "median": 46.97,
+          "high": 104.02
+        },
+        "Vermont": {
+          "low": 28.61,
+          "median": 47.42,
+          "high": 105.07
+        },
+        "Mississippi": {
+          "low": 23.38,
+          "median": 51.29,
+          "high": 114.54
+        },
+        "Texas": {
+          "low": 22.21,
+          "median": 49.63,
+          "high": 127.22
+        },
+        "Iowa": {
+          "low": 20.6,
+          "median": 42.16,
+          "high": 92.3
+        },
+        "Delaware": {
+          "low": 35.3,
+          "median": 65.97,
+          "high": 149.38
+        },
+        "Kansas": {
+          "low": 24.89,
+          "median": 44.63,
+          "high": 102.26
+        },
+        "Virginia": {
+          "low": 27.12,
+          "median": 58.69,
+          "high": 125.51
+        },
+        "Alabama": {
+          "low": 26.52,
+          "median": 53.75,
+          "high": 117.11
+        },
+        "Louisiana": {
+          "low": 24.26,
+          "median": 48.94,
+          "high": 105.41
+        },
+        "New Jersey": {
+          "low": 37.19,
+          "median": 83.51,
+          "high": 179.22
+        },
+        "Pennsylvania": {
+          "low": 24.04,
+          "median": 49.58,
+          "high": 106.02
+        },
+        "Utah": {
+          "low": 21.2,
+          "median": 47.04,
+          "high": 102.54
+        },
+        "Tennessee": {
+          "low": 24.43,
+          "median": 51.43,
+          "high": 110.89
+        },
+        "Nevada": {
+          "low": 23.06,
+          "median": 47.79,
+          "high": 122.62
+        },
+        "Montana": {
+          "low": 23.5,
+          "median": 43.93,
+          "high": 90.03
+        },
+        "Michigan": {
+          "low": 23.74,
+          "median": 47.85,
+          "high": 107.12
+        },
+        "Colorado": {
+          "low": 31.4,
+          "median": 63.39,
+          "high": 146.65
+        },
+        "Connecticut": {
+          "low": 32.7,
+          "median": 65.97,
+          "high": 150.43
+        },
+        "California": {
+          "low": 29.03,
+          "median": 59.81,
+          "high": 141.26
+        },
+        "Alaska": {
+          "low": 30.44,
+          "median": 56.07,
+          "high": 105.46
+        },
+        "South Dakota": {
+          "low": 41.34,
+          "median": 66.06,
+          "high": 111.54
+        },
+        "Arkansas": {
+          "low": 17.41,
+          "median": 35.6,
+          "high": 83.21
+        },
+        "Nebraska": {
+          "low": 23.08,
+          "median": 40.91,
+          "high": 92.83
+        },
+        "Indiana": {
+          "low": 25.87,
+          "median": 52.01,
+          "high": 119.53
+        },
+        "District of Columbia": {
+          "low": 42.59,
+          "median": 80.77,
+          "high": 150.03
+        },
+        "Minnesota": {
+          "low": 22.58,
+          "median": 47.76,
+          "high": 100.95
+        },
+        "Maine": {
+          "low": 25.27,
+          "median": 47.53,
+          "high": 91.37
+        },
+        "Massachusetts": {
+          "low": 29.19,
+          "median": 61.16,
+          "high": 151.34
+        },
+        "Wisconsin": {
+          "low": 28.63,
+          "median": 57.08,
+          "high": 119.02
+        },
+        "Hawaii": {
+          "low": 25.59,
+          "median": 52.01,
+          "high": 104.41
+        },
+        "Arizona": {
+          "low": 23.07,
+          "median": 45.58,
+          "high": 105.9
+        },
+        "Oklahoma": {
+          "low": 22.04,
+          "median": 43.48,
+          "high": 97.47
+        },
+        "New York": {
+          "low": 29.97,
+          "median": 62.91,
+          "high": 161.57
+        },
+        "Virgin Islands": {
+          "low": 22.26,
+          "median": 39.83,
+          "high": 79.19
+        },
+        "Rhode Island": {
+          "low": 31.25,
+          "median": 56.43,
+          "high": 117.08
+        },
+        "West Virginia": {
+          "low": 21.87,
+          "median": 39.66,
+          "high": 84.17
+        },
+        "Georgia": {
+          "low": 22.81,
+          "median": 49.87,
+          "high": 114.17
+        },
+        "Wyoming": {
+          "low": 24.39,
+          "median": 47.93,
+          "high": 103.28
+        },
+        "Missouri": {
+          "low": 20.41,
+          "median": 38.12,
+          "high": 90.78
+        },
+        "Kentucky": {
+          "low": 19.47,
+          "median": 38.16,
+          "high": 85.01
+        },
+        "Oregon": {
+          "low": 26.13,
+          "median": 49.76,
+          "high": 113.99
+        },
+        "Illinois": {
+          "low": 25.6,
+          "median": 49.8,
+          "high": 129.48
+        }
+      }
+    },
+    "sales": {
+      "occupation": "Retail Salespersons",
+      "source": "https://cloudfront.careeronestop.org/Toolkit/Wages/find-salary.aspx?dataview=table&hourly=False&keyword=Retail+Salespersons&location=Kentucky&national=True&onet=&soccode=412031",
+      "period": "May 2025",
+      "statistic": "Median hourly wage; all industries, not dealership-only",
+      "regions": {
+        "United States": {
+          "low": 13.08,
+          "median": 17.03,
+          "high": 23.02
+        },
+        "Indiana": {
+          "low": 11.26,
+          "median": 15.16,
+          "high": 22.55
+        },
+        "Utah": {
+          "low": 12.7,
+          "median": 16.3,
+          "high": 23.6
+        },
+        "Mississippi": {
+          "low": 10.63,
+          "median": 13.77,
+          "high": 20.19
+        },
+        "Arkansas": {
+          "low": 11.46,
+          "median": 14.07,
+          "high": 19.13
+        },
+        "Guam": {
+          "low": 10.29,
+          "median": 11.54,
+          "high": 18.17
+        },
+        "Nebraska": {
+          "low": 13.5,
+          "median": 15.32,
+          "high": 22.3
+        },
+        "Colorado": {
+          "low": 15.45,
+          "median": 18.25,
+          "high": 23.87
+        },
+        "Idaho": {
+          "low": 12.66,
+          "median": 16.87,
+          "high": 24.03
+        },
+        "Kentucky": {
+          "low": 10.77,
+          "median": 14.26,
+          "high": 21.08
+        },
+        "Michigan": {
+          "low": 13.35,
+          "median": 16.65,
+          "high": 23.23
+        },
+        "West Virginia": {
+          "low": 10.7,
+          "median": 13.92,
+          "high": 19.0
+        },
+        "Rhode Island": {
+          "low": 15.0,
+          "median": 16.76,
+          "high": 22.63
+        },
+        "Louisiana": {
+          "low": 10.55,
+          "median": 14.18,
+          "high": 21.77
+        },
+        "District of Columbia": {
+          "low": 17.5,
+          "median": 18.51,
+          "high": 23.81
+        },
+        "Texas": {
+          "low": 11.22,
+          "median": 14.81,
+          "high": 21.67
+        },
+        "Delaware": {
+          "low": 15.0,
+          "median": 17.0,
+          "high": 22.8
+        },
+        "Minnesota": {
+          "low": 13.8,
+          "median": 17.49,
+          "high": 23.12
+        },
+        "South Carolina": {
+          "low": 10.74,
+          "median": 14.75,
+          "high": 21.88
+        },
+        "Connecticut": {
+          "low": 16.42,
+          "median": 17.54,
+          "high": 23.96
+        },
+        "Pennsylvania": {
+          "low": 11.43,
+          "median": 15.0,
+          "high": 22.18
+        },
+        "Florida": {
+          "low": 13.62,
+          "median": 16.35,
+          "high": 22.18
+        },
+        "Virginia": {
+          "low": 13.24,
+          "median": 16.46,
+          "high": 22.4
+        },
+        "Alabama": {
+          "low": 10.9,
+          "median": 14.44,
+          "high": 21.78
+        },
+        "Virgin Islands": {
+          "low": 11.03,
+          "median": 13.84,
+          "high": 22.59
+        },
+        "North Dakota": {
+          "low": 13.53,
+          "median": 17.33,
+          "high": 23.95
+        },
+        "New Hampshire": {
+          "low": 14.23,
+          "median": 17.41,
+          "high": 23.9
+        },
+        "Puerto Rico": {
+          "low": 10.5,
+          "median": 10.85,
+          "high": 16.56
+        },
+        "Oklahoma": {
+          "low": 10.76,
+          "median": 14.26,
+          "high": 21.68
+        },
+        "Wisconsin": {
+          "low": 13.12,
+          "median": 16.58,
+          "high": 23.02
+        },
+        "Nevada": {
+          "low": 12.95,
+          "median": 16.44,
+          "high": 22.73
+        },
+        "Massachusetts": {
+          "low": 16.01,
+          "median": 17.6,
+          "high": 23.07
+        },
+        "Oregon": {
+          "low": 15.25,
+          "median": 17.68,
+          "high": 23.6
+        },
+        "Washington": {
+          "low": 17.24,
+          "median": 19.02,
+          "high": 26.28
+        },
+        "New Mexico": {
+          "low": 13.4,
+          "median": 16.01,
+          "high": 21.81
+        },
+        "North Carolina": {
+          "low": 11.08,
+          "median": 15.08,
+          "high": 22.15
+        },
+        "Wyoming": {
+          "low": 11.9,
+          "median": 16.5,
+          "high": 26.11
+        },
+        "Hawaii": {
+          "low": 14.74,
+          "median": 18.17,
+          "high": 23.67
+        },
+        "Arizona": {
+          "low": 14.82,
+          "median": 17.18,
+          "high": 22.7
+        },
+        "Montana": {
+          "low": 13.76,
+          "median": 17.44,
+          "high": 23.4
+        },
+        "Iowa": {
+          "low": 12.12,
+          "median": 15.08,
+          "high": 22.07
+        },
+        "Kansas": {
+          "low": 11.11,
+          "median": 15.47,
+          "high": 22.47
+        },
+        "New York": {
+          "low": 16.18,
+          "median": 18.13,
+          "high": 28.19
+        },
+        "Georgia": {
+          "low": 10.86,
+          "median": 14.83,
+          "high": 22.32
+        },
+        "New Jersey": {
+          "low": 15.49,
+          "median": 17.56,
+          "high": 28.95
+        },
+        "Tennessee": {
+          "low": 11.4,
+          "median": 15.36,
+          "high": 22.94
+        },
+        "Ohio": {
+          "low": 11.64,
+          "median": 14.81,
+          "high": 22.12
+        },
+        "Illinois": {
+          "low": 15.0,
+          "median": 17.0,
+          "high": 23.08
+        },
+        "Maryland": {
+          "low": 15.0,
+          "median": 17.07,
+          "high": 22.18
+        },
+        "Missouri": {
+          "low": 13.75,
+          "median": 16.09,
+          "high": 22.41
+        },
+        "Alaska": {
+          "low": 14.76,
+          "median": 17.93,
+          "high": 24.62
+        },
+        "Maine": {
+          "low": 15.05,
+          "median": 17.61,
+          "high": 23.8
+        },
+        "Vermont": {
+          "low": 14.94,
+          "median": 17.98,
+          "high": 26.78
+        },
+        "California": {
+          "low": 16.94,
+          "median": 18.48,
+          "high": 26.11
+        },
+        "South Dakota": {
+          "low": 13.55,
+          "median": 16.52,
+          "high": 29.67
+        }
+      }
+    },
+    "bdc": {
+      "occupation": "Customer Service Representatives",
+      "source": "https://cloudfront.careeronestop.org/Toolkit/Wages/find-salary.aspx?dataview=table&hourly=False&keyword=Customer+Service+Representatives&location=Kentucky&national=True&onet=&soccode=434051",
+      "period": "May 2025",
+      "statistic": "Median hourly wage; all industries, not dealership-only",
+      "regions": {
+        "United States": {
+          "low": 15.27,
+          "median": 21.53,
+          "high": 30.57
+        },
+        "West Virginia": {
+          "low": 14.23,
+          "median": 18.48,
+          "high": 27.39
+        },
+        "Iowa": {
+          "low": 15.6,
+          "median": 22.16,
+          "high": 31.03
+        },
+        "North Carolina": {
+          "low": 14.52,
+          "median": 19.35,
+          "high": 28.76
+        },
+        "Illinois": {
+          "low": 16.15,
+          "median": 22.18,
+          "high": 34.33
+        },
+        "Alaska": {
+          "low": 17.3,
+          "median": 21.71,
+          "high": 30.21
+        },
+        "District of Columbia": {
+          "low": 18.0,
+          "median": 23.2,
+          "high": 37.08
+        },
+        "Indiana": {
+          "low": 14.93,
+          "median": 20.74,
+          "high": 30.11
+        },
+        "Kentucky": {
+          "low": 14.15,
+          "median": 18.61,
+          "high": 28.76
+        },
+        "North Dakota": {
+          "low": 16.44,
+          "median": 21.48,
+          "high": 32.86
+        },
+        "New Mexico": {
+          "low": 14.93,
+          "median": 18.77,
+          "high": 27.15
+        },
+        "Mississippi": {
+          "low": 13.93,
+          "median": 17.49,
+          "high": 23.82
+        },
+        "Nebraska": {
+          "low": 16.45,
+          "median": 21.13,
+          "high": 28.56
+        },
+        "Arkansas": {
+          "low": 14.5,
+          "median": 18.19,
+          "high": 27.22
+        },
+        "Pennsylvania": {
+          "low": 15.11,
+          "median": 21.46,
+          "high": 30.46
+        },
+        "Tennessee": {
+          "low": 14.95,
+          "median": 20.59,
+          "high": 28.88
+        },
+        "Idaho": {
+          "low": 14.42,
+          "median": 20.77,
+          "high": 29.9
+        },
+        "Georgia": {
+          "low": 14.11,
+          "median": 19.06,
+          "high": 28.98
+        },
+        "Montana": {
+          "low": 16.87,
+          "median": 21.77,
+          "high": 29.93
+        },
+        "Virgin Islands": {
+          "low": 14.42,
+          "median": 17.85,
+          "high": 26.0
+        },
+        "Kansas": {
+          "low": 14.29,
+          "median": 19.39,
+          "high": 28.79
+        },
+        "Minnesota": {
+          "low": 17.18,
+          "median": 23.46,
+          "high": 35.02
+        },
+        "Maine": {
+          "low": 17.28,
+          "median": 22.67,
+          "high": 30.52
+        },
+        "Alabama": {
+          "low": 14.39,
+          "median": 18.46,
+          "high": 26.77
+        },
+        "Ohio": {
+          "low": 15.07,
+          "median": 21.93,
+          "high": 30.39
+        },
+        "Louisiana": {
+          "low": 13.67,
+          "median": 17.95,
+          "high": 24.52
+        },
+        "Wyoming": {
+          "low": 14.31,
+          "median": 20.35,
+          "high": 28.75
+        },
+        "South Dakota": {
+          "low": 14.93,
+          "median": 19.54,
+          "high": 26.77
+        },
+        "Delaware": {
+          "low": 17.34,
+          "median": 23.17,
+          "high": 36.53
+        },
+        "Connecticut": {
+          "low": 17.93,
+          "median": 23.12,
+          "high": 35.41
+        },
+        "Arizona": {
+          "low": 16.89,
+          "median": 21.97,
+          "high": 30.28
+        },
+        "Rhode Island": {
+          "low": 17.38,
+          "median": 22.86,
+          "high": 31.25
+        },
+        "Michigan": {
+          "low": 14.75,
+          "median": 21.13,
+          "high": 30.69
+        },
+        "Maryland": {
+          "low": 15.67,
+          "median": 20.59,
+          "high": 30.77
+        },
+        "Vermont": {
+          "low": 16.89,
+          "median": 22.84,
+          "high": 31.99
+        },
+        "Texas": {
+          "low": 14.1,
+          "median": 19.44,
+          "high": 28.65
+        },
+        "California": {
+          "low": 18.32,
+          "median": 23.83,
+          "high": 36.39
+        },
+        "Wisconsin": {
+          "low": 16.47,
+          "median": 22.58,
+          "high": 30.6
+        },
+        "Virginia": {
+          "low": 15.0,
+          "median": 20.54,
+          "high": 29.49
+        },
+        "Massachusetts": {
+          "low": 17.04,
+          "median": 23.61,
+          "high": 36.0
+        },
+        "New York": {
+          "low": 17.44,
+          "median": 23.08,
+          "high": 36.67
+        },
+        "Hawaii": {
+          "low": 16.28,
+          "median": 21.95,
+          "high": 30.83
+        },
+        "Missouri": {
+          "low": 15.37,
+          "median": 21.24,
+          "high": 30.72
+        },
+        "Oregon": {
+          "low": 17.65,
+          "median": 22.81,
+          "high": 30.83
+        },
+        "Oklahoma": {
+          "low": 13.76,
+          "median": 18.58,
+          "high": 27.91
+        },
+        "Florida": {
+          "low": 15.2,
+          "median": 19.44,
+          "high": 28.73
+        },
+        "Washington": {
+          "low": 18.89,
+          "median": 24.2,
+          "high": 35.39
+        },
+        "New Hampshire": {
+          "low": 16.32,
+          "median": 22.74,
+          "high": 31.87
+        },
+        "Puerto Rico": {
+          "low": 10.5,
+          "median": 12.84,
+          "high": 17.46
+        },
+        "Guam": {
+          "low": 10.84,
+          "median": 14.59,
+          "high": 21.01
+        },
+        "South Carolina": {
+          "low": 14.29,
+          "median": 18.69,
+          "high": 28.51
+        },
+        "Nevada": {
+          "low": 14.11,
+          "median": 19.5,
+          "high": 27.85
+        },
+        "New Jersey": {
+          "low": 17.08,
+          "median": 22.95,
+          "high": 34.63
+        },
+        "Utah": {
+          "low": 15.84,
+          "median": 20.74,
+          "high": 28.63
+        },
+        "Colorado": {
+          "low": 17.56,
+          "median": 22.86,
+          "high": 31.75
+        }
+      }
+    },
+    "fi": {
+      "occupation": "Loan Officers",
+      "source": "https://cloudfront.careeronestop.org/Toolkit/Wages/find-salary.aspx?dataview=table&hourly=False&keyword=Loan+Officers&location=Kentucky&national=True&onet=&soccode=132072",
+      "period": "May 2025",
+      "statistic": "Median hourly wage; all industries, not dealership-only",
+      "regions": {
+        "United States": {
+          "low": 18.96,
+          "median": 36.87,
+          "high": 73.65
+        },
+        "Ohio": {
+          "low": 18.36,
+          "median": 36.71,
+          "high": 63.45
+        },
+        "New Jersey": {
+          "low": 24.27,
+          "median": 44.67,
+          "high": 81.38
+        },
+        "Kansas": {
+          "low": 23.35,
+          "median": 41.81,
+          "high": 77.19
+        },
+        "New York": {
+          "low": 23.76,
+          "median": 46.01,
+          "high": 101.61
+        },
+        "Texas": {
+          "low": 16.42,
+          "median": 31.91,
+          "high": 65.04
+        },
+        "Connecticut": {
+          "low": 24.18,
+          "median": 46.03,
+          "high": 82.35
+        },
+        "Indiana": {
+          "low": 21.09,
+          "median": 35.08,
+          "high": 62.38
+        },
+        "Rhode Island": {
+          "low": 24.24,
+          "median": 37.14,
+          "high": 64.88
+        },
+        "South Dakota": {
+          "low": 28.12,
+          "median": 38.42,
+          "high": 60.14
+        },
+        "Alabama": {
+          "low": 20.23,
+          "median": 32.07,
+          "high": 74.84
+        },
+        "Maryland": {
+          "low": 18.02,
+          "median": 35.37,
+          "high": 76.86
+        },
+        "Montana": {
+          "low": 23.14,
+          "median": 34.41,
+          "high": 59.2
+        },
+        "Idaho": {
+          "low": 20.75,
+          "median": 34.17,
+          "high": 75.2
+        },
+        "Nevada": {
+          "low": 14.25,
+          "median": 31.01,
+          "high": 78.81
+        },
+        "Delaware": {
+          "low": 21.96,
+          "median": 39.97,
+          "high": 71.26
+        },
+        "Guam": {
+          "low": 16.57,
+          "median": 21.72,
+          "high": 40.22
+        },
+        "Virgin Islands": {
+          "low": 19.21,
+          "median": 21.53,
+          "high": 37.21
+        },
+        "Wisconsin": {
+          "low": 24.04,
+          "median": 37.64,
+          "high": 67.37
+        },
+        "Minnesota": {
+          "low": 27.73,
+          "median": 45.76,
+          "high": 78.53
+        },
+        "Massachusetts": {
+          "low": 31.1,
+          "median": 48.85,
+          "high": 95.3
+        },
+        "Alaska": {
+          "low": 12.85,
+          "median": 35.0,
+          "high": 59.41
+        },
+        "Utah": {
+          "low": 18.17,
+          "median": 28.58,
+          "high": 61.64
+        },
+        "Louisiana": {
+          "low": 18.32,
+          "median": 29.38,
+          "high": 59.82
+        },
+        "West Virginia": {
+          "low": 18.19,
+          "median": 27.68,
+          "high": 55.19
+        },
+        "North Dakota": {
+          "low": 27.89,
+          "median": 40.7,
+          "high": 70.5
+        },
+        "Kentucky": {
+          "low": 20.01,
+          "median": 29.85,
+          "high": 59.87
+        },
+        "New Hampshire": {
+          "low": 23.06,
+          "median": 38.78,
+          "high": 77.2
+        },
+        "District of Columbia": {
+          "low": 22.05,
+          "median": 44.66,
+          "high": 75.78
+        },
+        "Colorado": {
+          "low": 18.96,
+          "median": 45.44,
+          "high": 79.51
+        },
+        "Washington": {
+          "low": 18.75,
+          "median": 38.52,
+          "high": 78.0
+        },
+        "Arizona": {
+          "low": 17.29,
+          "median": 29.88,
+          "high": 64.37
+        },
+        "North Carolina": {
+          "low": 20.8,
+          "median": 36.5,
+          "high": 62.73
+        },
+        "Arkansas": {
+          "low": 18.85,
+          "median": 33.78,
+          "high": 65.63
+        },
+        "Vermont": {
+          "low": 27.32,
+          "median": 42.65,
+          "high": 80.8
+        },
+        "Pennsylvania": {
+          "low": 19.23,
+          "median": 33.32,
+          "high": 63.89
+        },
+        "Georgia": {
+          "low": 18.99,
+          "median": 32.93,
+          "high": 66.73
+        },
+        "Iowa": {
+          "low": 24.85,
+          "median": 40.23,
+          "high": 66.42
+        },
+        "Virginia": {
+          "low": 19.32,
+          "median": 37.66,
+          "high": 75.51
+        },
+        "Oregon": {
+          "low": 23.19,
+          "median": 45.4,
+          "high": 77.53
+        },
+        "Florida": {
+          "low": 15.95,
+          "median": 34.18,
+          "high": 63.98
+        },
+        "Missouri": {
+          "low": 18.71,
+          "median": 35.41,
+          "high": 65.45
+        },
+        "Puerto Rico": {
+          "low": 13.04,
+          "median": 17.18,
+          "high": 31.12
+        },
+        "Illinois": {
+          "low": 20.69,
+          "median": 38.05,
+          "high": 65.9
+        },
+        "Nebraska": {
+          "low": 23.73,
+          "median": 38.39,
+          "high": 65.69
+        },
+        "Michigan": {
+          "low": 17.71,
+          "median": 35.8,
+          "high": 65.24
+        },
+        "Hawaii": {
+          "low": 16.42,
+          "median": 30.65,
+          "high": 62.99
+        },
+        "Tennessee": {
+          "low": 18.39,
+          "median": 30.19,
+          "high": 54.47
+        },
+        "Wyoming": {
+          "low": 22.8,
+          "median": 38.28,
+          "high": 63.85
+        },
+        "Oklahoma": {
+          "low": 17.55,
+          "median": 35.09,
+          "high": 76.3
+        },
+        "South Carolina": {
+          "low": 17.83,
+          "median": 30.39,
+          "high": 68.4
+        },
+        "New Mexico": {
+          "low": 13.32,
+          "median": 30.1,
+          "high": 59.11
+        },
+        "California": {
+          "low": 18.01,
+          "median": 39.31,
+          "high": 81.27
+        },
+        "Mississippi": {
+          "low": 17.8,
+          "median": 28.97,
+          "high": 63.22
+        },
+        "Maine": {
+          "low": 22.46,
+          "median": 39.38,
+          "high": 67.63
+        }
+      }
+    },
+    "technicians": {
+      "occupation": "Automotive Service Technicians and Mechanics",
+      "source": "https://cloudfront.careeronestop.org/Toolkit/Wages/find-salary.aspx?dataview=table&hourly=False&keyword=Automotive+Service+Technicians+and+Mechanics&location=Kentucky&national=True&onet=&soccode=493023",
+      "period": "May 2025",
+      "statistic": "Median hourly wage; all industries, not dealership-only",
+      "regions": {
+        "United States": {
+          "low": 16.66,
+          "median": 24.34,
+          "high": 39.32
+        },
+        "Alabama": {
+          "low": 14.92,
+          "median": 21.94,
+          "high": 38.09
+        },
+        "Guam": {
+          "low": 11.6,
+          "median": 18.86,
+          "high": 28.81
+        },
+        "Minnesota": {
+          "low": 18.42,
+          "median": 28.07,
+          "high": 39.99
+        },
+        "Tennessee": {
+          "low": 16.74,
+          "median": 24.18,
+          "high": 38.43
+        },
+        "District of Columbia": {
+          "low": 22.23,
+          "median": 33.01,
+          "high": 43.25
+        },
+        "North Dakota": {
+          "low": 18.08,
+          "median": 27.58,
+          "high": 40.32
+        },
+        "Delaware": {
+          "low": 17.64,
+          "median": 28.08,
+          "high": 39.56
+        },
+        "Wyoming": {
+          "low": 16.44,
+          "median": 24.68,
+          "high": 38.21
+        },
+        "South Carolina": {
+          "low": 15.0,
+          "median": 23.12,
+          "high": 37.51
+        },
+        "Washington": {
+          "low": 18.98,
+          "median": 27.54,
+          "high": 45.97
+        },
+        "Rhode Island": {
+          "low": 15.32,
+          "median": 24.89,
+          "high": 38.84
+        },
+        "New Jersey": {
+          "low": 16.11,
+          "median": 27.22,
+          "high": 43.85
+        },
+        "Maryland": {
+          "low": 17.28,
+          "median": 27.66,
+          "high": 40.59
+        },
+        "Colorado": {
+          "low": 19.01,
+          "median": 29.46,
+          "high": 45.11
+        },
+        "Idaho": {
+          "low": 16.62,
+          "median": 23.28,
+          "high": 37.36
+        },
+        "Florida": {
+          "low": 15.37,
+          "median": 23.2,
+          "high": 38.07
+        },
+        "Utah": {
+          "low": 14.65,
+          "median": 22.39,
+          "high": 37.17
+        },
+        "New York": {
+          "low": 17.05,
+          "median": 26.02,
+          "high": 43.99
+        },
+        "West Virginia": {
+          "low": 13.59,
+          "median": 18.11,
+          "high": 31.5
+        },
+        "Iowa": {
+          "low": 17.36,
+          "median": 24.28,
+          "high": 37.21
+        },
+        "Nebraska": {
+          "low": 17.68,
+          "median": 24.31,
+          "high": 38.46
+        },
+        "New Hampshire": {
+          "low": 18.42,
+          "median": 28.38,
+          "high": 39.54
+        },
+        "Oklahoma": {
+          "low": 14.14,
+          "median": 22.38,
+          "high": 39.17
+        },
+        "Arizona": {
+          "low": 16.66,
+          "median": 23.83,
+          "high": 38.14
+        },
+        "Puerto Rico": {
+          "low": 10.5,
+          "median": 10.91,
+          "high": 18.95
+        },
+        "Massachusetts": {
+          "low": 18.45,
+          "median": 29.21,
+          "high": 45.72
+        },
+        "Nevada": {
+          "low": 16.11,
+          "median": 23.22,
+          "high": 39.03
+        },
+        "Oregon": {
+          "low": 19.03,
+          "median": 28.14,
+          "high": 44.27
+        },
+        "Arkansas": {
+          "low": 14.58,
+          "median": 21.23,
+          "high": 36.35
+        },
+        "Wisconsin": {
+          "low": 17.59,
+          "median": 26.13,
+          "high": 37.57
+        },
+        "Texas": {
+          "low": 14.12,
+          "median": 23.23,
+          "high": 39.29
+        },
+        "Connecticut": {
+          "low": 18.48,
+          "median": 28.95,
+          "high": 38.43
+        },
+        "Ohio": {
+          "low": 16.4,
+          "median": 23.42,
+          "high": 38.31
+        },
+        "Mississippi": {
+          "low": 13.77,
+          "median": 18.18,
+          "high": 35.58
+        },
+        "South Dakota": {
+          "low": 18.59,
+          "median": 24.6,
+          "high": 38.7
+        },
+        "Kansas": {
+          "low": 15.37,
+          "median": 22.98,
+          "high": 37.18
+        },
+        "North Carolina": {
+          "low": 15.14,
+          "median": 23.17,
+          "high": 38.27
+        },
+        "Maine": {
+          "low": 18.47,
+          "median": 25.02,
+          "high": 35.89
+        },
+        "Virginia": {
+          "low": 17.57,
+          "median": 28.53,
+          "high": 44.5
+        },
+        "Georgia": {
+          "low": 16.14,
+          "median": 23.59,
+          "high": 40.56
+        },
+        "Hawaii": {
+          "low": 17.48,
+          "median": 25.08,
+          "high": 38.02
+        },
+        "New Mexico": {
+          "low": 14.61,
+          "median": 22.74,
+          "high": 37.43
+        },
+        "Kentucky": {
+          "low": 14.53,
+          "median": 21.58,
+          "high": 35.54
+        },
+        "Louisiana": {
+          "low": 14.53,
+          "median": 22.31,
+          "high": 37.4
+        },
+        "Montana": {
+          "low": 18.35,
+          "median": 28.24,
+          "high": 37.72
+        },
+        "Missouri": {
+          "low": 16.8,
+          "median": 23.63,
+          "high": 36.96
+        },
+        "Pennsylvania": {
+          "low": 17.11,
+          "median": 23.94,
+          "high": 37.32
+        },
+        "Vermont": {
+          "low": 19.47,
+          "median": 24.82,
+          "high": 37.83
+        },
+        "California": {
+          "low": 18.36,
+          "median": 31.24,
+          "high": 45.81
+        },
+        "Alaska": {
+          "low": 21.19,
+          "median": 29.25,
+          "high": 45.48
+        },
+        "Michigan": {
+          "low": 17.36,
+          "median": 26.02,
+          "high": 38.01
+        },
+        "Illinois": {
+          "low": 16.44,
+          "median": 23.64,
+          "high": 43.85
+        },
+        "Virgin Islands": {
+          "low": 11.51,
+          "median": 18.83,
+          "high": 31.79
+        },
+        "Indiana": {
+          "low": 17.21,
+          "median": 23.73,
+          "high": 37.78
+        }
+      }
+    },
+    "parts": {
+      "occupation": "Parts Salespersons",
+      "source": "https://cloudfront.careeronestop.org/Toolkit/Wages/find-salary.aspx?dataview=table&hourly=False&keyword=Parts+Salespersons&location=Kentucky&national=True&onet=&soccode=412022",
+      "period": "May 2025",
+      "statistic": "Median hourly wage; all industries, not dealership-only",
+      "regions": {
+        "United States": {
+          "low": 13.58,
+          "median": 18.57,
+          "high": 30.24
+        },
+        "North Dakota": {
+          "low": 16.77,
+          "median": 23.37,
+          "high": 33.0
+        },
+        "North Carolina": {
+          "low": 12.24,
+          "median": 15.61,
+          "high": 27.25
+        },
+        "South Carolina": {
+          "low": 11.38,
+          "median": 15.47,
+          "high": 25.77
+        },
+        "West Virginia": {
+          "low": 11.18,
+          "median": 17.69,
+          "high": 28.89
+        },
+        "Montana": {
+          "low": 14.04,
+          "median": 21.66,
+          "high": 28.35
+        },
+        "Mississippi": {
+          "low": 11.18,
+          "median": 16.83,
+          "high": 25.99
+        },
+        "Utah": {
+          "low": 14.24,
+          "median": 18.84,
+          "high": 36.02
+        },
+        "Wyoming": {
+          "low": 11.88,
+          "median": 18.57,
+          "high": 29.8
+        },
+        "Missouri": {
+          "low": 14.04,
+          "median": 19.11,
+          "high": 28.28
+        },
+        "Virgin Islands": {
+          "low": 11.37,
+          "median": 13.76,
+          "high": 18.56
+        },
+        "South Dakota": {
+          "low": 16.77,
+          "median": 21.81,
+          "high": 29.72
+        },
+        "Oregon": {
+          "low": 17.06,
+          "median": 21.73,
+          "high": 32.87
+        },
+        "Alabama": {
+          "low": 11.39,
+          "median": 16.26,
+          "high": 28.0
+        },
+        "Ohio": {
+          "low": 13.33,
+          "median": 17.69,
+          "high": 28.21
+        },
+        "Illinois": {
+          "low": 15.1,
+          "median": 20.31,
+          "high": 32.31
+        },
+        "Wisconsin": {
+          "low": 14.7,
+          "median": 21.82,
+          "high": 29.59
+        },
+        "New Mexico": {
+          "low": 13.6,
+          "median": 17.74,
+          "high": 29.05
+        },
+        "Arizona": {
+          "low": 16.43,
+          "median": 22.13,
+          "high": 32.95
+        },
+        "Arkansas": {
+          "low": 12.94,
+          "median": 16.98,
+          "high": 26.1
+        },
+        "Nevada": {
+          "low": 13.64,
+          "median": 18.63,
+          "high": 34.13
+        },
+        "Pennsylvania": {
+          "low": 13.58,
+          "median": 18.52,
+          "high": 29.1
+        },
+        "Puerto Rico": {
+          "low": 10.5,
+          "median": 10.95,
+          "high": 13.14
+        },
+        "New York": {
+          "low": 16.71,
+          "median": 21.72,
+          "high": 31.32
+        },
+        "Connecticut": {
+          "low": 17.14,
+          "median": 21.34,
+          "high": 30.51
+        },
+        "Florida": {
+          "low": 13.81,
+          "median": 17.88,
+          "high": 29.58
+        },
+        "Rhode Island": {
+          "low": 15.18,
+          "median": 17.53,
+          "high": 29.23
+        },
+        "Colorado": {
+          "low": 16.77,
+          "median": 22.91,
+          "high": 35.82
+        },
+        "California": {
+          "low": 17.46,
+          "median": 21.37,
+          "high": 35.02
+        },
+        "Kansas": {
+          "low": 11.33,
+          "median": 17.76,
+          "high": 30.01
+        },
+        "Maryland": {
+          "low": 15.75,
+          "median": 20.41,
+          "high": 30.61
+        },
+        "Iowa": {
+          "low": 14.19,
+          "median": 22.44,
+          "high": 31.25
+        },
+        "Maine": {
+          "low": 15.13,
+          "median": 21.81,
+          "high": 28.86
+        },
+        "Vermont": {
+          "low": 17.71,
+          "median": 22.24,
+          "high": 29.12
+        },
+        "Delaware": {
+          "low": 15.0,
+          "median": 18.29,
+          "high": 30.77
+        },
+        "New Jersey": {
+          "low": 16.49,
+          "median": 21.88,
+          "high": 35.81
+        },
+        "Oklahoma": {
+          "low": 11.64,
+          "median": 17.5,
+          "high": 28.61
+        },
+        "Georgia": {
+          "low": 12.89,
+          "median": 17.78,
+          "high": 30.68
+        },
+        "Washington": {
+          "low": 18.11,
+          "median": 22.51,
+          "high": 32.82
+        },
+        "Guam": {
+          "low": 10.36,
+          "median": 12.98,
+          "high": 16.5
+        },
+        "Minnesota": {
+          "low": 14.83,
+          "median": 22.61,
+          "high": 30.52
+        },
+        "Louisiana": {
+          "low": 11.24,
+          "median": 15.05,
+          "high": 26.5
+        },
+        "Virginia": {
+          "low": 13.85,
+          "median": 18.3,
+          "high": 29.81
+        },
+        "Hawaii": {
+          "low": 17.2,
+          "median": 21.69,
+          "high": 31.81
+        },
+        "Indiana": {
+          "low": 13.47,
+          "median": 18.03,
+          "high": 29.36
+        },
+        "Tennessee": {
+          "low": 13.14,
+          "median": 17.36,
+          "high": 29.35
+        },
+        "Idaho": {
+          "low": 14.51,
+          "median": 21.43,
+          "high": 30.33
+        },
+        "New Hampshire": {
+          "low": 14.88,
+          "median": 22.3,
+          "high": 30.91
+        },
+        "Nebraska": {
+          "low": 14.38,
+          "median": 21.68,
+          "high": 29.98
+        },
+        "Texas": {
+          "low": 11.94,
+          "median": 17.04,
+          "high": 29.91
+        },
+        "Kentucky": {
+          "low": 11.59,
+          "median": 17.5,
+          "high": 28.42
+        },
+        "Michigan": {
+          "low": 14.7,
+          "median": 21.19,
+          "high": 35.42
+        },
+        "Alaska": {
+          "low": 17.53,
+          "median": 22.18,
+          "high": 33.29
+        },
+        "Massachusetts": {
+          "low": 17.25,
+          "median": 21.47,
+          "high": 36.05
+        }
+      }
+    },
+    "admin": {
+      "occupation": "Bookkeeping Accounting and Auditing Clerks",
+      "source": "https://cloudfront.careeronestop.org/Toolkit/Wages/find-salary.aspx?dataview=table&hourly=False&keyword=Bookkeeping+Accounting+and+Auditing+Clerks&location=Kentucky&national=True&onet=&soccode=433031",
+      "period": "May 2025",
+      "statistic": "Median hourly wage; all industries, not dealership-only",
+      "regions": {
+        "United States": {
+          "low": 17.31,
+          "median": 24.36,
+          "high": 35.84
+        },
+        "Tennessee": {
+          "low": 16.83,
+          "median": 23.16,
+          "high": 32.56
+        },
+        "Iowa": {
+          "low": 15.98,
+          "median": 23.17,
+          "high": 31.97
+        },
+        "Pennsylvania": {
+          "low": 16.81,
+          "median": 23.29,
+          "high": 33.45
+        },
+        "Connecticut": {
+          "low": 20.89,
+          "median": 28.83,
+          "high": 39.3
+        },
+        "Montana": {
+          "low": 16.48,
+          "median": 22.73,
+          "high": 30.76
+        },
+        "Hawaii": {
+          "low": 17.19,
+          "median": 23.43,
+          "high": 31.3
+        },
+        "Wyoming": {
+          "low": 16.28,
+          "median": 23.03,
+          "high": 32.55
+        },
+        "California": {
+          "low": 20.0,
+          "median": 28.48,
+          "high": 39.42
+        },
+        "Alaska": {
+          "low": 19.23,
+          "median": 27.13,
+          "high": 36.92
+        },
+        "Maine": {
+          "low": 19.23,
+          "median": 24.28,
+          "high": 33.65
+        },
+        "Idaho": {
+          "low": 16.68,
+          "median": 23.23,
+          "high": 35.03
+        },
+        "Missouri": {
+          "low": 16.62,
+          "median": 23.07,
+          "high": 32.78
+        },
+        "Oregon": {
+          "low": 18.15,
+          "median": 25.99,
+          "high": 35.87
+        },
+        "New Hampshire": {
+          "low": 17.5,
+          "median": 25.22,
+          "high": 34.74
+        },
+        "Kentucky": {
+          "low": 14.47,
+          "median": 22.38,
+          "high": 32.18
+        },
+        "Texas": {
+          "low": 16.09,
+          "median": 23.52,
+          "high": 35.01
+        },
+        "New York": {
+          "low": 19.17,
+          "median": 27.96,
+          "high": 39.42
+        },
+        "Minnesota": {
+          "low": 18.17,
+          "median": 26.25,
+          "high": 35.31
+        },
+        "Guam": {
+          "low": 11.29,
+          "median": 16.0,
+          "high": 23.17
+        },
+        "District of Columbia": {
+          "low": 22.66,
+          "median": 31.34,
+          "high": 45.35
+        },
+        "Utah": {
+          "low": 17.27,
+          "median": 23.77,
+          "high": 32.01
+        },
+        "South Dakota": {
+          "low": 17.18,
+          "median": 22.28,
+          "high": 28.43
+        },
+        "Florida": {
+          "low": 17.64,
+          "median": 23.72,
+          "high": 34.74
+        },
+        "Oklahoma": {
+          "low": 15.16,
+          "median": 22.2,
+          "high": 31.78
+        },
+        "Georgia": {
+          "low": 15.77,
+          "median": 23.73,
+          "high": 34.52
+        },
+        "Indiana": {
+          "low": 15.87,
+          "median": 22.99,
+          "high": 32.19
+        },
+        "Michigan": {
+          "low": 17.43,
+          "median": 23.55,
+          "high": 32.44
+        },
+        "North Carolina": {
+          "low": 16.21,
+          "median": 23.04,
+          "high": 32.35
+        },
+        "New Jersey": {
+          "low": 19.71,
+          "median": 28.03,
+          "high": 37.94
+        },
+        "Washington": {
+          "low": 21.67,
+          "median": 28.18,
+          "high": 37.32
+        },
+        "Colorado": {
+          "low": 17.91,
+          "median": 25.96,
+          "high": 37.28
+        },
+        "Delaware": {
+          "low": 18.33,
+          "median": 24.89,
+          "high": 34.33
+        },
+        "Nebraska": {
+          "low": 15.89,
+          "median": 22.65,
+          "high": 30.03
+        },
+        "Arizona": {
+          "low": 18.0,
+          "median": 24.32,
+          "high": 32.77
+        },
+        "Puerto Rico": {
+          "low": 11.01,
+          "median": 13.8,
+          "high": 21.55
+        },
+        "New Mexico": {
+          "low": 17.15,
+          "median": 23.12,
+          "high": 34.08
+        },
+        "South Carolina": {
+          "low": 16.05,
+          "median": 23.05,
+          "high": 33.11
+        },
+        "Louisiana": {
+          "low": 13.83,
+          "median": 21.58,
+          "high": 31.35
+        },
+        "Nevada": {
+          "low": 17.62,
+          "median": 24.22,
+          "high": 34.56
+        },
+        "North Dakota": {
+          "low": 17.95,
+          "median": 23.9,
+          "high": 31.75
+        },
+        "Illinois": {
+          "low": 15.56,
+          "median": 23.83,
+          "high": 34.36
+        },
+        "Vermont": {
+          "low": 20.06,
+          "median": 26.31,
+          "high": 36.04
+        },
+        "Virginia": {
+          "low": 17.6,
+          "median": 24.82,
+          "high": 35.03
+        },
+        "Wisconsin": {
+          "low": 17.48,
+          "median": 24.2,
+          "high": 31.47
+        },
+        "Rhode Island": {
+          "low": 19.18,
+          "median": 25.61,
+          "high": 36.64
+        },
+        "Kansas": {
+          "low": 15.45,
+          "median": 22.74,
+          "high": 30.83
+        },
+        "Ohio": {
+          "low": 17.36,
+          "median": 23.47,
+          "high": 32.37
+        },
+        "Mississippi": {
+          "low": 13.56,
+          "median": 20.6,
+          "high": 30.0
+        },
+        "Alabama": {
+          "low": 14.64,
+          "median": 21.46,
+          "high": 28.97
+        },
+        "West Virginia": {
+          "low": 14.85,
+          "median": 20.62,
+          "high": 28.16
+        },
+        "Massachusetts": {
+          "low": 19.59,
+          "median": 28.77,
+          "high": 38.98
+        },
+        "Arkansas": {
+          "low": 13.52,
+          "median": 20.6,
+          "high": 29.92
+        },
+        "Maryland": {
+          "low": 18.99,
+          "median": 25.74,
+          "high": 36.35
+        },
+        "Virgin Islands": {
+          "low": 15.14,
+          "median": 22.35,
+          "high": 31.8
+        }
+      }
+    },
+    "porters": {
+      "occupation": "Cleaners of Vehicles and Equipment",
+      "source": "https://cloudfront.careeronestop.org/Toolkit/Wages/find-salary.aspx?dataview=table&hourly=False&keyword=Cleaners+of+Vehicles+and+Equipment&location=Kentucky&national=True&onet=&soccode=537061",
+      "period": "May 2025",
+      "statistic": "Median hourly wage; all industries, not dealership-only",
+      "regions": {
+        "United States": {
+          "low": 13.17,
+          "median": 17.23,
+          "high": 22.89
+        },
+        "Colorado": {
+          "low": 17.0,
+          "median": 19.04,
+          "high": 23.77
+        },
+        "Delaware": {
+          "low": 15.0,
+          "median": 18.0,
+          "high": 21.2
+        },
+        "Ohio": {
+          "low": 13.04,
+          "median": 16.94,
+          "high": 21.96
+        },
+        "North Carolina": {
+          "low": 10.83,
+          "median": 16.09,
+          "high": 21.4
+        },
+        "Massachusetts": {
+          "low": 15.79,
+          "median": 18.57,
+          "high": 23.34
+        },
+        "Tennessee": {
+          "low": 12.67,
+          "median": 16.8,
+          "high": 22.75
+        },
+        "District of Columbia": {
+          "low": 17.5,
+          "median": 20.53,
+          "high": 26.22
+        },
+        "South Dakota": {
+          "low": 13.42,
+          "median": 16.85,
+          "high": 20.69
+        },
+        "West Virginia": {
+          "low": 11.5,
+          "median": 14.13,
+          "high": 17.66
+        },
+        "Mississippi": {
+          "low": 10.11,
+          "median": 13.77,
+          "high": 18.14
+        },
+        "Nevada": {
+          "low": 12.4,
+          "median": 16.46,
+          "high": 21.21
+        },
+        "Puerto Rico": {
+          "low": 10.5,
+          "median": 10.52,
+          "high": 14.26
+        },
+        "Minnesota": {
+          "low": 14.88,
+          "median": 18.07,
+          "high": 22.93
+        },
+        "New York": {
+          "low": 16.17,
+          "median": 18.94,
+          "high": 34.7
+        },
+        "Idaho": {
+          "low": 12.71,
+          "median": 17.13,
+          "high": 21.36
+        },
+        "South Carolina": {
+          "low": 11.03,
+          "median": 16.46,
+          "high": 20.66
+        },
+        "Georgia": {
+          "low": 11.48,
+          "median": 14.72,
+          "high": 22.18
+        },
+        "California": {
+          "low": 16.77,
+          "median": 18.23,
+          "high": 23.6
+        },
+        "Missouri": {
+          "low": 13.75,
+          "median": 16.67,
+          "high": 22.42
+        },
+        "Vermont": {
+          "low": 15.34,
+          "median": 19.01,
+          "high": 23.68
+        },
+        "New Jersey": {
+          "low": 15.49,
+          "median": 17.83,
+          "high": 22.33
+        },
+        "Virginia": {
+          "low": 13.24,
+          "median": 16.56,
+          "high": 22.84
+        },
+        "Rhode Island": {
+          "low": 15.0,
+          "median": 17.95,
+          "high": 25.0
+        },
+        "Montana": {
+          "low": 14.1,
+          "median": 17.55,
+          "high": 22.5
+        },
+        "Michigan": {
+          "low": 12.48,
+          "median": 16.29,
+          "high": 21.7
+        },
+        "New Hampshire": {
+          "low": 14.52,
+          "median": 17.99,
+          "high": 23.14
+        },
+        "Wisconsin": {
+          "low": 12.63,
+          "median": 16.96,
+          "high": 22.78
+        },
+        "Wyoming": {
+          "low": 13.14,
+          "median": 16.29,
+          "high": 20.48
+        },
+        "New Mexico": {
+          "low": 12.91,
+          "median": 14.57,
+          "high": 19.78
+        },
+        "Connecticut": {
+          "low": 16.35,
+          "median": 17.25,
+          "high": 22.07
+        },
+        "Guam": {
+          "low": 9.93,
+          "median": 10.57,
+          "high": 12.33
+        },
+        "Maine": {
+          "low": 14.86,
+          "median": 18.0,
+          "high": 24.08
+        },
+        "Illinois": {
+          "low": 15.0,
+          "median": 17.27,
+          "high": 26.92
+        },
+        "Arizona": {
+          "low": 15.0,
+          "median": 17.02,
+          "high": 22.46
+        },
+        "Utah": {
+          "low": 13.68,
+          "median": 16.78,
+          "high": 21.68
+        },
+        "Iowa": {
+          "low": 13.52,
+          "median": 17.27,
+          "high": 21.81
+        },
+        "Hawaii": {
+          "low": 15.22,
+          "median": 18.06,
+          "high": 25.73
+        },
+        "Oklahoma": {
+          "low": 11.07,
+          "median": 14.85,
+          "high": 21.54
+        },
+        "Virgin Islands": {
+          "low": 10.69,
+          "median": 13.6,
+          "high": 17.6
+        },
+        "Pennsylvania": {
+          "low": 12.22,
+          "median": 16.66,
+          "high": 22.56
+        },
+        "Nebraska": {
+          "low": 14.45,
+          "median": 17.87,
+          "high": 24.19
+        },
+        "Texas": {
+          "low": 11.02,
+          "median": 14.16,
+          "high": 20.88
+        },
+        "Kansas": {
+          "low": 13.76,
+          "median": 17.96,
+          "high": 22.15
+        },
+        "Kentucky": {
+          "low": 13.11,
+          "median": 16.57,
+          "high": 23.92
+        },
+        "Alaska": {
+          "low": 17.15,
+          "median": 19.33,
+          "high": 28.04
+        },
+        "Alabama": {
+          "low": 11.34,
+          "median": 14.11,
+          "high": 20.0
+        },
+        "North Dakota": {
+          "low": 14.49,
+          "median": 17.93,
+          "high": 22.21
+        },
+        "Maryland": {
+          "low": 15.0,
+          "median": 17.49,
+          "high": 26.99
+        },
+        "Florida": {
+          "low": 13.61,
+          "median": 16.05,
+          "high": 21.7
+        },
+        "Washington": {
+          "low": 17.05,
+          "median": 19.26,
+          "high": 25.06
+        },
+        "Indiana": {
+          "low": 12.97,
+          "median": 16.8,
+          "high": 23.04
+        },
+        "Oregon": {
+          "low": 15.94,
+          "median": 18.3,
+          "high": 24.3
+        },
+        "Arkansas": {
+          "low": 12.91,
+          "median": 16.81,
+          "high": 20.4
+        },
+        "Louisiana": {
+          "low": 10.2,
+          "median": 13.27,
+          "high": 21.15
+        }
+      }
+    },
+    "advisors": {
+      "occupation": "Customer Service Representatives",
+      "source": "https://cloudfront.careeronestop.org/Toolkit/Wages/find-salary.aspx?dataview=table&hourly=False&keyword=Customer+Service+Representatives&location=Kentucky&national=True&onet=&soccode=434051",
+      "period": "May 2025",
+      "statistic": "Median hourly wage; all industries, not dealership-only",
+      "regions": {
+        "United States": {
+          "low": 15.27,
+          "median": 21.53,
+          "high": 30.57
+        },
+        "West Virginia": {
+          "low": 14.23,
+          "median": 18.48,
+          "high": 27.39
+        },
+        "Iowa": {
+          "low": 15.6,
+          "median": 22.16,
+          "high": 31.03
+        },
+        "North Carolina": {
+          "low": 14.52,
+          "median": 19.35,
+          "high": 28.76
+        },
+        "Illinois": {
+          "low": 16.15,
+          "median": 22.18,
+          "high": 34.33
+        },
+        "Alaska": {
+          "low": 17.3,
+          "median": 21.71,
+          "high": 30.21
+        },
+        "District of Columbia": {
+          "low": 18.0,
+          "median": 23.2,
+          "high": 37.08
+        },
+        "Indiana": {
+          "low": 14.93,
+          "median": 20.74,
+          "high": 30.11
+        },
+        "Kentucky": {
+          "low": 14.15,
+          "median": 18.61,
+          "high": 28.76
+        },
+        "North Dakota": {
+          "low": 16.44,
+          "median": 21.48,
+          "high": 32.86
+        },
+        "New Mexico": {
+          "low": 14.93,
+          "median": 18.77,
+          "high": 27.15
+        },
+        "Mississippi": {
+          "low": 13.93,
+          "median": 17.49,
+          "high": 23.82
+        },
+        "Nebraska": {
+          "low": 16.45,
+          "median": 21.13,
+          "high": 28.56
+        },
+        "Arkansas": {
+          "low": 14.5,
+          "median": 18.19,
+          "high": 27.22
+        },
+        "Pennsylvania": {
+          "low": 15.11,
+          "median": 21.46,
+          "high": 30.46
+        },
+        "Tennessee": {
+          "low": 14.95,
+          "median": 20.59,
+          "high": 28.88
+        },
+        "Idaho": {
+          "low": 14.42,
+          "median": 20.77,
+          "high": 29.9
+        },
+        "Georgia": {
+          "low": 14.11,
+          "median": 19.06,
+          "high": 28.98
+        },
+        "Montana": {
+          "low": 16.87,
+          "median": 21.77,
+          "high": 29.93
+        },
+        "Virgin Islands": {
+          "low": 14.42,
+          "median": 17.85,
+          "high": 26.0
+        },
+        "Kansas": {
+          "low": 14.29,
+          "median": 19.39,
+          "high": 28.79
+        },
+        "Minnesota": {
+          "low": 17.18,
+          "median": 23.46,
+          "high": 35.02
+        },
+        "Maine": {
+          "low": 17.28,
+          "median": 22.67,
+          "high": 30.52
+        },
+        "Alabama": {
+          "low": 14.39,
+          "median": 18.46,
+          "high": 26.77
+        },
+        "Ohio": {
+          "low": 15.07,
+          "median": 21.93,
+          "high": 30.39
+        },
+        "Louisiana": {
+          "low": 13.67,
+          "median": 17.95,
+          "high": 24.52
+        },
+        "Wyoming": {
+          "low": 14.31,
+          "median": 20.35,
+          "high": 28.75
+        },
+        "South Dakota": {
+          "low": 14.93,
+          "median": 19.54,
+          "high": 26.77
+        },
+        "Delaware": {
+          "low": 17.34,
+          "median": 23.17,
+          "high": 36.53
+        },
+        "Connecticut": {
+          "low": 17.93,
+          "median": 23.12,
+          "high": 35.41
+        },
+        "Arizona": {
+          "low": 16.89,
+          "median": 21.97,
+          "high": 30.28
+        },
+        "Rhode Island": {
+          "low": 17.38,
+          "median": 22.86,
+          "high": 31.25
+        },
+        "Michigan": {
+          "low": 14.75,
+          "median": 21.13,
+          "high": 30.69
+        },
+        "Maryland": {
+          "low": 15.67,
+          "median": 20.59,
+          "high": 30.77
+        },
+        "Vermont": {
+          "low": 16.89,
+          "median": 22.84,
+          "high": 31.99
+        },
+        "Texas": {
+          "low": 14.1,
+          "median": 19.44,
+          "high": 28.65
+        },
+        "California": {
+          "low": 18.32,
+          "median": 23.83,
+          "high": 36.39
+        },
+        "Wisconsin": {
+          "low": 16.47,
+          "median": 22.58,
+          "high": 30.6
+        },
+        "Virginia": {
+          "low": 15.0,
+          "median": 20.54,
+          "high": 29.49
+        },
+        "Massachusetts": {
+          "low": 17.04,
+          "median": 23.61,
+          "high": 36.0
+        },
+        "New York": {
+          "low": 17.44,
+          "median": 23.08,
+          "high": 36.67
+        },
+        "Hawaii": {
+          "low": 16.28,
+          "median": 21.95,
+          "high": 30.83
+        },
+        "Missouri": {
+          "low": 15.37,
+          "median": 21.24,
+          "high": 30.72
+        },
+        "Oregon": {
+          "low": 17.65,
+          "median": 22.81,
+          "high": 30.83
+        },
+        "Oklahoma": {
+          "low": 13.76,
+          "median": 18.58,
+          "high": 27.91
+        },
+        "Florida": {
+          "low": 15.2,
+          "median": 19.44,
+          "high": 28.73
+        },
+        "Washington": {
+          "low": 18.89,
+          "median": 24.2,
+          "high": 35.39
+        },
+        "New Hampshire": {
+          "low": 16.32,
+          "median": 22.74,
+          "high": 31.87
+        },
+        "Puerto Rico": {
+          "low": 10.5,
+          "median": 12.84,
+          "high": 17.46
+        },
+        "Guam": {
+          "low": 10.84,
+          "median": 14.59,
+          "high": 21.01
+        },
+        "South Carolina": {
+          "low": 14.29,
+          "median": 18.69,
+          "high": 28.51
+        },
+        "Nevada": {
+          "low": 14.11,
+          "median": 19.5,
+          "high": 27.85
+        },
+        "New Jersey": {
+          "low": 17.08,
+          "median": 22.95,
+          "high": 34.63
+        },
+        "Utah": {
+          "low": 15.84,
+          "median": 20.74,
+          "high": 28.63
+        },
+        "Colorado": {
+          "low": 17.56,
+          "median": 22.86,
+          "high": 31.75
+        }
+      }
+    }
+  },
+  "Canada": {
+    "management": {
+      "occupation": "Car dealership manager",
+      "source": "https://www.jobbank.gc.ca/marketreport/wages-occupation/17528/ca",
+      "period": "Updated November 19, 2025; reference periods vary by region",
+      "statistic": "Median hourly wage for the source occupation; not dealership-only",
+      "regions": {
+        "Alberta": {
+          "low": 23.08,
+          "median": 46.15,
+          "high": 84.13,
+          "period": "2023-2024"
+        },
+        "British Columbia": {
+          "low": 23.75,
+          "median": 46.15,
+          "high": 86.54,
+          "period": "2023-2024"
+        },
+        "Manitoba": {
+          "low": 21.75,
+          "median": 38.46,
+          "high": 70.67,
+          "period": "2023-2024"
+        },
+        "New Brunswick": {
+          "low": 20.0,
+          "median": 33.65,
+          "high": 65.79,
+          "period": "2023-2024"
+        },
+        "Newfoundland and Labrador": {
+          "low": 18.0,
+          "median": 31.2,
+          "high": 67.31,
+          "period": "2023-2024"
+        },
+        "Northwest Territories": {
+          "low": 26.57,
+          "median": 42.24,
+          "high": 74.23,
+          "period": "2024"
+        },
+        "Nova Scotia": {
+          "low": 21.65,
+          "median": 36.06,
+          "high": 62.0,
+          "period": "2023-2024"
+        },
+        "Nunavut": {
+          "low": 27.79,
+          "median": 45.62,
+          "high": 68.53,
+          "period": "2024"
+        },
+        "Ontario": {
+          "low": 21.25,
+          "median": 43.27,
+          "high": 81.73,
+          "period": "2023-2024"
+        },
+        "Prince Edward Island": {
+          "low": 22.84,
+          "median": 34.85,
+          "high": 59.56,
+          "period": "2024"
+        },
+        "Quebec": {
+          "low": 20.5,
+          "median": 37.5,
+          "high": 80.0,
+          "period": "2023-2024"
+        },
+        "Saskatchewan": {
+          "low": 24.04,
+          "median": 43.27,
+          "high": 70.56,
+          "period": "2023-2024"
+        },
+        "Yukon": {
+          "low": 26.29,
+          "median": 41.36,
+          "high": 67.98,
+          "period": "2024"
+        }
+      }
+    },
+    "sales": {
+      "occupation": "Retail salesperson",
+      "source": "https://www.jobbank.gc.ca/marketreport/wages-occupation/21303/ca",
+      "period": "Updated November 19, 2025; reference periods vary by region",
+      "statistic": "Median hourly wage for the source occupation; not dealership-only",
+      "regions": {
+        "Alberta": {
+          "low": 15.0,
+          "median": 17.05,
+          "high": 28.85,
+          "period": "2023-2024"
+        },
+        "British Columbia": {
+          "low": 18.25,
+          "median": 18.72,
+          "high": 30.0,
+          "period": "2023-2024"
+        },
+        "Manitoba": {
+          "low": 16.0,
+          "median": 16.0,
+          "high": 26.0,
+          "period": "2023-2024"
+        },
+        "New Brunswick": {
+          "low": 15.9,
+          "median": 16.3,
+          "high": 27.69,
+          "period": "2023-2024"
+        },
+        "Newfoundland and Labrador": {
+          "low": 16.35,
+          "median": 16.35,
+          "high": 25.0,
+          "period": "2023-2024"
+        },
+        "Northwest Territories": {
+          "low": 17.2,
+          "median": 20.0,
+          "high": 25.0,
+          "period": "2023-2024"
+        },
+        "Nova Scotia": {
+          "low": 16.75,
+          "median": 16.75,
+          "high": 23.08,
+          "period": "2023-2024"
+        },
+        "Nunavut": {
+          "low": 20.17,
+          "median": 20.17,
+          "high": 38.46,
+          "period": "2023-2024"
+        },
+        "Ontario": {
+          "low": 17.6,
+          "median": 17.6,
+          "high": 28.85,
+          "period": "2023-2024"
+        },
+        "Prince Edward Island": {
+          "low": 17.0,
+          "median": 17.0,
+          "high": 24.6,
+          "period": "2023-2024"
+        },
+        "Quebec": {
+          "low": 16.6,
+          "median": 17.0,
+          "high": 27.78,
+          "period": "2023-2024"
+        },
+        "Saskatchewan": {
+          "low": 15.35,
+          "median": 16.0,
+          "high": 31.25,
+          "period": "2023-2024"
+        },
+        "Yukon": {
+          "low": 18.51,
+          "median": 20.0,
+          "high": 30.0,
+          "period": "2023-2024"
+        }
+      }
+    },
+    "bdc": {
+      "occupation": "Customer service representative",
+      "source": "https://www.jobbank.gc.ca/marketreport/wages-occupation/15201/ca",
+      "period": "Updated November 19, 2025; reference periods vary by region",
+      "statistic": "Median hourly wage for the source occupation; not dealership-only",
+      "regions": {
+        "Alberta": {
+          "low": 15.5,
+          "median": 22.0,
+          "high": 33.33,
+          "period": "2023-2024"
+        },
+        "British Columbia": {
+          "low": 18.25,
+          "median": 23.35,
+          "high": 33.65,
+          "period": "2023-2024"
+        },
+        "Manitoba": {
+          "low": 16.0,
+          "median": 19.0,
+          "high": 29.67,
+          "period": "2023-2024"
+        },
+        "New Brunswick": {
+          "low": 15.9,
+          "median": 21.44,
+          "high": 31.5,
+          "period": "2023-2024"
+        },
+        "Newfoundland and Labrador": {
+          "low": 16.35,
+          "median": 23.08,
+          "high": 34.0,
+          "period": "2023-2024"
+        },
+        "Northwest Territories": {
+          "low": 19.86,
+          "median": 28.66,
+          "high": 39.17,
+          "period": "2024"
+        },
+        "Nova Scotia": {
+          "low": 16.75,
+          "median": 18.53,
+          "high": 25.96,
+          "period": "2023-2024"
+        },
+        "Nunavut": {
+          "low": 25.3,
+          "median": 34.91,
+          "high": 50.37,
+          "period": "2024"
+        },
+        "Ontario": {
+          "low": 17.6,
+          "median": 21.5,
+          "high": 33.17,
+          "period": "2023-2024"
+        },
+        "Prince Edward Island": {
+          "low": 17.0,
+          "median": 17.0,
+          "high": 28.85,
+          "period": "2023-2024"
+        },
+        "Quebec": {
+          "low": 16.6,
+          "median": 24.1,
+          "high": 34.61,
+          "period": "2023-2024"
+        },
+        "Saskatchewan": {
+          "low": 15.35,
+          "median": 23.0,
+          "high": 35.0,
+          "period": "2023-2024"
+        },
+        "Yukon": {
+          "low": 18.51,
+          "median": 25.0,
+          "high": 34.0,
+          "period": "2023-2024"
+        }
+      }
+    },
+    "fi": {
+      "occupation": "Financial services officer",
+      "source": "https://www.jobbank.gc.ca/marketreport/wages-occupation/24826/ca",
+      "period": "Updated November 19, 2025; reference periods vary by region",
+      "statistic": "Median hourly wage for the source occupation; not dealership-only",
+      "regions": {
+        "Alberta": {
+          "low": 20.0,
+          "median": 32.67,
+          "high": 57.69,
+          "period": "2023-2024"
+        },
+        "British Columbia": {
+          "low": 22.5,
+          "median": 34.46,
+          "high": 52.88,
+          "period": "2023-2024"
+        },
+        "Manitoba": {
+          "low": 18.0,
+          "median": 28.85,
+          "high": 42.74,
+          "period": "2023-2024"
+        },
+        "New Brunswick": {
+          "low": 18.0,
+          "median": 28.21,
+          "high": 45.67,
+          "period": "2023-2024"
+        },
+        "Newfoundland and Labrador": {
+          "low": 16.35,
+          "median": 28.21,
+          "high": 51.28,
+          "period": "2023-2024"
+        },
+        "Nova Scotia": {
+          "low": 17.77,
+          "median": 25.64,
+          "high": 48.08,
+          "period": "2023-2024"
+        },
+        "Ontario": {
+          "low": 20.0,
+          "median": 31.79,
+          "high": 56.41,
+          "period": "2023-2024"
+        },
+        "Prince Edward Island": {
+          "low": 18.0,
+          "median": 28.21,
+          "high": 45.67,
+          "period": "2023-2024"
+        },
+        "Quebec": {
+          "low": 22.0,
+          "median": 31.55,
+          "high": 53.85,
+          "period": "2023-2024"
+        },
+        "Saskatchewan": {
+          "low": 18.41,
+          "median": 30.77,
+          "high": 50.38,
+          "period": "2023-2024"
+        }
+      }
+    },
+    "technicians": {
+      "occupation": "Automotive service technician",
+      "source": "https://www.jobbank.gc.ca/marketreport/wages-occupation/14799/ca",
+      "period": "Updated November 19, 2025; reference periods vary by region",
+      "statistic": "Median hourly wage for the source occupation; not dealership-only",
+      "regions": {
+        "Alberta": {
+          "low": 19.84,
+          "median": 30.0,
+          "high": 47.0,
+          "period": "2023-2024"
+        },
+        "British Columbia": {
+          "low": 20.0,
+          "median": 35.0,
+          "high": 49.0,
+          "period": "2023-2024"
+        },
+        "Manitoba": {
+          "low": 17.0,
+          "median": 27.5,
+          "high": 40.0,
+          "period": "2023-2024"
+        },
+        "New Brunswick": {
+          "low": 16.0,
+          "median": 24.75,
+          "high": 33.0,
+          "period": "2023-2024"
+        },
+        "Newfoundland and Labrador": {
+          "low": 17.5,
+          "median": 27.0,
+          "high": 41.0,
+          "period": "2023-2024"
+        },
+        "Northwest Territories": {
+          "low": 23.0,
+          "median": 42.0,
+          "high": 58.0,
+          "period": "2023-2024"
+        },
+        "Nova Scotia": {
+          "low": 17.0,
+          "median": 25.0,
+          "high": 36.32,
+          "period": "2023-2024"
+        },
+        "Nunavut": {
+          "low": 21.69,
+          "median": 35.58,
+          "high": 51.87,
+          "period": "2024"
+        },
+        "Ontario": {
+          "low": 18.75,
+          "median": 30.0,
+          "high": 43.27,
+          "period": "2023-2024"
+        },
+        "Prince Edward Island": {
+          "low": 17.0,
+          "median": 25.5,
+          "high": 32.0,
+          "period": "2023-2024"
+        },
+        "Quebec": {
+          "low": 20.0,
+          "median": 28.0,
+          "high": 40.0,
+          "period": "2023-2024"
+        },
+        "Saskatchewan": {
+          "low": 18.0,
+          "median": 30.0,
+          "high": 43.5,
+          "period": "2023-2024"
+        },
+        "Yukon": {
+          "low": 22.46,
+          "median": 35.02,
+          "high": 45.17,
+          "period": "2024"
+        }
+      }
+    },
+    "parts": {
+      "occupation": "Motor vehicle parts clerk",
+      "source": "https://www.jobbank.gc.ca/marketreport/wages-occupation/19318/ca",
+      "period": "Updated November 19, 2025; reference periods vary by region",
+      "statistic": "Median hourly wage for the source occupation; not dealership-only",
+      "regions": {
+        "Alberta": {
+          "low": 20.0,
+          "median": 30.29,
+          "high": 45.13,
+          "period": "2023-2024"
+        },
+        "British Columbia": {
+          "low": 20.0,
+          "median": 30.0,
+          "high": 39.46,
+          "period": "2023-2024"
+        },
+        "Manitoba": {
+          "low": 17.79,
+          "median": 26.37,
+          "high": 32.31,
+          "period": "2023-2024"
+        },
+        "New Brunswick": {
+          "low": 18.0,
+          "median": 23.2,
+          "high": 47.61,
+          "period": "2023-2024"
+        },
+        "Newfoundland and Labrador": {
+          "low": 22.0,
+          "median": 25.18,
+          "high": 65.0,
+          "period": "2023-2024"
+        },
+        "Northwest Territories": {
+          "low": 27.54,
+          "median": 40.17,
+          "high": 49.77,
+          "period": "2024"
+        },
+        "Nova Scotia": {
+          "low": 17.0,
+          "median": 24.52,
+          "high": 33.65,
+          "period": "2023-2024"
+        },
+        "Ontario": {
+          "low": 19.0,
+          "median": 27.0,
+          "high": 41.0,
+          "period": "2023-2024"
+        },
+        "Prince Edward Island": {
+          "low": 19.61,
+          "median": 24.52,
+          "high": 47.61,
+          "period": "2023-2024"
+        },
+        "Quebec": {
+          "low": 20.0,
+          "median": 24.0,
+          "high": 36.0,
+          "period": "2023-2024"
+        },
+        "Saskatchewan": {
+          "low": 20.0,
+          "median": 27.98,
+          "high": 45.48,
+          "period": "2023-2024"
+        },
+        "Yukon": {
+          "low": 20.06,
+          "median": 30.13,
+          "high": 38.5,
+          "period": "2024"
+        }
+      }
+    },
+    "admin": {
+      "occupation": "Bookkeeper",
+      "source": "https://www.jobbank.gc.ca/marketreport/wages-occupation/12562/ca",
+      "period": "Updated November 19, 2025; reference periods vary by region",
+      "statistic": "Median hourly wage for the source occupation; not dealership-only",
+      "regions": {
+        "Alberta": {
+          "low": 20.0,
+          "median": 30.0,
+          "high": 50.96,
+          "period": "2023-2024"
+        },
+        "British Columbia": {
+          "low": 19.44,
+          "median": 28.0,
+          "high": 47.45,
+          "period": "2023-2024"
+        },
+        "Manitoba": {
+          "low": 17.0,
+          "median": 25.0,
+          "high": 40.85,
+          "period": "2023-2024"
+        },
+        "New Brunswick": {
+          "low": 16.0,
+          "median": 25.0,
+          "high": 40.0,
+          "period": "2023-2024"
+        },
+        "Newfoundland and Labrador": {
+          "low": 17.0,
+          "median": 25.0,
+          "high": 40.0,
+          "period": "2023-2024"
+        },
+        "Northwest Territories": {
+          "low": 27.0,
+          "median": 41.03,
+          "high": 50.9,
+          "period": "2023-2024"
+        },
+        "Nova Scotia": {
+          "low": 16.75,
+          "median": 24.04,
+          "high": 38.0,
+          "period": "2023-2024"
+        },
+        "Nunavut": {
+          "low": 25.86,
+          "median": 43.0,
+          "high": 50.3,
+          "period": "2023-2024"
+        },
+        "Ontario": {
+          "low": 19.23,
+          "median": 28.5,
+          "high": 46.15,
+          "period": "2023-2024"
+        },
+        "Prince Edward Island": {
+          "low": 17.0,
+          "median": 25.0,
+          "high": 39.42,
+          "period": "2023-2024"
+        },
+        "Quebec": {
+          "low": 20.25,
+          "median": 28.02,
+          "high": 43.75,
+          "period": "2023-2024"
+        },
+        "Saskatchewan": {
+          "low": 18.0,
+          "median": 27.16,
+          "high": 43.27,
+          "period": "2023-2024"
+        },
+        "Yukon": {
+          "low": 30.0,
+          "median": 42.0,
+          "high": 48.12,
+          "period": "2023-2024"
+        }
+      }
+    },
+    "advisors": {
+      "occupation": "Customer service representative",
+      "source": "https://www.jobbank.gc.ca/marketreport/wages-occupation/15201/ca",
+      "period": "Updated November 19, 2025; reference periods vary by region",
+      "statistic": "Median hourly wage for the source occupation; not dealership-only",
+      "regions": {
+        "Alberta": {
+          "low": 15.5,
+          "median": 22.0,
+          "high": 33.33,
+          "period": "2023-2024"
+        },
+        "British Columbia": {
+          "low": 18.25,
+          "median": 23.35,
+          "high": 33.65,
+          "period": "2023-2024"
+        },
+        "Manitoba": {
+          "low": 16.0,
+          "median": 19.0,
+          "high": 29.67,
+          "period": "2023-2024"
+        },
+        "New Brunswick": {
+          "low": 15.9,
+          "median": 21.44,
+          "high": 31.5,
+          "period": "2023-2024"
+        },
+        "Newfoundland and Labrador": {
+          "low": 16.35,
+          "median": 23.08,
+          "high": 34.0,
+          "period": "2023-2024"
+        },
+        "Northwest Territories": {
+          "low": 19.86,
+          "median": 28.66,
+          "high": 39.17,
+          "period": "2024"
+        },
+        "Nova Scotia": {
+          "low": 16.75,
+          "median": 18.53,
+          "high": 25.96,
+          "period": "2023-2024"
+        },
+        "Nunavut": {
+          "low": 25.3,
+          "median": 34.91,
+          "high": 50.37,
+          "period": "2024"
+        },
+        "Ontario": {
+          "low": 17.6,
+          "median": 21.5,
+          "high": 33.17,
+          "period": "2023-2024"
+        },
+        "Prince Edward Island": {
+          "low": 17.0,
+          "median": 17.0,
+          "high": 28.85,
+          "period": "2023-2024"
+        },
+        "Quebec": {
+          "low": 16.6,
+          "median": 24.1,
+          "high": 34.61,
+          "period": "2023-2024"
+        },
+        "Saskatchewan": {
+          "low": 15.35,
+          "median": 23.0,
+          "high": 35.0,
+          "period": "2023-2024"
+        },
+        "Yukon": {
+          "low": 18.51,
+          "median": 25.0,
+          "high": 34.0,
+          "period": "2023-2024"
+        }
+      }
+    },
+    "porters": {
+      "occupation": "Car washer / specialized cleaner",
+      "source": "https://www.jobbank.gc.ca/marketreport/wages-occupation/14347/ca",
+      "period": "Updated November 19, 2025",
+      "regions": {
+        "Alberta": {
+          "low": 16.0,
+          "median": 20.0,
+          "high": 30.0,
+          "period": "2023-2024"
+        },
+        "British Columbia": {
+          "low": 18.25,
+          "median": 20.0,
+          "high": 30.0,
+          "period": "2023-2024"
+        },
+        "Manitoba": {
+          "low": 16.0,
+          "median": 17.0,
+          "high": 22.0,
+          "period": "2023-2024"
+        },
+        "New Brunswick": {
+          "low": 15.9,
+          "median": 17.5,
+          "high": 24.0,
+          "period": "2023-2024"
+        },
+        "Newfoundland and Labrador": {
+          "low": 16.35,
+          "median": 17.0,
+          "high": 27.6,
+          "period": "2023-2024"
+        },
+        "Nova Scotia": {
+          "low": 16.75,
+          "median": 18.0,
+          "high": 29.45,
+          "period": "2023-2024"
+        },
+        "Ontario": {
+          "low": 17.6,
+          "median": 19.25,
+          "high": 25.0,
+          "period": "2023-2024"
+        },
+        "Prince Edward Island": {
+          "low": 17.0,
+          "median": 18.0,
+          "high": 26.0,
+          "period": "2023-2024"
+        },
+        "Quebec": {
+          "low": 16.67,
+          "median": 21.0,
+          "high": 26.0,
+          "period": "2023-2024"
+        },
+        "Saskatchewan": {
+          "low": 15.35,
+          "median": 16.0,
+          "high": 27.69,
+          "period": "2023-2024"
+        },
+        "Yukon": {
+          "low": 18.51,
+          "median": 20.38,
+          "high": 36.75,
+          "period": "2024"
+        }
+      }
+    }
+  }
+}

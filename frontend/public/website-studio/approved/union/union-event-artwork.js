@@ -1,0 +1,1 @@
+(()=>{const load=src=>new Promise((resolve,reject)=>{const script=document.createElement('script');script.src=src;script.onload=resolve;script.onerror=reject;document.head.append(script)});load('dealer-event-catalogue.js?v=3').then(()=>load('dealer-event-library.js?v=3')).catch(error=>console.error('Event library unavailable',error));})();

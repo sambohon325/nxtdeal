@@ -1,0 +1,9 @@
+{
+  "repository": "https://github.com/sambohon325/dealercomposite",
+  "commit": "263e1c77223ab9f70ad1ce4fd055be00ec5fea7a",
+  "source": "earnings.py:sample_register",
+  "source_sha256": "6b68d9b80e3afa32546cc83a5fed1e2ee4347522cb8ec706d62e93023ca5c2b9",
+  "adaptations": [
+    "Accept already-generated canonical rows and explicit side instead of standalone simulation. All register transforms retained."
+  ]
+}

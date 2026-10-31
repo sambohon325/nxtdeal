@@ -1,0 +1,105 @@
+name: ${COOLIFY_RESOURCE_UUID:-nxtdeal-synthetic}
+x-api: &api
+  build:
+    context: .
+    dockerfile: deploy/synthetic/api.Dockerfile
+    args:
+      SOURCE_COMMIT: ${SOURCE_COMMIT:-unknown}
+  volumes:
+    - fixture:/data
+  networks: [isolated]
+  cap_drop: [ALL]
+  security_opt: [no-new-privileges:true]
+  read_only: true
+  tmpfs: [/tmp]
+  pids_limit: 256
+  mem_limit: 2g
+  logging:
+    driver: json-file
+    options: {max-size: "10m", max-file: "3"}
+
+services:
+  seed:
+    <<: *api
+    command: [seed, /data/dealership]
+    restart: "no"
+  dealer:
+    <<: *api
+    command: [dealer, /data/dealership]
+    depends_on:
+      seed: {condition: service_completed_successfully}
+    restart: unless-stopped
+    healthcheck:
+      test: [CMD, python, -c, "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8317/openapi.json', timeout=5)"]
+      interval: 10s
+      timeout: 6s
+      retries: 12
+  hub:
+    <<: *api
+    command: [hub, /data/dealership]
+    depends_on:
+      seed: {condition: service_completed_successfully}
+    restart: unless-stopped
+    healthcheck:
+      test: [CMD, python, -c, "import urllib.request; urllib.request.urlopen('http://127.0.0.1:9317/mysales/email/status', timeout=5)"]
+      interval: 10s
+      timeout: 6s
+      retries: 12
+  web:
+    build:
+      context: .
+      dockerfile: deploy/synthetic/web.Dockerfile
+      args:
+        SOURCE_COMMIT: ${SOURCE_COMMIT:-unknown}
+    networks: [isolated]
+    depends_on:
+      dealer: {condition: service_healthy}
+      hub: {condition: service_healthy}
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    read_only: true
+    tmpfs: [/tmp, /app/.next/cache]
+    restart: unless-stopped
+    pids_limit: 256
+    mem_limit: 1g
+    logging:
+      driver: json-file
+      options: {max-size: "10m", max-file: "3"}
+    healthcheck:
+      test: [CMD, node, -e, "fetch('http://127.0.0.1:3317/apps').then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))"]
+      interval: 10s
+      timeout: 6s
+      retries: 12
+
+  gateway:
+    build:
+      context: .
+      dockerfile: deploy/synthetic/gateway.Dockerfile
+      args:
+        SOURCE_COMMIT: ${SOURCE_COMMIT:-unknown}
+    ports: ["127.0.0.1:3317:3317", "127.0.0.1:8317:8317", "127.0.0.1:9317:9317"]
+    networks: [isolated, ingress]
+    depends_on:
+      web: {condition: service_healthy}
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    read_only: true
+    tmpfs: [/tmp]
+    restart: unless-stopped
+    pids_limit: 64
+    mem_limit: 128m
+    healthcheck:
+      test: [CMD, wget, -q, -O, /dev/null, "http://127.0.0.1:3317/apps"]
+      interval: 10s
+      timeout: 6s
+      retries: 12
+    logging:
+      driver: json-file
+      options: {max-size: "10m", max-file: "3"}
+
+volumes:
+  fixture:
+networks:
+  isolated:
+    internal: true
+  ingress:

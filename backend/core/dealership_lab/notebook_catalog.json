@@ -1,0 +1,321 @@
+{
+  "metrics": {
+    "revenue": [
+      "Vehicle revenue / month",
+      "currency",
+      "up",
+      "Vehicle sales revenue divided by modeled months."
+    ],
+    "profit": [
+      "Planning profit / month",
+      "currency",
+      "up",
+      "Saved earnings forecast profit divided by modeled months; not recorded profit."
+    ],
+    "cash": [
+      "Net cash flow / month",
+      "currency",
+      "up",
+      "Saved earnings forecast net cash flow divided by modeled months; excludes new financing."
+    ],
+    "sales": [
+      "Vehicles sold / month",
+      "number",
+      "up",
+      "Modeled new and used retail sales divided by months."
+    ],
+    "front": [
+      "Vehicle gross / sale",
+      "currency",
+      "up",
+      "Vehicle gross divided by retail sales; excludes F&I and service."
+    ],
+    "holding": [
+      "Inventory holding cost / month",
+      "currency",
+      "down",
+      "Modeled holding costs divided by months."
+    ],
+    "ad_sale": [
+      "Advertising cost / sale",
+      "currency",
+      "down",
+      "Total marketing spend divided by all retail sales; not attributed advertising ROI."
+    ],
+    "conversion": [
+      "Lead-to-sale conversion",
+      "percent",
+      "up",
+      "Retail sales divided by all modeled leads, multiplied by 100."
+    ],
+    "unhandled": [
+      "Unhandled leads / month",
+      "number",
+      "down",
+      "Unworked modeled leads divided by months."
+    ],
+    "fi": [
+      "F&I gross / retail sale",
+      "currency",
+      "up",
+      "F&I gross divided by all retail sales; not product penetration."
+    ],
+    "ros": [
+      "Repair orders / month",
+      "number",
+      "up",
+      "Completed modeled service orders divided by months."
+    ],
+    "ro_gross": [
+      "Service gross / repair order",
+      "currency",
+      "up",
+      "Service gross divided by completed orders; not service revenue."
+    ],
+    "lost_ros": [
+      "Unserved repair orders / month",
+      "number",
+      "down",
+      "Modeled service demand exceeding capacity divided by months."
+    ],
+    "payroll": [
+      "Payroll cost / month",
+      "currency",
+      "down",
+      "Modeled payroll divided by months. May include burdens unlike the Census reference."
+    ],
+    "overhead": [
+      "Operating overhead / month",
+      "currency",
+      "down",
+      "Modeled operating overhead divided by months; review included expense lines."
+    ],
+    "overload": [
+      "Overloaded work hours / month",
+      "number",
+      "down",
+      "Modeled workload above available staffing hours divided by months."
+    ],
+    "collection": [
+      "Collection-rate assumption",
+      "percent",
+      "up",
+      "Entered share of scheduled payments collected; an input, not an observed outcome."
+    ],
+    "default": [
+      "Monthly default assumption",
+      "percent",
+      "down",
+      "Entered monthly share of principal defaulting; not an observed delinquency rate."
+    ],
+    "parts": [
+      "Parts gross / month",
+      "currency",
+      "up",
+      "Not separately modeled. Optional user-entered monthly department total."
+    ],
+    "collision": [
+      "Collision gross / month",
+      "currency",
+      "up",
+      "Not separately modeled. Optional user-entered monthly department total."
+    ]
+  },
+  "templates": {
+    "leadership": [
+      "Owner & GM",
+      [
+        "revenue",
+        "profit",
+        "cash"
+      ],
+      "Review profit alongside cash. Identify which department or working-capital requirement explains the difference.",
+      "Test one operational change, then check profit and cash together before committing."
+    ],
+    "sales": [
+      "Sales & inventory",
+      [
+        "sales",
+        "front",
+        "holding"
+      ],
+      "Check volume, vehicle gross and holding costs together. Discounting can move units while reducing earnings.",
+      "Test acquisition cost, stock mix or replenishment in a separate saved option."
+    ],
+    "marketing": [
+      "Marketing & BDC",
+      [
+        "ad_sale",
+        "conversion",
+        "unhandled"
+      ],
+      "Check whether lead-handling capacity can support more advertising. Cost per sale includes organic sales.",
+      "Test response coverage or campaign spend separately and compare incremental gross against added cost."
+    ],
+    "fi": [
+      "Finance & insurance",
+      [
+        "fi",
+        "sales"
+      ],
+      "Compare F&I gross per retail unit with volume; this does not measure compliance or product penetration.",
+      "Review product mix and training assumptions; rerun the proposal with realistic costs."
+    ],
+    "service": [
+      "Service department",
+      [
+        "ros",
+        "ro_gross",
+        "lost_ros"
+      ],
+      "Separate demand, available technician capacity and gross per order.",
+      "Test technician coverage, hours or service capacity; check added payroll against added gross."
+    ],
+    "people": [
+      "People, facilities & administration",
+      [
+        "payroll",
+        "overhead",
+        "overload"
+      ],
+      "Lower costs alone are not success. Check service capacity and lost opportunities before cutting staff.",
+      "Review department schedules and expense lines, then test the change without reducing required coverage."
+    ],
+    "bhph": [
+      "BHPH collections & portfolio",
+      [
+        "cash",
+        "collection",
+        "default"
+      ],
+      "Collection and default percentages are assumptions. Review cash needs and stress-test weaker collections.",
+      "Create a downside option with lower collections and higher defaults; compare cash runway before growth."
+    ],
+    "parts": [
+      "Parts department",
+      [
+        "parts"
+      ],
+      "Parts is not separately modeled yet. Enter a clearly sourced department total and a target without treating it as a simulator output.",
+      "Review purchasing, obsolescence and gross with the parts manager; record a measurable action."
+    ],
+    "collision": [
+      "Collision department",
+      [
+        "collision"
+      ],
+      "Collision is not separately modeled yet. A manual figure remains separate from dealership earnings.",
+      "Review cycle time, work in progress and job gross; choose one process change to track."
+    ]
+  },
+  "departments": {
+    "leadership": [
+      "Owner & GM",
+      [
+        "revenue",
+        "profit",
+        "cash"
+      ]
+    ],
+    "sales": [
+      "Sales & inventory",
+      [
+        "sales",
+        "front",
+        "holding"
+      ]
+    ],
+    "marketing": [
+      "Marketing",
+      [
+        "ad_sale",
+        "conversion"
+      ]
+    ],
+    "bdc": [
+      "BDC & customer experience",
+      [
+        "conversion",
+        "unhandled"
+      ]
+    ],
+    "fi": [
+      "Finance & insurance",
+      [
+        "fi",
+        "sales"
+      ]
+    ],
+    "bhph": [
+      "BHPH collections & portfolio",
+      [
+        "cash",
+        "collection",
+        "default"
+      ]
+    ],
+    "service": [
+      "Service & workshop",
+      [
+        "ros",
+        "ro_gross",
+        "lost_ros"
+      ]
+    ],
+    "parts": [
+      "Parts",
+      [
+        "parts"
+      ]
+    ],
+    "collision": [
+      "Collision",
+      [
+        "collision"
+      ]
+    ],
+    "people": [
+      "People & training",
+      [
+        "payroll",
+        "overload"
+      ]
+    ],
+    "facilities": [
+      "Facilities & safety",
+      [
+        "overhead"
+      ]
+    ],
+    "accounting": [
+      "Controller & accounting",
+      [
+        "profit",
+        "cash",
+        "overhead"
+      ]
+    ],
+    "technology": [
+      "Technology & data",
+      [
+        "unhandled",
+        "overhead"
+      ]
+    ]
+  },
+  "topics": {
+    "leadership": "Assign compliance oversight, escalation authority and periodic audits.",
+    "sales": "Check licensing, title/history disclosures, advertised terms and delivery documents.",
+    "marketing": "Review advertised prices, substantiation, financing disclosures and campaign consent.",
+    "bdc": "Review contact consent, opt-outs, call recording and outreach rules before automation.",
+    "fi": "Review credit authorization, lending disclosures, fair treatment and optional-product consent.",
+    "bhph": "Review servicing, collections, repossession authorization, notices and complaints with a qualified reviewer.",
+    "service": "Document estimates, repair authorization, safety checks and warranty responsibilities.",
+    "parts": "Check parts traceability, returns, hazardous materials and warranty documentation.",
+    "collision": "Review repair authorization, insurer/customer approvals, refinishing hazards and waste handling.",
+    "people": "Review pay, hours, overtime, training and employment requirements for this location.",
+    "facilities": "Review premises permits, fire protection, workplace safety and environmental disposal.",
+    "accounting": "Review reconciliations, tax treatment, record retention and segregation of duties.",
+    "technology": "Review data access, vendor permissions, retention, incident response and security controls."
+  }
+}

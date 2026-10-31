@@ -1,0 +1,4 @@
+{
+  "extends": "./tsconfig.json",
+  "include": ["components/OperationsCustomerJourneyBoard.tsx", "lib/customerJourney.ts", "lib/api.ts", "lib/auth.ts"]
+}

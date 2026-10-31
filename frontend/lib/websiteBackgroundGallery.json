@@ -1,0 +1,188 @@
+[
+  {
+    "id": "fieldwork-hero",
+    "name": "Olive SUV & mountain grasslands",
+    "category": "Trucks & adventure",
+    "url": "/website-studio/assets/fieldwork-hero.png"
+  },
+  {
+    "id": "tempo-luxury-hero",
+    "name": "Silver sedan in dark showroom",
+    "category": "City & showroom",
+    "url": "/website-studio/assets/tempo-luxury-hero.png"
+  },
+  {
+    "id": "tempo-hero",
+    "name": "Blue hatchback & sculptural architecture",
+    "category": "City & showroom",
+    "url": "/website-studio/assets/tempo-hero.png"
+  },
+  {
+    "id": "pacific-editorial-hero",
+    "name": "Graphite wagon & architecture",
+    "category": "Performance",
+    "url": "/website-studio/assets/pacific-editorial-hero.png"
+  },
+  {
+    "id": "pacific-hero",
+    "name": "White SUV on the Pacific",
+    "category": "Scenic roads",
+    "url": "/website-studio/assets/pacific-hero.png"
+  },
+  {
+    "id": "redline-hero",
+    "name": "Silver coupe in red studio",
+    "category": "Performance",
+    "url": "/website-studio/assets/redline-hero.png"
+  },
+  {
+    "id": "switch-hero",
+    "name": "Silver crossover studio",
+    "category": "City & showroom",
+    "url": "/website-studio/assets/switch-hero.png"
+  },
+  {
+    "id": "waypoint-hero",
+    "name": "Golden hills touring",
+    "category": "Everyday & lifestyle",
+    "url": "/website-studio/assets/waypoint-hero.png"
+  },
+  {
+    "id": "scene-forest",
+    "name": "Misty evergreen road",
+    "category": "Scenic roads",
+    "url": "/website-studio/assets/scene-forest.png"
+  },
+  {
+    "id": "scene-desert",
+    "name": "Sandstone & open highway",
+    "category": "Scenic roads",
+    "url": "/website-studio/assets/scene-desert.png"
+  },
+  {
+    "id": "scene-coast",
+    "name": "Pacific coastal drive",
+    "category": "Scenic roads",
+    "url": "/website-studio/assets/scene-coast.png"
+  },
+  {
+    "id": "scene-city",
+    "name": "City at blue hour",
+    "category": "City & showroom",
+    "url": "/website-studio/assets/scene-city.png"
+  },
+  {
+    "id": "lone-star-truck-hero",
+    "name": "Texas truck country",
+    "category": "Trucks & adventure",
+    "url": "/website-studio/assets/lone-star-truck-hero.png"
+  },
+  {
+    "id": "union-offroad-hero",
+    "name": "Off-road American trail",
+    "category": "Trucks & adventure",
+    "url": "/website-studio/assets/union-offroad-hero.png"
+  },
+  {
+    "id": "high-mesa-hero",
+    "name": "Desert adventure",
+    "category": "Trucks & adventure",
+    "url": "/website-studio/assets/high-mesa-hero.png"
+  },
+  {
+    "id": "evergreen-hero",
+    "name": "Forest SUV escape",
+    "category": "Trucks & adventure",
+    "url": "/website-studio/assets/evergreen-hero.png"
+  },
+  {
+    "id": "conexion-hero",
+    "name": "Bright everyday drive",
+    "category": "Everyday & lifestyle",
+    "url": "/website-studio/assets/conexion-hero.png"
+  },
+  {
+    "id": "daybreak-hero",
+    "name": "Golden-hour drive",
+    "category": "Everyday & lifestyle",
+    "url": "/website-studio/assets/daybreak-hero.png"
+  },
+  {
+    "id": "rally-hero",
+    "name": "Red hatchback & architecture",
+    "category": "Everyday & lifestyle",
+    "url": "/website-studio/assets/rally-hero.png"
+  },
+  {
+    "id": "vector-hero",
+    "name": "Fresh city crossover",
+    "category": "Everyday & lifestyle",
+    "url": "/website-studio/assets/vector-hero.png"
+  },
+  {
+    "id": "metroline-hero",
+    "name": "Metro city drive",
+    "category": "City & showroom",
+    "url": "/website-studio/assets/metroline-hero.png"
+  },
+  {
+    "id": "sterling-hero",
+    "name": "Modern luxury",
+    "category": "City & showroom",
+    "url": "/website-studio/assets/sterling-hero.png"
+  },
+  {
+    "id": "foundry-hero",
+    "name": "Industrial character",
+    "category": "City & showroom",
+    "url": "/website-studio/assets/foundry-hero.png"
+  },
+  {
+    "id": "afterhours-hero",
+    "name": "After-dark performance",
+    "category": "Performance",
+    "url": "/website-studio/assets/afterhours-hero.png"
+  },
+  {
+    "id": "apex-hero",
+    "name": "Performance in motion",
+    "category": "Performance",
+    "url": "/website-studio/assets/apex-hero.png"
+  },
+  {
+    "id": "harbor-hero",
+    "name": "Coastal touring",
+    "category": "Everyday & lifestyle",
+    "url": "/website-studio/assets/harbor-hero.png"
+  },
+  {
+    "id": "lone-star-wheel-service",
+    "name": "Wheel & tire care",
+    "category": "Service & people",
+    "url": "/website-studio/assets/lone-star-wheel-service.png"
+  },
+  {
+    "id": "lone-star-service-advisor",
+    "name": "Service conversation",
+    "category": "Service & people",
+    "url": "/website-studio/assets/lone-star-service-advisor.png"
+  },
+  {
+    "id": "lone-star-diagnostics",
+    "name": "Workshop diagnostics",
+    "category": "Service & people",
+    "url": "/website-studio/assets/lone-star-diagnostics.png"
+  },
+  {
+    "id": "lone-star-about-team",
+    "name": "Dealership team",
+    "category": "Service & people",
+    "url": "/website-studio/assets/lone-star-about-team.png"
+  },
+  {
+    "id": "fall-event-truck",
+    "name": "Autumn truck getaway",
+    "category": "Seasonal",
+    "url": "/website-studio/assets/fall-event-truck.png"
+  }
+]

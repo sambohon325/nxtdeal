@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "es2020",
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "jsx": "react-jsx",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "baseUrl": ".",
+    "paths": { "@/*": ["./*"] }
+  },
+  "include": [
+    "lib/adminUsers.ts",
+    "lib/securityAdmin.ts",
+    "lib/rolesPermissions.ts",
+    "lib/apiKeys.ts",
+    "lib/api.ts",
+    "lib/auth.ts",
+    "components/AdminUsersBoard.tsx"
+  ]
+}

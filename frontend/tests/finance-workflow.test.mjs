@@ -1,0 +1,23 @@
+import {workControls} from './work-controls-stub.mjs';
+import {test} from 'node:test';
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import vm from 'node:vm';
+import ts from 'typescript';
+import * as jsx from 'react/jsx-runtime';
+const elements=e=>!e||typeof e!=='object'?[]:[e,...[e.props?.children].flat(Infinity).flatMap(elements)];
+test('finance failure never renders zero clearance counts and supports retry',async()=>{
+ const state=[];let cursor=0,effect,fail=true;
+ const source=ts.transpileModule(fs.readFileSync(new URL('../components/LendingComplianceBoard.tsx',import.meta.url),'utf8'),{compilerOptions:{module:ts.ModuleKind.CommonJS,jsx:ts.JsxEmit.ReactJSX}}).outputText;
+ const scope={exports:{},require:name=>{if(name.endsWith('/WorkspaceUi'))return workControls;
+  if(name==='react/jsx-runtime')return jsx;
+  if(name==='react')return {useEffect:fn=>{effect=fn;},useState:initial=>{const i=cursor++;if(!(i in state))state[i]=initial;return[state[i],v=>state[i]=v];}};
+  if(name==='@/lib/productTheme')return {PRODUCT_ACCENT_COLORS:['blue']};
+  return {getLendingComplianceDashboard:async()=>{if(fail)throw Error('Offline');return {ofac:{items:[]},form_8300:{items:[]}};},getFinanceComplianceOverview:async()=>({})};
+ }};vm.runInNewContext(source,scope);
+ const render=()=>{cursor=0;return elements(scope.exports.LendingComplianceBoard({theme:'dark'}));};
+ assert.ok(render().some(e=>e.props.role==='status'));effect();await new Promise(resolve=>setImmediate(resolve));
+ let tree=render();assert.ok(tree.some(e=>e.props.role==='alert'));assert.ok(!tree.some(e=>e.props.label==='Form 8300 Overdue'));
+ fail=false;tree.find(e=>e.props.children==='Retry compliance').props.onClick();await new Promise(resolve=>setImmediate(resolve));
+ tree=render();assert.ok(!tree.some(e=>e.props.role==='alert'));assert.ok(tree.some(e=>e.props.label==='Form 8300 Overdue'));
+});

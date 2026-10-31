@@ -1,0 +1,60 @@
+/* NXTDeal product surfaces. Semantic alert/status colors and light/print views remain distinct. */
+.nxt-ui {
+  --brand-ink: #07121c;
+  --brand-charcoal: #0b1c29;
+  --brand-gray: #9fb6c7;
+  --brand-blue: #9ad9fb;
+  --brand-teal: #c3eaff;
+  --chrono-line: #8fcdf52b;
+  --chrono-glass: linear-gradient(130deg, #8fcdf509, #06142145);
+  height: 100%; min-height: 0; display: flex; flex-direction: column;
+  color: #edf5fb; background: radial-gradient(ellipse at 85% 0, #16436155, transparent 50%), #06111b;
+  font-family: var(--font-geist-sans), sans-serif;
+}
+.nxt-ui :where(.font-brand) { font-family: var(--font-geist-sans), sans-serif; text-transform: none; letter-spacing: -.015em; font-weight: 500; }
+.nxt-ui :where(h1, h2, h3) { font-weight: 450; letter-spacing: -.025em; }
+/* Match shared legacy utilities without changing danger/success/warning treatments. */
+.nxt-ui :is(.bg-brand-ink, .bg-black, .bg-zinc-950):not([data-appearance="light"], [data-appearance="light"] *) { background: #06121c85; }
+.nxt-ui :is(.bg-brand-charcoal, .bg-zinc-900, .bg-zinc-800):not([data-appearance="light"], [data-appearance="light"] *) { background: linear-gradient(125deg, #659bc00c, #07172365); }
+.nxt-ui :is(.border-zinc-900, .border-zinc-800, .border-zinc-700, [class~="border-black/20"], [class~="border-zinc-800/60"]):not([data-appearance="light"], [data-appearance="light"] *) { border-color: var(--chrono-line); }
+.nxt-ui :is(.text-zinc-500, .text-zinc-600):not([data-appearance="light"], [data-appearance="light"] *) { color: #91adbf; }
+.nxt-ui .text-zinc-400:not([data-appearance="light"], [data-appearance="light"] *) { color: #aec5d5; }
+.nxt-ui :is(button, a).font-brand { text-transform: none; letter-spacing: 0; }
+.nxt-ui :is(input:not([type="checkbox"]):not([type="radio"]):not([type="range"]):not([type="color"]), select, textarea):not([data-appearance="light"] *) {
+  border-color: #8fcdf533; border-radius: 8px; background-color: #06121ce6; color: #eaf5fc;
+}
+.nxt-ui :is(input, select, textarea)::placeholder { color: #8ca6b8; }
+.nxt-ui :is(button, a) { transition: background-color .15s, border-color .15s, color .15s; }
+.nxt-ui button:disabled { cursor: not-allowed; }
+.nxt-ui table { border-collapse: separate; border-spacing: 0; font-size: 12px; line-height: 1.5; }
+.nxt-ui :is(th, td) { padding: 11px 12px; }
+.nxt-ui th { font-weight: 500; text-transform: none; letter-spacing: .015em; }
+.nxt-ui tbody tr:hover { background: #8ed9ff08; }
+.nxt-ui :is(.rounded-lg, .rounded-xl).border { border-radius: 12px; }
+/* Retire decorative diagonal ribbons; preserve status badges and indicators. */
+.nxt-ui .nxt-accent { width: 1px; clip-path: none !important; background: #8ed9ff55 !important; }
+.nxt-board { padding: 12px 0; }
+.nxt-board-toolbar { padding: 0 0 18px; flex-wrap: wrap; row-gap: 12px; border-bottom: 1px solid var(--chrono-line); }
+.nxt-board-layout { gap: 22px; padding-top: 22px; }
+.nxt-report-grid { gap: 22px; padding: 0; }
+.nxt-report-card { border-radius: 14px; box-shadow: inset 0 1px 0 #c9ebff05; }
+.nxt-report-card > header { padding: 18px 20px 12px; border: 0; cursor: grab; }
+.nxt-report-title { white-space: normal; font-size: 14px; font-weight: 450; letter-spacing: -.01em; text-transform: none; padding: 0; }
+.nxt-report-tools button { min-width: 26px; min-height: 26px; border-color: transparent; }
+.nxt-report-tools button:hover { border-color: #8fcdf54a; background: #86cfff10; }
+.nxt-module-tray { border: 1px solid var(--chrono-line); border-radius: 12px; padding: 14px; }
+.nxt-ui [data-appearance="light"] { color: #172c3d; background: #f4f8fb; --chrono-line: #b8cddb; }
+.nxt-ui [data-appearance="light"] .nxt-report-card { background: #fff; }
+.nxt-ui [data-fullscreen="true"] { padding: 28px; overflow-y: auto; background: #07121c; }
+@media (max-width: 900px) {
+  .nxt-report-grid { grid-template-columns: minmax(0, 1fr); }
+  .nxt-report-grid > * { grid-column: 1 / -1 !important; }
+  .nxt-board-layout { flex-direction: column; }
+  .nxt-module-tray { width: 100%; max-height: 240px; overflow-y: auto; }
+  .nxt-report-card > header { padding: 15px; }
+}
+@media print {
+  .nxt-ui { background: white; color: black; }
+  .nxt-ui .dealeros-report-print-region, .nxt-ui .dealeros-report-print-region * { color: black; box-shadow: none; }
+  .nxt-ui .nxt-report-card { background: white; border: 1px solid #bbb; break-inside: avoid; }
+}

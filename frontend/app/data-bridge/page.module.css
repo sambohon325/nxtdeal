@@ -1,0 +1,30 @@
+.page{max-width:1120px;margin:auto;padding:40px 24px 80px;color:#e8edf8;background:#0c1425;min-height:100vh;font-family:Arial,sans-serif}.page a{color:#a8c8ff}.page h1{font-size:clamp(30px,4vw,48px);line-height:1.12;max-width:750px}.page p{line-height:1.65;color:#b9c6dc}.kicker{font-size:12px;letter-spacing:.18em;margin-top:40px}.page section{margin-top:28px;border:1px solid #344059;border-radius:16px;padding:24px;background:#131f33}.page h2{margin-top:0}.notice{padding:14px;border-left:3px solid #5de3c5}.error{background:#5a202a;padding:16px;color:#fff!important}.row{display:flex;gap:16px;flex-wrap:wrap;align-items:end;margin:16px 0}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin:20px 0}.page label{display:flex;flex-direction:column;gap:8px;margin-bottom:14px;flex:1;min-width:180px}.page input,.page select{background:#0b1425;color:#eef3ff;border:1px solid #617089;padding:12px;border-radius:8px;max-width:100%;font:inherit}.page button{background:#b9d5ff;color:#0c1930;border:0;padding:12px 18px;border-radius:8px;font-weight:700;cursor:pointer}.page button:disabled{opacity:.45;cursor:not-allowed}.page article{padding:16px;border:1px solid #3b4961;border-radius:10px;margin:16px 0}.page dt{font-weight:bold}.page dd{margin:4px 0 12px;color:#b9c6dc}.scroll{overflow:auto}.page table{width:100%;border-collapse:collapse}.page td,.page th{text-align:left;border-bottom:1px solid #39465e;padding:12px;overflow-wrap:anywhere}.page :focus-visible{outline:3px solid #5de3c5;outline-offset:3px}
+
+.page details{margin:18px 0;padding:14px;border:1px solid #44546f;border-radius:8px}.page summary{cursor:pointer;font-weight:600}.page details[open] summary{margin-bottom:14px}.page ul{padding-left:22px;line-height:1.7}
+.page h2{font-size:24px;line-height:1.3}.page h3{font-size:18px;line-height:1.4}.overview{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin:24px 0}.overview a{display:flex;flex-direction:column;gap:8px;padding:18px;background:#16263d;border:1px solid #435775;border-radius:12px;text-decoration:none}.overview strong{font-size:30px;color:#edf5ff}.overview span{font-size:14px;line-height:1.4;color:#c4d4e9}.page section{scroll-margin-top:20px}
+
+.page .checkOption{display:block;line-height:1.5}.checkOption input{margin-right:10px;width:auto}.checkOption p{margin:8px 0 0;font-size:14px}
+
+.page article>button{margin:0 8px 8px 0}.page ol{padding-left:22px;line-height:1.6}
+
+.page table{min-width:640px}.page th{white-space:nowrap}.page th:first-child,.page td:first-child{min-width:48px}.page th:nth-child(2),.page td:nth-child(2){min-width:90px}
+.page dd{overflow-wrap:anywhere}
+
+.page code{overflow-wrap:anywhere}
+
+.page .activityList{max-height:28rem;overflow:auto;padding-right:12px}.activityList li{padding:12px 0;border-bottom:1px solid #39465e}.page .activityList p{margin:4px 0;overflow-wrap:anywhere}
+
+.systemGrid { grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr)); align-items: start; }
+.systemGrid > article:has(details[open]) { grid-column: 1 / -1; }
+
+/* Flex parents must not make long source IDs establish the page's minimum width. */
+.page { width:100%; min-width:0; box-sizing:border-box; overflow-wrap:anywhere; }
+.page label { min-width:min(180px,100%); }
+.page button { max-width:100%; overflow-wrap:anywhere; }
+.page input,.page select { min-width:0; }
+@media (max-width:600px) {
+  .page { padding:28px 16px 56px; }
+  .page section { padding:16px; }
+  .page article { padding:12px; }
+  .page details { padding:12px; }
+}

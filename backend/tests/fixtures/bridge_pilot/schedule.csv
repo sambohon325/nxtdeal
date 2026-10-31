@@ -1,0 +1,2 @@
+external_id,modified_at,account_id,due_at,amount,currency,principal_amount,interest_amount,fee_amount,status
+schedule-synthetic-1,2026-10-04T12:00:00Z,accounts-synthetic-1,2026-11-01T12:00:00Z,100.00,USD,90.00,8.00,2.00,scheduled

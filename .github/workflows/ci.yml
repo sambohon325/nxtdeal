@@ -1,0 +1,216 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  kiosk-browser:
+    name: Isolated kiosk browser acceptance
+    runs-on: [self-hosted, nxtdeal]
+    timeout-minutes: 20
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install frontend and isolated browser test dependencies
+        run: |
+          npm ci --prefix frontend
+          if [ "$(uname -s)" = "Linux" ]; then
+            npm ci --prefix frontend/browser-acceptance --ignore-scripts
+          else
+            npm ci --prefix frontend/browser-acceptance
+          fi
+          npm audit --prefix frontend/browser-acceptance --audit-level=high
+          python -m pip install -r backend/requirements.txt
+          python -m pip install httpx
+      - name: Install pinned Playwright Chromium
+        run: |
+          if [ "$(uname -s)" = "Linux" ]; then
+            node frontend/browser-acceptance/node_modules/playwright/cli.js install --with-deps chromium
+          else
+            npx playwright install chromium
+          fi
+      - name: Exercise real browser with isolated auth and ledger
+        working-directory: frontend
+        env:
+          KIOSK_REAL_BACKEND: "1"
+          KIOSK_PYTHON: python
+        run: |
+          # Git-Bash $PWD returns MSYS-style paths (/c/Users/...) that Node.js
+          # on Windows cannot resolve. Resolve to a native Windows absolute path.
+          export PLAYWRIGHT_MODULE="$(node -e 'console.log(require("path").resolve("browser-acceptance/node_modules/playwright"))')"
+          set -o pipefail
+          node scripts/kiosk-browser-acceptance.cjs 2>&1 | tee "$RUNNER_TEMP/kiosk-browser.out"
+      - name: Preserve browser acceptance result
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: kiosk-browser-acceptance
+          path: ${{ runner.temp }}/kiosk-browser.out
+          retention-days: 14
+
+  backend:
+    name: Backend tests
+    runs-on: [self-hosted, nxtdeal]
+    timeout-minutes: 45
+    defaults:
+      run:
+        working-directory: backend
+        shell: bash
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          if [ -f requirements.txt ]; then
+            pip install -r requirements.txt
+          fi
+          if [ -f requirements-dev.txt ]; then
+            pip install -r requirements-dev.txt
+          fi
+          # Belt and braces: the handoff doc lists these as the minimum to import
+          # api.app and the route tests. Harmless if requirements.txt already has them.
+          pip install pytest openai fastapi pydantic "uvicorn[standard]" httpx
+          pip install -r requirements-bridge-sftp.txt
+
+      - name: Validate legacy domain redirects
+        run: python ../ops/domains/test_redirects.py
+
+      - name: Seed an empty tenant storage dir
+        run: |
+          mkdir -p "$RUNNER_TEMP/dealeros-storage"
+          echo '{"entities": [], "relationships": [], "id_counters": {}}' \
+            > "$RUNNER_TEMP/dealeros-storage/graph.json"
+          echo '[]' > "$RUNNER_TEMP/dealeros-storage/audit.json"
+          echo '{}' > "$RUNNER_TEMP/dealeros-storage/credentials.json"
+          echo '{}' > "$RUNNER_TEMP/dealeros-storage/customer_credentials.json"
+
+      - name: Run isolated Hub tests
+        working-directory: hub
+        run: |
+          python - <<'PY'
+          import os
+          from pathlib import Path
+          import sys
+          import tempfile
+          import pytest
+
+          root = Path.cwd()
+          sys.path.insert(0, str(root))
+          # Hub app imports load relative storage paths before test fixtures run.
+          # Isolate that startup as well as each test's explicitly patched paths.
+          with tempfile.TemporaryDirectory(prefix="nxtdeal-hub-ci-") as workspace:
+              os.chdir(workspace)
+              try:
+                  result = pytest.main([str(root / "tests"), "-q"])
+              finally:
+                  os.chdir(root)
+          sys.exit(result)
+          PY
+
+      - name: Verify Hub tests preserved the candidate
+        if: always()
+        run: |
+          test "$(git rev-parse HEAD)" = "$GITHUB_SHA"
+          git diff --exit-code "$GITHUB_SHA" --
+
+      - name: Run pytest
+        id: pytest
+        env:
+          OPENAI_API_KEY: sk-dummy
+          DEALEROS_AUTH_SECRET: test-secret
+          DEALEROS_STORAGE_DIR: ${{ runner.temp }}/dealeros-storage
+        run: |
+          set +e
+          # NOTE: `pytest tests/` deliberately, not bare `pytest` -- see the handoff doc.
+          pytest tests/ -q --tb=short -rf --color=no 2>&1 | tee "$RUNNER_TEMP/pytest.out"
+          exit "${PIPESTATUS[0]}"
+
+      - name: Compare against the failure baseline
+        if: always()
+        run: |
+          python ../.github/scripts/check_test_baseline.py \
+            "$RUNNER_TEMP/pytest.out" \
+            ../.github/test-baseline.txt
+
+      - name: Upload pytest output
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: pytest-output
+          path: ${{ runner.temp }}/pytest.out
+          retention-days: 14
+
+      - name: Rehearse a completely synthetic dealership
+        run: |
+          python ../scripts/synthetic_dealership.py create "$RUNNER_TEMP/synthetic-dealership"
+          python ../scripts/rehearse_synthetic.py "$RUNNER_TEMP/synthetic-dealership"
+
+      - name: Retain synthetic rehearsal evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: synthetic-rehearsal
+          path: ${{ runner.temp }}/synthetic-dealership/rehearsal.json
+          retention-days: 14
+
+  frontend:
+    name: Frontend typecheck & build
+    runs-on: [self-hosted, nxtdeal]
+    timeout-minutes: 30
+    defaults:
+      run:
+        working-directory: frontend
+        shell: bash
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Install dependencies
+        run: |
+          if [ -f package-lock.json ]; then
+            npm ci
+          else
+            npm install
+          fi
+
+      - name: Check all frontend behavior and routing regressions
+        # Discover new suites automatically, including restricted kiosk lifecycle.
+        # Direct TypeScript helper imports require stripping on Node 22.
+        run: node --experimental-strip-types --test tests/*.test.mjs
+
+      - name: Check dealership learning battles
+        run: node tests/forecourt-battles.mjs
+
+      - name: Typecheck
+        run: npx tsc --noEmit --pretty false
+
+      - name: Production build
+        # Retry handles Next.js 15.2+ upgrade-nudge which stops the first build
+        # to surface security advisories, then proceeds on retry.
+        run: npm run build || npm run build

@@ -1,0 +1,10 @@
+[
+  {
+    "external_id": "accounts-synthetic-1",
+    "modified_at": "2026-10-04T12:00:00Z",
+    "customer_id": "customers-synthetic-1",
+    "contract_id": "contracts-synthetic-1",
+    "currency": "USD",
+    "balance": "1000.00"
+  }
+]

@@ -1,0 +1,145 @@
+/* Shared measurements for Today and department work. No department owns these values. */
+[data-nxt-glass] {
+  --work-body:14px; --work-small:12px; --work-label:13px;
+  --work-title:28px; --work-heading:18px; --work-number:36px;
+  --work-gap:16px; --work-section-gap:24px; --work-inset:20px;
+  --work-button-radius:16px; --work-control-height:44px; --work-control-radius:10px; --work-panel-radius:16px;
+  --work-control-bg:linear-gradient(125deg,rgba(var(--surface),.7),rgba(var(--surface),.3));
+  --work-glass-border:rgba(255,255,255,.5);
+  --work-glass-shadow:inset 0 1px 0 rgba(255,255,255,.31);
+  --work-selected-bg:linear-gradient(120deg,rgba(155,223,255,.22),rgba(124,186,218,.08));
+  --work-selected-border:rgba(130,190,220,.65);
+}
+.work-button {
+  display:inline-flex; align-items:center; justify-content:center; gap:8px;
+  min-height:var(--work-control-height,44px); padding:10px 16px;
+  border:1px solid var(--line,#75899d66); border-radius:var(--work-button-radius,16px);
+  background:var(--work-control-bg,#eef3f8); color:var(--text,#172b40);
+  font-family:inherit; font-size:var(--work-body,14px); font-weight:500; line-height:1.4; text-align:center; cursor:pointer;
+}
+/* Deliberate component specificity beats the shell's native-button reset. */
+[data-nxt-glass] .nxt-workspace-content button.work-button {
+  min-height:var(--work-control-height); padding:10px 16px; border:1px solid var(--work-glass-border);
+  border-radius:var(--work-button-radius)!important; background:var(--work-control-bg)!important; color:var(--text);
+  font-family:inherit; font-size:var(--work-body); font-weight:500; line-height:1.4;
+  box-shadow:var(--work-glass-shadow); text-transform:none; letter-spacing:0; transform:none;
+}
+[data-nxt-glass] .nxt-workspace-content button.work-button[data-work-variant=primary] {background:var(--work-selected-bg)!important;border-color:var(--work-selected-border);color:var(--text);font-weight:600;}
+[data-nxt-glass] .nxt-workspace-content button.work-button[data-work-variant=danger] {background:transparent!important;border-color:#c95b58;color:var(--work-danger,#d86865);}
+[data-nxt-glass][data-theme=light] {--work-danger:#b52926;}
+[data-nxt-glass] .nxt-workspace-content button.work-button[data-work-variant=quiet] {background:transparent!important;border-color:transparent;color:var(--text);box-shadow:none;}
+[data-nxt-glass] .nxt-workspace-content button.work-button:is([aria-pressed=true],[aria-selected=true],[aria-current=page],[aria-current=step]) {border-color:var(--work-selected-border);background:var(--work-selected-bg)!important;color:var(--text);box-shadow:var(--work-glass-shadow);}
+[data-nxt-glass] .nxt-workspace-content .work-control:not([type=checkbox]):not([type=radio]):not([type=range]):not([type=color]):not([type=file]):not([type=hidden]) {box-sizing:border-box;min-width:0;max-width:100%;min-height:var(--work-input-min-height,var(--work-control-height));padding:10px 12px;border:1px solid var(--line);border-radius:var(--work-control-radius);background:rgb(var(--surface));color:var(--text);font-family:inherit;font-size:var(--work-body);font-weight:400;line-height:1.5;letter-spacing:0;}
+[data-nxt-glass] .nxt-workspace-content textarea.work-control {--work-input-min-height:110px;resize:vertical;}
+[data-nxt-glass] .nxt-workspace-content .work-control:is([type=checkbox],[type=radio]) {width:18px;height:18px;min-height:0;padding:0;flex:none;accent-color:var(--accent);}
+[data-nxt-glass] .nxt-workspace-content .work-control:disabled {opacity:.6;cursor:not-allowed;}
+[data-nxt-glass] .nxt-workspace-content .work-control:focus-visible {outline:2px solid var(--accent);outline-offset:2px;}
+[data-nxt-glass] button.work-button:not(:disabled):hover {border-color:var(--accent);filter:brightness(1.08);}
+[data-nxt-glass] button.work-button:disabled {opacity:.5;cursor:not-allowed;}
+.work-button:focus-visible {outline:2px solid var(--accent,#0877d1);outline-offset:3px;}
+.work-button svg {width:18px;height:18px;flex:none;}
+.work-toolbar {display:flex;align-items:end;flex-wrap:wrap;gap:var(--work-gap,16px);padding:var(--work-inset,20px);border:1px solid var(--line,#75899d66);border-radius:var(--work-panel-radius,16px);background:rgba(var(--surface,255 255 255),.3);}
+.work-toolbar>.work-field {flex:1 1 200px;}
+.work-actions {display:flex;align-items:center;flex-wrap:wrap;gap:8px;}
+.work-section {display:grid;gap:var(--work-gap,16px);min-width:0;}
+.work-section-heading {display:flex;align-items:start;justify-content:space-between;gap:var(--work-gap,16px);}
+.work-section-heading h3 {font-size:var(--work-heading,18px);font-weight:600;line-height:1.4;}
+.work-section-heading p,.work-empty p {font-size:var(--work-body,14px);line-height:1.6;color:var(--muted,#52677b);margin-top:8px;}
+.work-empty {padding:32px 24px;border:1px dashed var(--line,#75899d66);border-radius:var(--work-panel-radius,16px);}
+.work-empty h4 {font-size:var(--work-heading,18px);font-weight:500;}
+.work-empty .work-actions {margin-top:16px;}
+.work-stack {display:grid;gap:var(--work-section-gap,24px);min-width:0;}
+.work-stat {display:flex;flex-direction:column;gap:12px;min-width:0;padding:var(--work-inset,20px);border:1px solid var(--line,#75899d66);border-radius:var(--work-panel-radius,16px);background:rgba(var(--surface,255 255 255),.3);}
+[data-nxt-glass] .work-overlay {position:fixed;inset:0;z-index:100;display:flex;align-items:center;justify-content:center;padding:24px;overflow-y:auto;background:rgba(3,10,18,.78);}
+[data-nxt-glass] .work-overlay>div {max-height:calc(100dvh - 48px);overflow-y:auto;background:rgb(var(--surface));color:var(--text);border:1px solid var(--line);border-radius:var(--work-panel-radius);}
+[data-nxt-glass] .work-stat>span {font-size:var(--work-label);line-height:1.5;color:var(--muted);font-weight:500;}
+[data-nxt-glass] .work-stat>strong {font-family:inherit;font-size:var(--work-title);font-weight:500;line-height:1.2;letter-spacing:-.035em;overflow-wrap:anywhere;}
+.work-form {display:grid;gap:16px;padding:var(--work-inset,20px);border:1px solid var(--line,#75899d66);border-radius:var(--work-panel-radius,16px);background:rgba(var(--surface,255 255 255),.3);min-width:0;}
+.work-form-grid {display:grid;grid-template-columns:repeat(auto-fit,minmax(min(220px,100%),1fr));gap:16px;align-items:start;}
+[data-nxt-glass] .work-form h3 {font-size:var(--work-heading);font-weight:600;}
+[data-nxt-glass] .work-form .work-field-label {font-size:var(--work-label);line-height:1.5;}
+[data-nxt-glass] .work-form :is(input:not([type=checkbox]):not([type=radio]),select,textarea) {font:inherit;min-height:var(--work-control-height);padding:10px 12px;border:1px solid var(--line);border-radius:var(--work-control-radius);background:rgb(var(--surface));color:var(--text);}
+.work-record-title {display:block;font-size:var(--work-body,14px);font-weight:600;line-height:1.5;}
+[data-nxt-glass] .nxt-workspace-content .work-detail-title {font-family:inherit;font-size:var(--work-title);font-weight:600;line-height:1.25;letter-spacing:-.035em;text-transform:none;overflow-wrap:anywhere;}
+.work-record-meta {display:block;margin-top:4px;font-size:var(--work-small,12px);line-height:1.5;color:var(--muted,#52677b);}
+[data-nxt-glass] [data-work-page-header] h2 {font-size:var(--work-title);line-height:1.25;font-weight:600;letter-spacing:-.035em;}
+[data-nxt-glass] [data-work-page-header] p {font-size:var(--work-body);line-height:1.6;}
+[data-nxt-glass] [data-work-page-header] p:first-child {font-size:var(--work-small);letter-spacing:.04em;text-transform:none;}
+[data-nxt-glass] .work-toolbar .work-field-label {font-size:var(--work-label);line-height:1.5;font-weight:500;}
+[data-nxt-glass] .nxt-workspace-content .work-field-label {font-size:var(--work-label);line-height:1.5;font-weight:500;}
+[data-nxt-glass] .nxt-workspace-content .nxt-pagination select {min-height:var(--work-control-height);font-size:var(--work-body);border-radius:var(--work-control-radius);}
+[data-nxt-glass] .nxt-workspace-content table {font-size:var(--work-body);line-height:1.5;}
+[data-nxt-glass] .nxt-workspace-content table th {font-size:var(--work-label);letter-spacing:0;font-weight:600;}
+[data-nxt-glass] .work-toolbar .work-field :is(input,select,textarea) {font:inherit;font-size:var(--work-body);min-height:var(--work-control-height);padding:10px 12px;border:1px solid var(--line);border-radius:var(--work-control-radius);background:rgb(var(--surface));color:var(--text);}
+@media(max-width:650px){.work-section-heading{flex-direction:column}.work-toolbar{padding:16px}.work-toolbar>.work-field{flex-basis:100%;}[data-nxt-glass] .nxt-workspace-content .work-control:not([type=checkbox]):not([type=radio]){font-size:16px;}}
+
+/* A labelled control and its action share a baseline, including legacy flex rows. */
+[data-nxt-glass] .nxt-workspace-content .flex:has(>.work-field){align-items:flex-end;flex-wrap:wrap;gap:16px}
+[data-nxt-glass] .nxt-workspace-content .work-field{align-self:stretch;justify-content:flex-end}
+[data-nxt-glass] .nxt-workspace-content .work-field>.work-control{flex:0 0 auto}
+[data-nxt-glass] .nxt-workspace-content .work-field:has(textarea){justify-content:flex-start}
+[data-nxt-glass] .nxt-workspace-content .work-button{flex-shrink:0}
+
+.work-inventory-board{display:grid;gap:24px;min-width:0;background:transparent;color:inherit}
+.work-inventory-stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(170px,100%),1fr));gap:16px;margin-bottom:20px}
+[data-nxt-glass] .work-inventory-board>.flex-1{padding:0}
+[data-nxt-glass] .work-inventory-board :is(.text-xs,.text-sm){font-size:14px;line-height:1.5}
+[data-nxt-glass] .work-inventory-board .font-brand{font-family:inherit;letter-spacing:0;text-transform:none}
+[data-nxt-glass] .work-inventory-board .flex:has(>button[data-work-view]){flex-wrap:wrap;gap:8px;padding:0 0 16px}
+[data-nxt-glass] .work-inventory-board .grid:has(>.work-field){grid-template-columns:repeat(auto-fit,minmax(min(220px,100%),1fr));gap:16px}
+
+[data-nxt-glass] .work-inventory-detail>div{background:transparent;border:0;padding:0;max-width:none;max-height:none;overflow:visible}
+[data-nxt-glass] .work-inventory-detail :is(.text-xs,.text-sm){font-size:14px;line-height:1.5}
+[data-nxt-glass] .work-inventory-detail .font-brand{font-family:inherit;text-transform:none;letter-spacing:0;font-weight:600}
+[data-nxt-glass] .work-inventory-detail .grid:has(>.work-field){grid-template-columns:repeat(auto-fit,minmax(min(220px,100%),1fr));gap:16px}
+
+[data-nxt-glass] .work-inventory-board td summary{cursor:pointer;min-height:44px;padding:10px 12px;border:1px solid var(--line);border-radius:var(--work-control-radius);white-space:nowrap}
+[data-nxt-glass] .work-inventory-board td details[open]>div{margin-top:16px;min-width:min(400px,70vw)}
+
+/* The same glass surface continues from Today into actions, tabs and pagination. */
+[data-nxt-glass][data-theme=dark]{--work-glass-border:rgba(214,239,255,.2);--work-glass-shadow:inset 0 1px 0 rgba(255,255,255,.31);}
+[data-nxt-glass] .department-daily-navigation button,
+[data-nxt-glass] .nxt-pagination button {background:var(--work-control-bg);border:1px solid var(--work-glass-border);box-shadow:var(--work-glass-shadow);color:var(--text);border-radius:var(--work-button-radius);}
+[data-nxt-glass] .department-daily-navigation button[aria-current=page]{background:var(--work-selected-bg);border-color:var(--work-selected-border);box-shadow:var(--work-glass-shadow);}
+
+/* Today and department actions share one silhouette, including hover and selection. */
+[data-nxt-glass] .quick-action,[data-nxt-glass] .soft-button{border-radius:var(--work-button-radius);box-shadow:var(--work-glass-shadow);}
+[data-nxt-glass] .quick-action:hover{box-shadow:var(--work-glass-shadow);transform:none;}
+
+/* Form and record content shares the same density in every department. Keep
+   selectors on work surfaces so customer-facing previews retain their design. */
+[data-nxt-glass] .nxt-workspace-content :is(.work-field>.work-control,.work-field>input,.work-field>select,.work-field>textarea,.work-control):not([type=checkbox]):not([type=radio]):not([type=range]):not([type=color]):not([type=file]):not([type=hidden]) {
+  box-sizing:border-box;min-width:0;max-width:100%;min-height:var(--work-input-min-height,44px)!important;
+  padding:10px 12px!important;border:1px solid var(--line);border-radius:var(--work-control-radius)!important;
+  background:rgb(var(--surface));color:var(--text);font-family:inherit!important;font-size:var(--work-body)!important;
+  font-weight:400;line-height:1.5;letter-spacing:0;
+}
+[data-nxt-glass] .nxt-workspace-content :is(textarea.work-control,.work-field>textarea){--work-input-min-height:110px;min-height:110px!important;resize:vertical;}
+[data-nxt-glass] .nxt-workspace-content .work-field{gap:8px;margin:0;}
+[data-nxt-glass] .nxt-workspace-content .work-field-label{font-family:inherit;font-size:var(--work-label)!important;font-weight:500;line-height:1.5;letter-spacing:0;text-transform:none;}
+[data-nxt-glass] .nxt-workspace-content :is(.work-form,.work-toolbar,.work-empty){background:var(--work-control-bg);border-color:var(--work-glass-border);box-shadow:var(--work-glass-shadow);}
+[data-nxt-glass] .nxt-workspace-content :is(.work-form,.work-toolbar){padding:var(--work-inset);gap:var(--work-gap);}
+[data-nxt-glass] .nxt-workspace-content .nxt-table-scroll{border-radius:var(--work-panel-radius);border-color:var(--work-glass-border);}
+[data-nxt-glass] .nxt-workspace-content .nxt-record-table table{background:rgba(var(--surface),.35);font-family:inherit;font-size:var(--work-body)!important;line-height:1.5;}
+[data-nxt-glass] .nxt-workspace-content .nxt-record-table :is(th,td){padding:14px 16px!important;vertical-align:top;}
+[data-nxt-glass] .nxt-workspace-content .nxt-record-table th{font-family:inherit;font-size:var(--work-label)!important;font-weight:600;letter-spacing:0!important;text-transform:none;}
+[data-nxt-glass] .nxt-workspace-content .nxt-record-table td{font-size:var(--work-body)!important;line-height:1.5;}
+[data-nxt-glass] .nxt-workspace-content .nxt-record-table td :is(.text-xs,.text-sm,[class~="text-[10px]"],[class~="text-[11px]"]){font-size:var(--work-body);line-height:1.5;}
+[data-nxt-glass] .nxt-workspace-content :is([data-record-detail],.work-inventory-detail){font-family:inherit;font-size:var(--work-body);line-height:1.5;}
+[data-nxt-glass] .nxt-workspace-content [data-record-detail]{border-radius:var(--work-panel-radius);border-color:var(--work-glass-border);background:rgba(var(--surface),.7);}
+[data-nxt-glass] .nxt-workspace-content :is([data-record-detail],.work-record-content,.workspace-editor-surface) :is(.text-xs,.text-sm,[class~="text-[10px]"],[class~="text-[11px]"]){font-size:var(--work-body);line-height:1.5;}
+[data-nxt-glass] .nxt-workspace-content :is([data-record-detail],.work-record-content,.workspace-editor-surface) :is(.p-3,.p-4){padding:var(--work-inset);}
+[data-nxt-glass] .nxt-workspace-content :is([data-record-detail],.work-record-content,.workspace-editor-surface) :is(.gap-2,.gap-3){gap:var(--work-gap);}
+[data-nxt-glass] .nxt-workspace-content :is([data-record-detail],.work-record-content,.workspace-editor-surface) :is(.grid-cols-2,.grid-cols-3){grid-template-columns:repeat(auto-fit,minmax(min(220px,100%),1fr));}
+[data-nxt-glass] .nxt-workspace-content :is([data-record-detail],.work-record-content,.workspace-editor-surface) :is(h3,h4){font-size:var(--work-heading);font-weight:600;line-height:1.4;}
+[data-nxt-glass] .nxt-workspace-content .work-record-meta{font-size:var(--work-small);}
+@media(max-width:650px){
+ [data-nxt-glass] .nxt-workspace-content :is(.work-form,.work-toolbar){padding:16px;}
+ [data-nxt-glass] .nxt-workspace-content :is(.work-field>.work-control,.work-field>input,.work-field>select,.work-field>textarea,.work-control):not([type=checkbox]):not([type=radio]):not([type=range]):not([type=color]):not([type=file]):not([type=hidden]){font-size:16px!important;}
+}
+
+[data-nxt-glass] .nxt-workspace-content :is([data-record-detail],.work-record-content,.workspace-editor-surface) .font-brand{font-family:inherit;letter-spacing:0;text-transform:none;}
+[data-nxt-glass] .nxt-workspace-content :is([data-record-detail],.work-record-content,.workspace-editor-surface) .font-brand.mb-2{font-size:var(--work-heading);font-weight:600;line-height:1.4;margin-bottom:var(--work-gap);}
+
+/* Property summaries use the same body size as their nested record lists. */
+[data-nxt-glass] .nxt-workspace-content .work-property-table>tbody>tr>td{font-size:var(--work-body)!important;line-height:1.5;}

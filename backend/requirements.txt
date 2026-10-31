@@ -1,0 +1,49 @@
+# DealerOS backend dependencies.
+#
+# Pinned to versions confirmed working live 2026-07-13 (Sam's machine, Python 3.14.6,
+# Windows) — the backend was booted, tested end to end (audit logging, auth/login,
+# credential provisioning), and `pytest tests/` passed clean against these exact versions.
+# This replaces an earlier unverified/unpinned draft. If you're on a different Python
+# version and hit install issues, that's expected to happen eventually with pins this
+# specific — loosen the pins rather than fighting them, then re-pin once it's confirmed
+# working again.
+
+fastapi==0.139.0
+uvicorn[standard]==0.49.0
+pydantic==2.13.4
+pytest==9.1.1
+
+# core/ai_assistant.py calls the real OpenAI API (gpt-4o-mini) — NOT rules-based, despite
+# older docs saying otherwise (corrected 2026-07-13, see CLAUDE.md). Found during Phase 10
+# work: `openai` isn't installed in backend/venv/ and wasn't in this file, yet the server
+# has booted clean every time — meaning whatever Python `uvicorn` actually runs under on
+# Sam's machine isn't backend/venv. Worth Sam checking that discrepancy directly. Adding
+# both as explicit pins regardless, since a genuinely fresh `pip install -r
+# requirements.txt` into backend/venv would otherwise crash on boot (core/ai_api.py imports
+# core/ai_assistant.py unconditionally). Versions unverified — nothing installs these, no
+# `pip freeze` confirmation, same caveat as everything else that isn't proven against
+# backend/venv specifically.
+openai
+python-dotenv
+
+# python-multipart -- FastAPI requires this at runtime for UploadFile/Form parsing
+# (core/data_connections.py's CSV-upload connection type, session 37,
+# POST /connections/{id}/upload-csv). Not pinned to a specific version (same
+# unverified-against-backend/venv caveat as openai/python-dotenv above) -- added
+# because a genuinely fresh install would otherwise 500 on that one route the moment
+# a file is actually uploaded (FastAPI raises this lazily, not at import time, so it
+# wouldn't be caught by the server booting clean).
+python-multipart
+
+# Marketing channel gateway and Twilio transport; explicit runtime dependency.
+httpx==0.28.1
+cryptography==50.0.0
+
+# Shared Chrono numerical engine
+numpy==2.3.5
+
+# Decode and sanitize public marketing artwork uploads.
+Pillow==12.2.0
+
+# Website domain ownership verification.
+dnspython==2.8.0

@@ -1,0 +1,23 @@
+{
+  "repository": "https://github.com/sambohon325/dealercomposite",
+  "model_version": "5.4.0",
+  "files": {
+    "catalogue.py": "30ad57fd6e6669baee1220bd66df51d7775421f948079923f9e17fc242429d2b",
+    "configuration.py": "f0c145196398ef09cba1cdbc818b88bcc311ac75c89de5ae83f0f376f0e04208",
+    "earnings.py": "2747e465a03fba9eb38938178281e6d165c9f5d1f10c6c37a5ad34d3b6988c24",
+    "jurisdictions.py": "9d7d54bc985de1e473d144a565f39bfe3efc8ef6a60514f83402346839d6a954",
+    "mixes.py": "2309022eee792b4ff1e30f44df2b0a50a21ace68100a44216d3b31ab0a79a08d",
+    "model.py": "0cd96592e45e4545736b4e83e1a51c6300f2c8f133d0d80a4d21aefb3f4cdce9",
+    "operating.py": "9823b42171d8c27a20d243969e340ebdaec848ba3b199738d3b5599b15a7a956",
+    "regional_rules.py": "b91d6e993b6b8036987e1150d052091b669eadb9eb72f314dc09afed6f0143b7",
+    "wages.py": "a34e2f5cc5f5fc849c22b86f77541675847cea9e83aeec75812b6e0dfea06545",
+    "workflow.py": "4143fee5577ac337cf77e015b0088f409176fcbb17d03eabc1aad38055d4f624"
+  },
+  "adaptations": [
+    "Relative package imports",
+    "Removed standalone run_experiment, outlook and percentile aggregation; execution and uncertainty summaries belong to Chrono.",
+    "Monthly CSV transforms retained; original standalone forecasting replaced by a BusinessModel plugin executed by shared Chrono Engine."
+  ],
+  "decision_templates_source_sha256": "d9a3110e815793b862753335c825966ab7fcc04ae37baa96daed9850829217f4",
+  "reported_transforms_source_sha256": "463a7181ed01c03dc9ea67fcce2d33832be562f12f1ea850a68913125f66e215"
+}

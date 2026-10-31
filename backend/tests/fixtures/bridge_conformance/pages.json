@@ -1,0 +1,19 @@
+{
+  "pages": [
+    {
+      "records": [
+        {
+          "object_type": "customers",
+          "external_id": "synthetic-1",
+          "modified_at": "2026-10-04T12:00:00Z",
+          "values": {
+            "name": "Synthetic customer",
+            "email": "synthetic@example.invalid"
+          }
+        }
+      ],
+      "cursor": null,
+      "complete": true
+    }
+  ]
+}

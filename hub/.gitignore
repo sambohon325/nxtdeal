@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.pyc
+venv/
+.vscode/
+
+# Environment
+.env
+
+# Data storage — real dealer/prospect PII (company names, contact emails, addresses),
+# Network Connect account data, and audit history shouldn't be tracked in git. Same
+# reasoning as the root .gitignore's backend/storage/*.json exclusion. Repo confirmed
+# private, so this isn't urgent, but it's good practice going forward regardless.
+# IMPORTANT: this only stops NEW commits from including these files — several were
+# already committed in prior sessions before this .gitignore existed (dealers.json.bak,
+# hub_audit.json, dealer_modules.json, feature_flags.json, dealer_contacts.json, etc.).
+# Run `git rm --cached hub/storage/*.json hub/storage/*.bak*` (then commit) to actually
+# untrack them going forward, and consider whether history needs scrubbing if this repo
+# is ever made public. See CLAUDE.md's "DealerOS Network Connect" section.
+storage/*.json
+storage/*.bak*
+
+# OS
+.DS_Store
+Thumbs.db

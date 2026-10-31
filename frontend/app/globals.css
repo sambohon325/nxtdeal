@@ -1,0 +1,280 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: dark;
+  --background: #171819;
+  --foreground: #f1f1f2;
+  --brand-blue: #c6d8e2;
+  --brand-teal: #d6e0e5;
+  --brand-yellow: #d4e0ec;
+  --brand-red: #94a9bc;
+  --brand-ink: #171819;
+  --brand-charcoal: #202123;
+  --brand-gray: #a7aaad;
+  --brand-mist: #e6e8ea;
+  --brand-shear: 0deg;
+  --chrono-line: rgba(220, 231, 237, 0.07);
+  --chrono-glass: linear-gradient(135deg, rgba(167, 210, 237, 0.035), rgba(255, 255, 255, 0.008) 45%, transparent);
+}
+
+/* NXTDeal's glass, platinum and ice-blue identity, inspired by the official mark.
+   Operational status colors remain separate from decorative brand tokens. */
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --font-brand: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --color-brand-blue: var(--brand-blue);
+  --color-brand-teal: var(--brand-teal);
+  --color-brand-yellow: var(--brand-yellow);
+  --color-brand-red: var(--brand-red);
+  --color-brand-ink: var(--brand-ink);
+  --color-brand-charcoal: var(--brand-charcoal);
+  --color-brand-gray: var(--brand-gray);
+  --color-brand-mist: var(--brand-mist);
+}
+
+.brand-shear, .brand-unshear { transform: none; }
+.brand-shear-glow { filter: blur(40px); }
+.brand-cta {
+  background: linear-gradient(180deg, #f4f5f6, #dfe3e6);
+  color: #061623;
+  border: 1px solid #ffffff40;
+  box-shadow: inset 0 1px 0 #ffffff60;
+  border-radius: 10px;
+  clip-path: none;
+  transition: box-shadow 0.18s, filter 0.18s;
+}
+.brand-cta:hover:not(:disabled) { filter: brightness(1.08); box-shadow: inset 0 1px 0 #fff; }
+.bg-brand-blue, .bg-brand-teal { color: #061623; }
+.chrono-surface {
+  background: var(--chrono-glass);
+  border: 1px solid var(--chrono-line);
+  border-radius: 20px;
+  box-shadow: inset 0 1px 0 #ddecf509;
+  backdrop-filter: blur(18px);
+}
+body {
+  background: radial-gradient(ellipse at 78% 0, rgba(140,180,200,.015), transparent 45%), var(--background);
+  color: var(--foreground);
+  font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+:where(button, a, input, select, textarea, summary):focus-visible {
+  outline: 2px solid #8ddcff;
+  outline-offset: 4px;
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; }
+}
+
+/* Unified dark scrollbar theme (2026-07-13, session 27) — per Sam: "we need to
+   eliminate the scroll bar... if we're going to have a scroll bar it needs to be dark
+   themed... we want to keep the theme unified." DealerOS's every internal scroll
+   region (chat, workspace panel, Knowledge sidebar, etc.) is dark (zinc-900/950); the
+   browser's default light scrollbar looked completely out of place against it. Applied
+   globally via the universal selector so this is automatic on every current and future
+   scrollable region — no per-page/per-component styling needed. Thumb only, no visible
+   track, so it reads as "barely there" while remaining fully usable (mouse wheel,
+   trackpad, keyboard, and a real drag-scroll all still work identically). */
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #3f3f46 transparent; /* zinc-700 thumb, transparent track */
+}
+
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #3f3f46; /* zinc-700 */
+  border-radius: 9999px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: #52525b; /* zinc-600 */
+}
+
+/* Cinematic arrival screen: artwork stays decorative; all controls are live HTML. */
+.nxt-entry { position: relative; height: 100dvh; overflow-y: auto; isolation: isolate; background: #030a0f; color: #f5f7fa; font-family: var(--font-geist-sans), sans-serif; }
+.nxt-scene { object-fit: cover; object-position: center; z-index: -3; }
+.nxt-scene-shade { position: absolute; inset: 0; z-index: -2; background: linear-gradient(90deg, #0005, transparent 65%), linear-gradient(0deg, #02080eb0, transparent 22%); }
+.nxt-entry-content { position: relative; min-height: 100%; max-width: 1920px; margin: auto; padding: 36px 5.7% 26px; display: flex; flex-direction: column; }
+.nxt-entry-header { display: flex; align-items: flex-start; justify-content: space-between; gap: 30px; }
+.nxt-entry-logo { width: clamp(280px, 32vw, 520px); height: clamp(88px, 10vw, 150px); }
+.nxt-promise { padding-top: 0; font-size: 12px; line-height: 1.9; letter-spacing: .38em; text-transform: uppercase; color: #a6c6d9; }
+.nxt-entry-main { flex: 1; display: grid; grid-template-columns: 1.08fr 1fr; gap: clamp(40px, 8vw, 150px); align-items: start; padding: 10px 0 68px; }
+.nxt-introduction { padding-top: 42px; }
+.nxt-introduction h1 { font-size: clamp(54px, 5.75vw, 100px); font-weight: 300; line-height: .99; letter-spacing: -.045em; }
+.nxt-introduction h1 span { color: #8ccff7; background: linear-gradient(#c3edff, #57ace6); background-clip: text; -webkit-text-fill-color: transparent; }
+.nxt-introduction > p { max-width: 610px; margin-top: 26px; color: #cad6df; font-size: clamp(16px, 1.3vw, 22px); font-weight: 300; line-height: 1.45; }
+.nxt-pillars { display: flex; flex-wrap: wrap; gap: 16px 24px; margin-top: 34px; color: #a9cbe0; font-size: 11px; letter-spacing: .32em; text-transform: uppercase; }
+.nxt-pillars li + li { padding-left: 24px; border-left: 1px solid #7397ae; }
+.nxt-login { position: relative; width: 100%; padding: clamp(28px, 3.7vw, 62px); border: 1px solid #b5e6ff; border-radius: 30px; background: linear-gradient(115deg, #84c9f32e, #061018c9 38%, #061018bb 80%, #36749a40); backdrop-filter: blur(22px); box-shadow: inset 0 0 2px 1px #e4f7ff80, 0 0 20px #46baff12; }
+.nxt-login::before, .nxt-login::after { content: ""; position: absolute; left: 44%; width: 22%; height: 2px; background: linear-gradient(90deg, transparent, #fff, transparent); box-shadow: 0 0 12px #75cfff; pointer-events: none; }
+.nxt-login::before { top: -1px; }.nxt-login::after { bottom: -1px; }
+.nxt-login h2 { text-align: center; font-size: clamp(30px, 2.8vw, 48px); font-weight: 350; line-height: 1.15; letter-spacing: -.035em; white-space: nowrap; }
+.nxt-eyebrow { margin: 15px 0 32px; text-align: center; font-size: 12px; text-transform: uppercase; letter-spacing: .4em; color: #9fcae4; }
+.nxt-field { display: flex; align-items: center; gap: 18px; height: 62px; padding: 0 18px; margin-bottom: 18px; border: 1px solid #789aaf59; border-radius: 12px; background: #01090f66; box-shadow: inset 0 1px 2px #0005; }
+.nxt-field:focus-within { border-color: #8ddcff; }
+.nxt-field svg, .nxt-sso svg { width: 24px; height: 24px; fill: none; stroke: currentColor; stroke-width: 1.4; flex-shrink: 0; color: #c0d9e9; }
+.nxt-field input { width: 100%; min-width: 0; height: 100%; border: 0; outline: none; background: transparent; color: #f6faff; font-size: 16px; }
+.nxt-field input::placeholder { color: #a3b5c3; }
+.nxt-password-toggle { display: grid; place-items: center; padding: 8px; margin-right: -8px; cursor: pointer; }
+.nxt-form-options { display: flex; justify-content: flex-end; margin: 2px 0 28px; font-size: 14px; }
+.nxt-form-options button, .nxt-request a { color: #74cfff; cursor: pointer; }
+.nxt-form-options button:hover, .nxt-request a:hover { color: white; text-decoration: underline; }
+.nxt-sign-in { display: flex; align-items: center; justify-content: center; gap: 22px; width: 100%; min-height: 58px; border: 1px solid #fff9; border-radius: 12px; color: #091527; background: linear-gradient(#f7f9fc, #d8e2ec); font-size: 20px; font-weight: 500; cursor: pointer; transition: filter .2s; }
+.nxt-sign-in:hover { filter: brightness(1.08); }.nxt-sign-in:disabled { opacity: .6; cursor: wait; }
+.nxt-sign-in span { font-size: 28px; font-weight: 300; }
+.nxt-divider { display: flex; align-items: center; gap: 24px; margin: 26px 0 20px; color: #aacde3; text-transform: uppercase; letter-spacing: .2em; font-size: 12px; }
+.nxt-divider::before, .nxt-divider::after { content: ""; flex: 1; height: 1px; background: #9abed444; }
+.nxt-sso { width: 100%; min-height: 58px; display: flex; align-items: center; justify-content: center; gap: 20px; border: 1px solid #789aaf59; border-radius: 12px; background: #16334a20; font-size: 16px; color: #b8c4ce; cursor: not-allowed; }
+.nxt-sso-note { text-align: center; font-size: 11px; color: #a6b8c6; margin-top: 10px; }
+.nxt-request { margin-top: 25px; text-align: center; color: #c0ccd6; font-size: 15px; }.nxt-request a { margin-left: 12px; }
+.nxt-form-error, .nxt-help { margin-bottom: 18px; font-size: 14px; line-height: 1.5; color: #ffc0c0; }.nxt-help { margin: 20px 0 0; color: #d0e6f5; }
+.nxt-entry-footer { display: flex; justify-content: space-between; gap: 24px; font-size: 12px; color: #9badba; }.nxt-entry-footer a:hover { color: white; }
+@media (min-width: 1400px) { .nxt-entry-main { margin-top: -48px; }.nxt-introduction { padding-top: 100px; } }
+@media (max-width: 1050px) { .nxt-entry-content { padding: 28px 4% 22px; }.nxt-entry-main { gap: 32px; padding-top: 22px; }.nxt-login { padding: 30px 24px; }.nxt-field { gap: 12px; padding-inline: 12px; }.nxt-field input { font-size: 14px; }.nxt-pillars { gap: 14px; font-size: 9px; letter-spacing: .2em; }.nxt-pillars li + li { padding-left: 14px; }.nxt-promise { font-size: 9px; } }
+@media (max-width: 760px) { .nxt-entry-content { padding: 20px 22px 24px; }.nxt-entry-header { justify-content: center; }.nxt-entry-logo { width: 300px; height: 90px; }.nxt-promise { display: none; }.nxt-entry-main { grid-template-columns: 1fr; gap: 38px; padding: 20px 0 40px; }.nxt-introduction { padding-top: 0; text-align: center; }.nxt-introduction h1 { font-size: clamp(48px, 10vw, 72px); }.nxt-introduction > p { max-width: 440px; margin: 22px auto 0; }.nxt-pillars { justify-content: center; margin-top: 24px; }.nxt-login { max-width: 500px; margin-inline: auto; }.nxt-scene { position: fixed !important; object-position: 42% center; }.nxt-scene-shade { position: fixed; background: #02080e88; }.nxt-login h2 { font-size: 36px; }.nxt-entry-footer { font-size: 10px; } }
+
+/* Compact arrival content; the decorative scene keeps its original dimensions. */
+@media (min-width: 761px) {
+  .nxt-entry-header > *, .nxt-introduction, .nxt-login, .nxt-entry-footer { zoom: .75; }
+  .nxt-login { width:100%; justify-self:end; }
+  .nxt-entry-main { grid-template-columns: 1.08fr .75fr; gap:clamp(60px, 10vw, 190px); padding-top:35px; }
+}
+@media (max-width: 760px) {
+  .nxt-entry-logo { width:225px; height:68px; }
+  .nxt-introduction h1 { font-size:clamp(36px, 7.5vw, 54px); }
+  .nxt-login { padding:23px 18px; border-radius:23px; }
+  .nxt-login h2 { font-size:27px; }
+  .nxt-field { height:47px; margin-bottom:14px; }
+  .nxt-sign-in, .nxt-sso { min-height:44px; }
+  .nxt-eyebrow { margin:11px 0 24px; }
+  .nxt-entry-main { gap:28px; }
+}
+
+/* Print the selected immutable Lab notebook, not the surrounding application. */
+@media print {
+ body:has([data-lab-print]) {background:white!important;}
+ body:has([data-lab-print]) * {visibility:hidden;}
+ [data-lab-print], [data-lab-print] * {visibility:visible!important;color:black!important;background:white!important;box-shadow:none!important;text-shadow:none!important;}
+ [data-lab-print] {position:absolute!important;inset:0!important;width:100%!important;padding:18px!important;border:0!important;}
+ [data-lab-print] section {break-inside:avoid;}
+}
+
+/* Shared NXTDeal Hub and companion-app chrome. Status colors remain semantic. */
+.nxt-hub, .nxt-suite {
+  background: radial-gradient(ellipse at 85% 0%, #4b9ed526, transparent 55%),
+    radial-gradient(ellipse at 0% 90%, #8ccff710, transparent 48%), #030a0f;
+  color: #eff5fa;
+}
+.nxt-hub-header {
+  background: #061019cc;
+  backdrop-filter: blur(24px);
+  box-shadow: inset 0 1px 0 #e5f4ff0d;
+}
+.nxt-glass-card {
+  background: linear-gradient(120deg, #9cdbff12, #061019b8 55%, #4b9ed512);
+  border-color: #9abed433;
+  box-shadow: inset 0 1px 0 #effaff0a, 0 8px 28px #00000012;
+  backdrop-filter: blur(18px);
+}
+.nxt-glass-card:hover { border-color: #c6d8e24d; box-shadow: inset 0 1px 0 #effaff18, 0 10px 32px #0002; }
+.nxt-hub :is(.bg-zinc-900, .bg-zinc-900\/95, .bg-zinc-900\/50),
+.nxt-suite :is(.bg-zinc-900, .bg-zinc-900\/95, .bg-zinc-900\/50) {
+  background: linear-gradient(120deg, #9cdbff12, #061019d9 55%, #4b9ed512);
+  box-shadow: inset 0 1px 0 #effaff09;
+  backdrop-filter: blur(18px);
+}
+.nxt-hub :is(.border-zinc-800, .border-zinc-900),
+.nxt-suite :is(.border-zinc-800, .border-zinc-900) { border-color: #9abed429; }
+.nxt-hub :is(input, select, textarea), .nxt-suite :is(input, select, textarea) {
+  border-radius: 10px;
+  background-color: #01090fb3;
+}
+.nxt-hub select option, .nxt-suite select option { background: #061019; color: #eff5fa; }
+.nxt-hub :where(button,a,input,select,textarea):focus-visible,
+.nxt-suite :where(button,a,input,select,textarea):focus-visible { outline: 2px solid #8ddcff; outline-offset: 3px; }
+@media (max-width: 640px) {
+  .nxt-hub-header .w-60 { width: 160px; }
+  .nxt-glass-card h3 { white-space: normal; }
+}
+
+/* Navy surfaces and ice-blue accents from the main NXTDeal entry experience. */
+.nxt-hub, .nxt-suite { --brand-blue: #8ccff7; --brand-teal: #9cdbff; --chrono-line: #9abed433; }
+.nxt-hub .bg-zinc-950\/40 { background-color: #030a0f66; }
+.nxt-hub .bg-zinc-200 { background: linear-gradient(135deg, #f2f7fb, #c6ddeb); color: #102538; }
+.nxt-suite .brand-cta, .nxt-hub .brand-cta { background: linear-gradient(135deg, #f2f7fb, #c6ddeb); color: #102538; }
+.nxt-suite .text-zinc-400, .nxt-hub .text-zinc-400 { color: #b8c4ce; }
+
+/* Cinematic NXTDeal imagery with flatter, restrained glass surfaces. */
+.nxt-hub, .nxt-suite {
+  background: linear-gradient(90deg, #02090feb, #061523dd), url("/brand/nxtdeal-showroom.webp") center / cover;
+}
+.nxt-cinematic {
+  background: linear-gradient(90deg, #02090f70, #03101a90), url("/brand/nxtdeal-showroom.webp") center / cover;
+}
+.nxt-glass-card, .nxt-glass-card:hover {
+  border-radius: 6px;
+  background: #06131dcc;
+  border-color: #9abed42e;
+  box-shadow: none;
+  backdrop-filter: blur(10px);
+}
+.nxt-glass-card:hover { border-color: #9cdbff70; }
+.nxt-hub :is(.bg-zinc-900, .bg-zinc-900\/95, .bg-zinc-900\/50),
+.nxt-suite :is(.bg-zinc-900, .bg-zinc-900\/95, .bg-zinc-900\/50) {
+  background: #06131ddb;
+  border-radius: 6px;
+  box-shadow: none;
+  backdrop-filter: blur(10px);
+}
+.nxt-hub-header { box-shadow: none; backdrop-filter: blur(10px); }
+.nxt-hub :is(input, select, textarea), .nxt-suite :is(input, select, textarea),
+.nxt-hub .brand-cta, .nxt-suite .brand-cta { border-radius: 5px; box-shadow: none; }
+.nxt-access-layout { position: relative; z-index: 1; min-height: 100%; max-width: 1440px; margin: auto; padding: 64px 6%; display: grid; grid-template-columns: minmax(0,1fr) minmax(340px,440px); align-items: center; gap: 9%; }
+.nxt-access-intro { padding-bottom: 48px; }
+.nxt-access-eyebrow { font-size: 11px; text-transform: uppercase; letter-spacing: .28em; color: #b6d9ed; margin-bottom: 26px; }
+.nxt-access-intro h2 { font-size: clamp(36px,4vw,64px); line-height: 1.1; font-weight: 300; letter-spacing: -.045em; color: #eff5fa; }
+.nxt-access-intro h2 span { color: #8ccff7; }
+.nxt-access-description { margin-top: 24px; max-width: 420px; font-size: 16px; line-height: 1.6; color: #c6d8e4; }
+.nxt-access-rule { margin-top: 36px; width: 72px; height: 1px; background: #8ccff7; }
+.nxt-access-card { background: #06131dba; }
+@media (max-width: 760px) {
+  .nxt-access-layout { grid-template-columns: minmax(0,1fr); gap: 24px; padding: 32px 20px; }
+  .nxt-access-intro { padding-bottom: 0; }
+  .nxt-access-intro h2 { font-size: 32px; }
+  .nxt-access-eyebrow { margin-bottom: 14px; font-size: 9px; }
+  .nxt-access-description { margin-top: 12px; font-size: 14px; }
+  .nxt-access-rule { display: none; }
+  .nxt-access-card { max-width: none; }
+  .nxt-cinematic { background-position: 42% center; }
+}
+
+/* Keep decorative edge lighting from creating a horizontal scroll track. */
+.nxt-hub, .nxt-suite { overflow-x: hidden; }
+
+/* Daily workspaces: readable controls, visible keyboard focus and useful touch targets. */
+.nxt-workflow { background: #091722; }
+.nxt-workflow :is(button, input, select, textarea) { min-height: 44px; }
+.nxt-workflow :is(button, a, input, select, textarea):focus-visible {
+  outline: 2px solid #7dd3fc;
+  outline-offset: 3px;
+}
+.nxt-workflow :is(.text-zinc-500, .text-zinc-600) { color: #aabccc; }
+.nxt-workflow main :is(.text-\[10px\], .text-\[11px\]) { font-size: 0.8125rem; line-height: 1.5; }
+.nxt-workflow main input, .nxt-workflow main select, .nxt-workflow main textarea { font-size: 1rem; }
+@media (prefers-reduced-motion: reduce) {
+  .nxt-workflow *, .nxt-workflow *::before, .nxt-workflow *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

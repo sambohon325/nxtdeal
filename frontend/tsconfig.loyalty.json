@@ -1,0 +1,4 @@
+{
+  "extends": "./tsconfig.json",
+  "include": ["components/LoyaltyRewardsBoard.tsx", "lib/loyalty.ts", "lib/api.ts", "lib/auth.ts"]
+}

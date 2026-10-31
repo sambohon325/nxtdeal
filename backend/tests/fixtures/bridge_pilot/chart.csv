@@ -1,0 +1,3 @@
+external_id,modified_at,name,account_code,currency
+cash-synthetic,2026-10-04T12:00:00Z,Synthetic cash,1000,USD
+receivable-synthetic,2026-10-04T12:00:00Z,Synthetic receivable,1200,USD

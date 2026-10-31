@@ -1,0 +1,4 @@
+{
+  "extends": "./tsconfig.json",
+  "include": ["components/AccessoriesAcceleratorBoard.tsx", "lib/accessories.ts", "lib/api.ts", "lib/auth.ts"]
+}

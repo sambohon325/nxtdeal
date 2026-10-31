@@ -1,0 +1,426 @@
+ServiceNumber,CustomerID,VIN,Description,ServiceDate,Mileage,Cost,PartsCost,LaborHours,PayType,Status,Technician
+S7001,C4054,TOYCAM00081,Tire Replacement (Set of 4),2025-05-27,129400,711.26,221.68,3.2,Customer Pay,Completed,E3034
+S7002,C4054,TOYCAM00081,Coolant Flush,2026-06-01,135030,42.33,18.63,2.5,Customer Pay,Completed,E3032
+S7003,C4040,KIAOPT00057,Check Engine Light Diagnosis,2025-10-26,145643,658.38,290.67,3.9,Customer Pay,Completed,E3036
+S7004,C4040,KIAOPT00057,Cabin Air Filter Replacement,2026-06-19,142326,395.54,128.52,2.0,Customer Pay,Completed,E3033
+S7005,C4186,CHEMAL00291,Oil Change,2026-05-01,34758,352.11,121.58,1.7,Customer Pay,Completed,E3035
+S7006,C4186,CHEMAL00291,AC System Service,2026-03-31,41675,387.03,147.6,2.6,Customer Pay,Completed,E3032
+S7007,C4186,CHEMAL00291,AC System Service,2026-04-01,40010,354.61,115.03,2.2,Customer Pay,Completed,E3035
+S7008,C4172,HYUTUC00275,Multi-Point Inspection,2026-07-06,38192,731.16,290.59,3.0,Customer Pay,Completed,E3032
+S7009,C4172,HYUTUC00275,Brake Pad Replacement,2026-07-13,38499,581.16,244.6,3.2,Customer Pay,Completed,E3033
+S7010,C4015,FORESC00021,Brake Pad Replacement,2026-07-12,74127,200.13,63.77,4.4,Customer Pay,Completed,E3035
+S7011,C4123,FORF1500195,Oil Change,2026-06-25,37914,847.46,318.76,1.6,Customer Pay,Completed,E3034
+S7012,C4123,FORF1500195,Wiper Blade Replacement,2026-06-26,41515,33.61,10.25,0.6,Customer Pay,Completed,E3036
+S7013,C4123,FORF1500195,Coolant Flush,2026-07-08,42071,321.52,144.34,1.5,Customer Pay,Completed,E3033
+S7014,C4145,TOYTAC00228,State Inspection,2025-06-08,13729,403.31,144.61,3.4,Customer Pay,Completed,E3034
+S7015,C4145,TOYTAC00228,Wiper Blade Replacement,2025-12-22,13365,116.62,43.81,3.0,Customer Pay,Completed,E3034
+S7016,C4055,NISSEN00083,Cabin Air Filter Replacement,2026-06-23,121169,111.12,33.53,3.6,Internal,Completed,E3032
+S7017,C4055,NISSEN00083,Multi-Point Inspection,2026-06-24,127888,527.45,216.32,4.4,Internal,Completed,E3033
+S7018,C4034,CHR30000048,Cabin Air Filter Replacement,2026-04-28,76637,495.8,206.75,3.6,Customer Pay,Completed,E3032
+S7019,C4109,CHEMAL00175,State Inspection,2026-06-07,5156,784.23,344.34,1.0,Customer Pay,Completed,E3034
+S7020,C4006,JEEPAT00007,Spark Plug Replacement,2026-06-15,64914,764.81,253.3,0.9,Customer Pay,Completed,E3035
+S7021,C4159,JEECOM00253,Cabin Air Filter Replacement,2026-07-11,5785,627.97,217.93,4.1,Customer Pay,Completed,E3033
+S7022,C4283,GMCSIE00459,Tire Rotation,2026-07-02,18427,131.96,46.45,4.5,Customer Pay,Completed,E3032
+S7023,C4017,FORESC00023,Cabin Air Filter Replacement,2026-07-06,135101,557.31,210.5,3.5,Customer Pay,Completed,E3034
+S7024,C4124,KIAK500198,Recall Repair - Airbag Sensor,2026-06-23,4663,0.0,0.0,0.5,Warranty,Completed,E3034
+S7025,C4138,KIASPO00219,Transmission Service,2026-07-05,14793,646.02,239.06,3.7,Customer Pay,Completed,E3036
+S7026,C4044,BUILAC00063,Battery Replacement,2025-12-18,114098,202.14,82.39,4.3,Customer Pay,Completed,E3036
+S7027,C4044,BUILAC00063,Wheel Alignment,2026-06-08,125346,174.11,71.09,2.2,Customer Pay,Completed,E3035
+S7028,C4044,BUILAC00063,Coolant Flush,2025-12-29,122980,571.92,208.41,2.8,Customer Pay,Completed,E3032
+S7029,C4024,FORFUS00035,Check Engine Light Diagnosis,2026-07-13,100995,250.16,97.71,4.0,Customer Pay,Completed,E3034
+S7030,C4025,FORESC00036,Coolant Flush,2026-07-08,131315,403.56,135.92,1.4,Customer Pay,Completed,E3034
+S7031,C4162,HONACC00259,Coolant Flush,2025-12-28,11061,628.8,208.8,2.8,Customer Pay,Completed,E3033
+S7032,C4005,HYUELA00006,Cabin Air Filter Replacement,2026-04-06,73107,488.71,167.0,2.9,Customer Pay,Completed,E3036
+S7033,C4303,KIATEL00490,Coolant Flush,2026-03-15,2063,737.64,226.79,2.5,Customer Pay,Completed,E3034
+S7034,C4303,KIATEL00490,Serpentine Belt Replacement,2025-10-07,9870,178.88,63.94,2.8,Customer Pay,Completed,E3032
+S7035,C4257,JEEGRA00410,Serpentine Belt Replacement,2026-06-08,17809,277.39,99.98,4.1,Customer Pay,Completed,E3032
+S7036,C4257,JEEGRA00410,Multi-Point Inspection,2026-06-09,10917,438.8,158.96,1.7,Customer Pay,Completed,E3034
+S7037,C4100,NISSEN00150,Spark Plug Replacement,2026-02-06,112674,562.71,227.6,2.3,Customer Pay,Completed,E3034
+S7038,C4284,FORF1500462,Tire Rotation,2026-06-20,14786,748.14,335.94,3.9,Customer Pay,Completed,E3033
+S7039,C4284,FORF1500462,Transmission Service,2026-06-19,2230,740.04,222.56,3.3,Customer Pay,Completed,E3034
+S7040,C4284,FORF1500462,Brake Pad Replacement,2025-08-01,12947,71.75,24.36,3.3,Customer Pay,Completed,E3034
+S7041,C4201,SUBFOR00316,Brake Pad Replacement,2026-07-13,14056,139.86,57.76,4.1,Customer Pay,Completed,E3035
+S7042,C4201,SUBFOR00316,State Inspection,2026-07-12,16331,445.79,152.5,3.6,Customer Pay,Completed,E3033
+S7043,C4280,CHESIL00455,Multi-Point Inspection,2026-06-08,7249,337.11,113.39,3.1,Customer Pay,Completed,E3032
+S7044,C4067,CHR30000105,Oil Change,2025-06-27,111900,613.32,219.42,2.5,Customer Pay,Completed,E3033
+S7045,C4050,HYUELA00075,Coolant Flush,2026-06-09,105815,691.61,254.58,1.1,Customer Pay,Completed,E3032
+S7046,C4050,HYUELA00075,Transmission Service,2026-01-09,102397,365.44,143.64,1.3,Customer Pay,Completed,E3033
+S7047,C4170,GMCTER00271,State Inspection,2025-11-05,8399,594.08,256.3,3.5,Customer Pay,Completed,E3032
+S7048,C4209,RAM15000330,Spark Plug Replacement,2026-06-13,3257,605.83,205.88,4.2,Customer Pay,Completed,E3034
+S7049,C4209,RAM15000330,Recall Repair - Fuel Pump,2026-05-17,17146,0.0,0.0,0.8,Warranty,Completed,E3034
+S7050,C4258,TOYCOR00417,Tire Rotation,2026-06-16,13721,594.29,215.96,1.7,Customer Pay,Completed,E3033
+S7051,C4052,GMCTER00079,Check Engine Light Diagnosis,2026-06-17,126584,407.19,161.63,4.3,Customer Pay,Completed,E3032
+S7052,C4077,CHECRU00119,Wiper Blade Replacement,2026-06-21,134372,87.28,29.15,3.0,Customer Pay,Completed,E3035
+S7053,C4013,NISSEN00017,Software/Firmware Update,2026-07-09,134720,460.79,152.31,3.0,Customer Pay,Completed,E3032
+S7054,C4196,GMCTER00310,Spark Plug Replacement,2026-07-13,2782,673.0,271.35,1.2,Customer Pay,Completed,E3033
+S7055,C4020,NISALT00027,Oil Change,2026-07-02,87387,609.44,184.74,4.4,Customer Pay,Completed,E3033
+S7056,C4149,TOYCAM00233,Spark Plug Replacement,2026-01-27,16135,537.34,181.15,0.9,Customer Pay,Completed,E3036
+S7057,C4149,TOYCAM00233,Wiper Blade Replacement,2025-11-25,25547,486.97,156.8,0.9,Customer Pay,Completed,E3034
+S7058,C4083,GMCTER00126,Software/Firmware Update,2026-01-25,129959,607.16,223.93,3.8,Customer Pay,Completed,E3034
+S7059,C4238,SUBFOR00383,Spark Plug Replacement,2026-07-13,13963,128.09,52.42,0.6,Customer Pay,Completed,E3033
+S7060,C4238,SUBFOR00383,Transmission Service,2026-01-15,12295,463.1,190.4,4.4,Customer Pay,Completed,E3033
+S7061,C4041,KIAOPT00058,Brake Pad Replacement,2026-07-08,120119,869.93,349.56,4.1,Customer Pay,Completed,E3036
+S7062,C4041,KIAOPT00058,Transmission Service,2026-07-12,115533,802.55,291.0,4.5,Customer Pay,Completed,E3033
+S7063,C4227,HYUELA00361,Brake Pad Replacement,2025-11-06,9966,407.1,181.25,3.7,Customer Pay,Completed,E3032
+S7064,C4286,HYUELA00465,Serpentine Belt Replacement,2025-04-14,5834,622.39,213.77,2.7,Customer Pay,Completed,E3034
+S7065,C4286,HYUELA00465,Wheel Alignment,2025-01-20,2249,43.56,14.92,2.9,Internal,Completed,E3035
+S7066,C4286,HYUELA00465,Transmission Service,2026-01-29,9788,604.41,204.12,1.9,Internal,Completed,E3036
+S7067,C4244,GMCTER00393,Multi-Point Inspection,2025-08-14,24631,650.47,266.67,2.2,Customer Pay,Completed,E3034
+S7068,C4244,GMCTER00393,Transmission Service,2026-06-28,25202,246.38,88.19,2.1,Customer Pay,Completed,E3034
+S7069,C4184,HYUTUC00289,State Inspection,2026-07-10,7046,409.15,172.11,1.1,Customer Pay,Completed,E3034
+S7070,C4184,HYUTUC00289,Cabin Air Filter Replacement,2026-07-13,18394,291.91,112.39,3.0,Customer Pay,Completed,E3033
+S7071,C4184,HYUTUC00289,Brake Pad Replacement,2026-07-12,12225,150.58,52.25,4.2,Customer Pay,Completed,E3035
+S7072,C4060,JEECOM00092,Serpentine Belt Replacement,2026-01-22,80892,54.07,23.99,2.2,Customer Pay,Completed,E3036
+S7073,C4255,FORMUS00408,Check Engine Light Diagnosis,2026-05-23,2261,354.6,154.25,4.0,Customer Pay,Completed,E3035
+S7074,C4255,FORMUS00408,Oil Change,2026-07-04,3281,432.63,163.4,3.9,Customer Pay,Completed,E3032
+S7075,C4255,FORMUS00408,Brake Pad Replacement,2026-07-03,11363,320.12,109.99,2.4,Customer Pay,Completed,E3032
+S7076,C4310,HONCRV00500,Tire Rotation,2026-05-27,4993,640.36,246.1,4.4,Customer Pay,Completed,E3033
+S7077,C4207,SUBFOR00326,Wheel Alignment,2025-07-02,7086,576.56,253.96,3.7,Customer Pay,Completed,E3032
+S7078,C4207,SUBFOR00326,Brake Pad Replacement,2026-06-17,17084,482.24,152.17,0.6,Customer Pay,Completed,E3035
+S7079,C4175,CHEMAL00278,Recall Repair - Fuel Pump,2026-02-03,17698,0.0,0.0,0.7,Warranty,Completed,E3033
+S7080,C4168,JEEWRA00268,Serpentine Belt Replacement,2026-06-07,6583,777.59,283.71,3.0,Customer Pay,Completed,E3033
+S7081,C4168,JEEWRA00268,Wiper Blade Replacement,2026-03-15,10031,178.56,68.21,2.4,Customer Pay,Completed,E3034
+S7082,C4037,CHR20000052,Transmission Service,2026-02-11,107857,610.89,247.2,0.9,Customer Pay,Completed,E3035
+S7083,C4037,CHR20000052,Serpentine Belt Replacement,2026-06-22,108761,134.5,52.06,0.6,Customer Pay,Completed,E3032
+S7084,C4197,FORMUS00311,Serpentine Belt Replacement,2025-05-26,41627,797.7,240.4,1.1,Customer Pay,Completed,E3036
+S7085,C4197,FORMUS00311,Check Engine Light Diagnosis,2026-07-11,43676,369.83,147.34,1.9,Customer Pay,Completed,E3034
+S7086,C4197,FORMUS00311,Recall Repair - Airbag Sensor,2026-05-29,35149,0.0,0.0,0.6,Warranty,Completed,E3035
+S7087,C4251,CHESIL00403,Recall Repair - Fuel Pump,2026-07-13,6435,0.0,0.0,1.2,Warranty,Completed,E3036
+S7088,C4042,CHR20000059,Check Engine Light Diagnosis,2026-02-17,159003,255.52,99.23,2.8,Customer Pay,Completed,E3036
+S7089,C4042,CHR20000059,Tire Rotation,2025-04-20,156216,55.67,18.64,3.2,Customer Pay,Completed,E3035
+S7090,C4129,TOYCOR00204,Wiper Blade Replacement,2026-07-07,14285,121.72,49.81,2.0,Customer Pay,Completed,E3032
+S7091,C4133,NISALT00211,Multi-Point Inspection,2026-06-14,6224,414.12,163.45,0.6,Customer Pay,Completed,E3034
+S7092,C4187,CHEEQU00294,State Inspection,2025-09-07,33290,514.12,192.11,3.2,Customer Pay,Completed,E3033
+S7093,C4156,NISALT00248,Cabin Air Filter Replacement,2026-06-23,1615,104.83,46.54,0.9,Internal,Completed,E3033
+S7094,C4156,NISALT00248,AC System Service,2026-06-13,17832,524.41,184.12,3.2,Customer Pay,Completed,E3035
+S7095,C4167,RAM15000266,Spark Plug Replacement,2026-07-13,2703,465.73,202.58,3.9,Customer Pay,Completed,E3035
+S7096,C4134,HONACC00213,State Inspection,2025-05-26,8075,97.98,33.78,1.0,Customer Pay,Completed,E3032
+S7097,C4243,HONACC00390,Wheel Alignment,2026-06-08,5678,832.37,337.52,0.8,Customer Pay,Completed,E3034
+S7098,C4243,HONACC00390,Wiper Blade Replacement,2026-07-01,2362,772.27,289.61,2.1,Customer Pay,Completed,E3036
+S7099,C4115,NISALT00185,Software/Firmware Update,2026-06-28,2459,598.3,217.31,1.3,Internal,Completed,E3033
+S7100,C4115,NISALT00185,Coolant Flush,2026-07-09,2902,834.02,360.08,1.4,Customer Pay,Completed,E3036
+S7101,C4299,JEECOM00482,Transmission Service,2026-01-14,3170,883.51,344.32,2.9,Customer Pay,Completed,E3036
+S7102,C4299,JEECOM00482,Software/Firmware Update,2026-02-07,12007,659.29,246.9,1.4,Customer Pay,Completed,E3035
+S7103,C4299,JEECOM00482,Oil Change,2026-03-04,12961,840.17,350.58,1.3,Internal,Completed,E3032
+S7104,C4087,HYUSON00131,Recall Repair - Fuel Pump,2026-07-07,125338,0.0,0.0,0.9,Warranty,Completed,E3035
+S7105,C4075,CHECRU00117,Transmission Service,2026-06-16,99804,336.05,147.09,1.5,Customer Pay,Completed,E3036
+S7106,C4093,CHR20000139,Tire Replacement (Set of 4),2026-07-03,114528,524.19,158.43,3.4,Customer Pay,Completed,E3032
+S7107,C4160,HONCIV00254,Tire Rotation,2026-01-30,4775,303.28,131.49,4.5,Customer Pay,Completed,E3036
+S7108,C4220,RAM15000346,Multi-Point Inspection,2025-12-09,12200,247.66,92.68,3.4,Customer Pay,Completed,E3033
+S7109,C4421,,Tire Replacement (Set of 4),2026-01-29,89907,284.62,107.88,1.6,Customer Pay,Completed,E3032
+S7110,C4421,,Spark Plug Replacement,2026-03-15,60708,273.4,87.64,4.4,Customer Pay,Completed,E3036
+S7111,C4321,,Tire Rotation,2025-06-13,36170,880.77,350.09,2.3,Customer Pay,Completed,E3035
+S7112,C4493,,Recall Repair - Fuel Pump,2026-07-01,33530,0.0,0.0,0.6,Warranty,Completed,E3034
+S7113,C4493,,Spark Plug Replacement,2026-02-16,76262,46.39,17.01,1.4,Customer Pay,Completed,E3035
+S7114,C4493,,Tire Rotation,2025-11-27,73170,501.14,152.3,2.9,Customer Pay,Completed,E3036
+S7115,C4485,,AC System Service,2026-07-06,52944,783.19,344.04,3.5,Customer Pay,Completed,E3035
+S7116,C4410,,Tire Replacement (Set of 4),2025-11-09,54299,433.24,166.9,2.6,Customer Pay,Completed,E3035
+S7117,C4410,,Recall Repair - Airbag Sensor,2025-09-19,66282,0.0,0.0,1.1,Warranty,Completed,E3032
+S7118,C4410,,Coolant Flush,2025-11-17,53739,526.83,179.72,1.6,Internal,Completed,E3032
+S7119,C4410,,Software/Firmware Update,2025-12-13,37104,767.4,232.21,0.5,Customer Pay,Completed,E3035
+S7120,C4372,,Tire Rotation,2026-03-13,43326,534.22,232.15,2.7,Customer Pay,Completed,E3033
+S7121,C4372,,Software/Firmware Update,2026-07-08,34622,255.79,85.46,1.2,Customer Pay,Completed,E3032
+S7122,C4364,,Serpentine Belt Replacement,2026-06-29,62889,534.49,217.86,0.7,Internal,Completed,E3032
+S7123,C4364,,Tire Replacement (Set of 4),2026-01-15,82379,654.93,230.84,0.8,Customer Pay,Completed,E3036
+S7124,C4467,,Transmission Service,2026-07-01,62292,751.34,233.45,2.2,Customer Pay,Completed,E3032
+S7125,C4466,,AC System Service,2025-12-28,29836,810.72,357.83,1.7,Customer Pay,Completed,E3034
+S7126,C4330,,Brake Pad Replacement,2025-02-14,106162,559.85,210.85,3.6,Customer Pay,Completed,E3034
+S7127,C4350,,Recall Repair - Airbag Sensor,2025-02-21,33314,0.0,0.0,0.6,Warranty,Completed,E3033
+S7128,C4350,,Tire Replacement (Set of 4),2026-03-23,99594,667.74,253.18,0.7,Customer Pay,Completed,E3036
+S7129,C4350,,Cabin Air Filter Replacement,2025-10-21,75508,757.32,254.92,1.5,Customer Pay,Completed,E3035
+S7130,C4350,,Wiper Blade Replacement,2025-05-17,89279,417.15,150.8,0.8,Customer Pay,Completed,E3034
+S7131,C4456,,AC System Service,2026-04-23,65961,229.88,102.99,4.2,Customer Pay,Completed,E3036
+S7132,C4456,,Wheel Alignment,2025-10-12,58824,327.16,118.19,2.5,Customer Pay,Completed,E3035
+S7133,C4471,,Serpentine Belt Replacement,2025-07-22,85394,43.49,14.77,2.7,Customer Pay,Completed,E3033
+S7134,C4471,,Oil Change,2026-04-05,85209,630.33,201.62,4.0,Customer Pay,Completed,E3034
+S7135,C4438,,Wheel Alignment,2025-09-23,36107,133.55,58.06,2.9,Customer Pay,Completed,E3032
+S7136,C4335,,AC System Service,2026-04-23,44154,578.81,211.47,3.5,Customer Pay,Completed,E3036
+S7137,C4335,,Multi-Point Inspection,2026-06-24,92375,162.45,63.19,3.2,Internal,Completed,E3034
+S7138,C4335,,State Inspection,2026-06-23,45314,272.98,91.4,2.5,Customer Pay,Completed,E3036
+S7139,C4314,,Wheel Alignment,2026-03-31,62221,310.83,101.57,1.1,Customer Pay,Completed,E3036
+S7140,C4314,,Coolant Flush,2026-07-11,85357,116.53,37.03,1.6,Customer Pay,Completed,E3033
+S7141,C4314,,Software/Firmware Update,2026-07-12,42125,890.25,390.53,3.2,Customer Pay,Completed,E3033
+S7142,C4347,,Oil Change,2025-07-10,46294,550.59,238.73,2.7,Internal,Completed,E3035
+S7143,C4347,,Transmission Service,2025-02-14,92908,206.72,79.73,3.4,Customer Pay,Completed,E3035
+S7144,C4390,,Brake Pad Replacement,2026-07-05,60813,416.62,141.43,4.0,Customer Pay,Completed,E3034
+S7145,C4451,,Multi-Point Inspection,2025-09-03,90146,314.58,107.4,3.0,Customer Pay,Completed,E3034
+S7146,C4451,,AC System Service,2025-02-27,25431,117.37,44.39,1.3,Customer Pay,Completed,E3033
+S7147,C4451,,Wiper Blade Replacement,2026-06-25,94866,615.8,198.73,3.8,Customer Pay,Completed,E3033
+S7148,C4333,,Cabin Air Filter Replacement,2026-07-01,45116,32.77,12.57,1.3,Customer Pay,Completed,E3035
+S7149,C4487,,Transmission Service,2025-09-16,60466,451.27,147.57,1.7,Customer Pay,Completed,E3035
+S7150,C4487,,Transmission Service,2026-02-24,71902,502.76,167.34,4.4,Customer Pay,Completed,E3035
+S7151,C4486,,Battery Replacement,2025-05-17,53135,434.31,137.69,3.3,Customer Pay,Completed,E3035
+S7152,C4427,,Wheel Alignment,2025-02-17,71433,263.08,112.51,2.1,Customer Pay,Completed,E3034
+S7153,C4427,,AC System Service,2026-04-16,66538,376.84,128.22,3.4,Customer Pay,Completed,E3034
+S7154,C4391,,Battery Replacement,2026-07-11,67946,496.32,157.11,4.4,Customer Pay,Completed,E3036
+S7155,C4391,,Recall Repair - Fuel Pump,2025-02-09,75741,0.0,0.0,0.4,Warranty,Completed,E3036
+S7156,C4354,,Transmission Service,2026-06-19,60067,495.85,211.09,2.1,Customer Pay,Completed,E3033
+S7157,C4386,,Tire Replacement (Set of 4),2025-08-27,92875,667.99,204.01,0.6,Customer Pay,Completed,E3036
+S7158,C4386,,Tire Rotation,2026-05-30,54021,166.53,55.7,3.6,Customer Pay,Completed,E3034
+S7159,C4386,,Recall Repair - Fuel Pump,2026-02-09,58671,0.0,0.0,0.4,Warranty,Completed,E3032
+S7160,C4386,,AC System Service,2026-07-06,52297,47.52,18.12,4.2,Customer Pay,Completed,E3035
+S7161,C4352,,Coolant Flush,2025-12-04,42224,399.87,138.08,2.3,Customer Pay,Completed,E3036
+S7162,C4328,,Wiper Blade Replacement,2026-06-15,106988,871.18,324.52,4.1,Customer Pay,Completed,E3033
+S7163,C4328,,Recall Repair - Fuel Pump,2026-06-11,49514,0.0,0.0,1.2,Warranty,Completed,E3033
+S7164,C4382,,Wiper Blade Replacement,2026-07-07,42084,418.95,132.53,1.7,Customer Pay,Completed,E3032
+S7165,C4382,,Spark Plug Replacement,2025-08-19,107670,546.26,196.92,3.9,Customer Pay,Completed,E3033
+S7166,C4458,,Wheel Alignment,2026-03-16,73967,674.23,205.96,3.3,Customer Pay,Completed,E3034
+S7167,C4404,,Tire Replacement (Set of 4),2026-06-03,100663,464.83,155.89,2.3,Customer Pay,Completed,E3036
+S7168,C4404,,Brake Pad Replacement,2025-04-12,92629,400.35,127.75,0.6,Customer Pay,Completed,E3033
+S7169,C4401,,Tire Rotation,2025-05-15,56758,800.38,315.29,2.6,Customer Pay,Completed,E3035
+S7170,C4481,,Wheel Alignment,2026-06-26,87684,656.34,223.59,1.8,Customer Pay,Completed,E3033
+S7171,C4481,,Cabin Air Filter Replacement,2026-06-29,97547,728.44,259.1,2.9,Customer Pay,Completed,E3033
+S7172,C4329,,Battery Replacement,2025-06-06,55623,486.2,146.58,2.2,Customer Pay,Completed,E3032
+S7173,C4329,,Wheel Alignment,2025-01-24,34916,640.26,201.09,2.3,Customer Pay,Completed,E3036
+S7174,C4329,,Multi-Point Inspection,2025-06-28,54746,334.88,111.82,3.0,Customer Pay,Completed,E3034
+S7175,C4329,,State Inspection,2026-03-31,49591,664.5,275.8,4.2,Customer Pay,Completed,E3036
+S7176,C4356,,Battery Replacement,2025-11-01,81511,258.75,108.55,2.8,Customer Pay,Completed,E3036
+S7177,C4428,,Spark Plug Replacement,2025-10-29,44396,212.09,71.0,1.4,Internal,Completed,E3033
+S7178,C4428,,Coolant Flush,2025-01-19,91714,97.67,31.31,3.7,Customer Pay,Completed,E3034
+S7179,C4428,,Wiper Blade Replacement,2025-05-19,78467,517.32,185.11,2.4,Customer Pay,Completed,E3034
+S7180,C4377,,Battery Replacement,2025-08-26,94446,852.57,346.74,3.9,Customer Pay,Completed,E3034
+S7181,C4377,,Transmission Service,2026-04-09,79745,184.86,79.18,3.6,Customer Pay,Completed,E3033
+S7182,C4432,,Recall Repair - Fuel Pump,2025-08-02,28315,0.0,0.0,0.6,Warranty,Completed,E3035
+S7183,C4432,,Oil Change,2025-08-06,86827,539.97,235.78,4.2,Customer Pay,Completed,E3036
+S7184,C4376,,Recall Repair - Fuel Pump,2026-05-24,62650,0.0,0.0,0.3,Warranty,Completed,E3032
+S7185,C4424,,Serpentine Belt Replacement,2026-05-16,35367,456.55,196.88,3.5,Customer Pay,Completed,E3034
+S7186,C4424,,Recall Repair - Airbag Sensor,2026-07-11,48000,0.0,0.0,0.9,Warranty,Completed,E3032
+S7187,C4424,,Tire Rotation,2025-05-21,63231,415.73,144.31,3.9,Customer Pay,Completed,E3036
+S7188,C4424,,Coolant Flush,2025-12-25,85424,811.02,363.29,3.4,Customer Pay,Completed,E3032
+S7189,C4346,,Multi-Point Inspection,2025-03-22,57650,197.85,63.73,1.6,Customer Pay,Completed,E3032
+S7190,C4346,,Check Engine Light Diagnosis,2026-06-19,70254,386.04,164.58,4.3,Customer Pay,Completed,E3036
+S7191,C4346,,Serpentine Belt Replacement,2026-01-03,38705,524.3,201.82,2.4,Customer Pay,Completed,E3033
+S7192,C4346,,Coolant Flush,2025-07-28,61283,544.29,225.88,3.7,Customer Pay,Completed,E3035
+S7193,C4342,,Wheel Alignment,2025-09-28,48071,758.45,330.09,1.3,Customer Pay,Completed,E3032
+S7194,C4489,,Recall Repair - Airbag Sensor,2026-06-21,82165,0.0,0.0,0.8,Warranty,Completed,E3033
+S7195,C4489,,Battery Replacement,2026-06-19,86012,881.96,322.74,0.9,Customer Pay,Completed,E3034
+S7196,C4435,,Battery Replacement,2026-04-24,62327,61.95,22.17,2.7,Customer Pay,Completed,E3034
+S7197,C4499,,Cabin Air Filter Replacement,2025-11-10,58724,327.69,125.42,3.5,Customer Pay,Completed,E3036
+S7198,C4499,,Cabin Air Filter Replacement,2025-10-10,60506,436.88,138.62,3.1,Internal,Completed,E3033
+S7199,C4470,,State Inspection,2026-02-09,26736,814.1,257.0,1.9,Customer Pay,Completed,E3035
+S7200,C4470,,Brake Pad Replacement,2025-12-29,37735,192.78,62.54,2.7,Customer Pay,Completed,E3036
+S7201,C4384,,Recall Repair - Fuel Pump,2026-04-09,60703,0.0,0.0,0.7,Warranty,Completed,E3034
+S7202,C4384,,Recall Repair - Fuel Pump,2026-05-28,67822,0.0,0.0,0.6,Warranty,Completed,E3032
+S7203,C4413,,State Inspection,2026-03-05,95695,54.83,24.03,4.0,Customer Pay,Completed,E3036
+S7204,C4413,,Coolant Flush,2025-06-01,50382,716.05,224.52,3.7,Customer Pay,Completed,E3035
+S7205,C4415,,Cabin Air Filter Replacement,2025-06-19,61453,798.16,249.07,1.4,Customer Pay,Completed,E3032
+S7206,C4415,,Tire Replacement (Set of 4),2025-06-25,100224,765.72,284.54,1.9,Customer Pay,Completed,E3035
+S7207,C4344,,Serpentine Belt Replacement,2026-02-08,51104,644.4,202.58,1.0,Customer Pay,Completed,E3034
+S7208,C4344,,Recall Repair - Fuel Pump,2026-03-29,81964,0.0,0.0,0.8,Warranty,Completed,E3036
+S7209,C4423,,Wiper Blade Replacement,2025-07-20,75221,351.14,148.7,2.9,Customer Pay,Completed,E3033
+S7210,C4455,,Wheel Alignment,2026-06-19,68043,408.79,162.74,2.2,Customer Pay,Completed,E3035
+S7211,C4442,,AC System Service,2025-10-13,42678,186.17,70.3,0.9,Customer Pay,Completed,E3032
+S7212,C4442,,Oil Change,2026-03-09,37947,169.96,63.91,3.2,Customer Pay,Completed,E3035
+S7213,C4477,,Software/Firmware Update,2026-06-26,98522,675.59,284.47,4.1,Customer Pay,Completed,E3035
+S7214,C4477,,Brake Pad Replacement,2026-01-27,35913,713.37,270.91,2.0,Customer Pay,Completed,E3032
+S7215,C4406,,Cabin Air Filter Replacement,2025-10-10,90648,477.95,205.92,2.2,Customer Pay,Completed,E3032
+S7216,C4332,,Tire Rotation,2026-01-29,60087,803.56,271.48,1.8,Customer Pay,Completed,E3036
+S7217,C4416,,Oil Change,2026-06-26,42706,418.68,127.84,0.9,Customer Pay,Completed,E3035
+S7218,C4440,,Recall Repair - Airbag Sensor,2026-06-16,99303,0.0,0.0,1.0,Warranty,Completed,E3034
+S7219,C4426,,Check Engine Light Diagnosis,2025-09-25,46268,525.08,183.25,0.7,Internal,Completed,E3036
+S7220,C4378,,Wheel Alignment,2026-07-12,45093,397.59,175.95,1.5,Internal,Completed,E3032
+S7221,C4378,,Wheel Alignment,2025-10-13,39162,565.55,237.0,3.3,Customer Pay,Completed,E3036
+S7222,C4378,,Software/Firmware Update,2026-04-11,78693,679.77,232.16,3.2,Customer Pay,Completed,E3034
+S7223,C4378,,Cabin Air Filter Replacement,2026-06-26,65384,46.28,14.78,1.6,Customer Pay,Completed,E3033
+S7224,C4488,,Multi-Point Inspection,2025-09-02,86422,561.9,219.93,2.3,Customer Pay,Completed,E3036
+S7225,C4325,,Coolant Flush,2025-01-31,92803,326.31,119.64,2.3,Customer Pay,Completed,E3036
+S7226,C4325,,Software/Firmware Update,2026-02-22,102664,380.55,146.78,0.8,Customer Pay,Completed,E3034
+S7227,C4373,,Wheel Alignment,2026-02-01,53876,283.88,113.89,0.6,Customer Pay,Completed,E3036
+S7228,C4400,,Wheel Alignment,2025-02-11,50161,514.09,172.33,4.2,Customer Pay,Completed,E3036
+S7229,C4400,,Brake Pad Replacement,2025-05-25,54498,374.29,118.5,1.7,Customer Pay,Completed,E3036
+S7230,C4444,,Software/Firmware Update,2026-03-23,78610,307.87,97.24,4.0,Customer Pay,Completed,E3036
+S7231,C4444,,Recall Repair - Fuel Pump,2025-09-06,90686,0.0,0.0,0.7,Warranty,Completed,E3035
+S7232,C4472,,Wheel Alignment,2026-03-04,45948,32.89,13.63,3.1,Customer Pay,Completed,E3036
+S7233,C4312,,Cabin Air Filter Replacement,2026-03-15,49748,583.67,187.23,3.0,Customer Pay,Completed,E3035
+S7234,C4312,,Wiper Blade Replacement,2025-12-17,36234,174.81,70.39,4.3,Customer Pay,Completed,E3036
+S7235,C4491,,Battery Replacement,2026-07-12,57261,428.25,143.85,2.4,Customer Pay,Completed,E3033
+S7236,C4491,,Oil Change,2026-07-11,57999,210.09,70.75,2.9,Customer Pay,Completed,E3035
+S7237,C4420,,Coolant Flush,2026-07-02,29879,788.7,265.58,3.4,Customer Pay,Completed,E3032
+S7238,C4420,,Check Engine Light Diagnosis,2026-03-11,72189,896.11,278.29,2.2,Customer Pay,Completed,E3032
+S7239,C4324,,Serpentine Belt Replacement,2025-02-12,37637,448.29,154.19,2.1,Customer Pay,Completed,E3035
+S7240,C4324,,Serpentine Belt Replacement,2026-06-26,40687,402.86,129.68,1.5,Customer Pay,Completed,E3034
+S7241,C4324,,Recall Repair - Airbag Sensor,2026-01-01,90638,0.0,0.0,1.1,Warranty,Completed,E3034
+S7242,C4348,,Serpentine Belt Replacement,2025-04-04,73775,812.29,273.51,1.5,Customer Pay,Completed,E3034
+S7243,C4359,,Tire Rotation,2025-10-27,87574,692.34,237.66,1.4,Customer Pay,Completed,E3034
+S7244,C4359,,Battery Replacement,2025-11-29,44954,523.84,213.18,3.2,Customer Pay,Completed,E3033
+S7245,C4359,,Software/Firmware Update,2026-02-16,30581,583.97,193.73,1.7,Internal,Completed,E3034
+S7246,C4331,,Recall Repair - Fuel Pump,2026-07-02,54114,0.0,0.0,0.7,Warranty,Completed,E3033
+S7247,C4331,,Coolant Flush,2026-06-16,105138,485.29,213.0,3.1,Customer Pay,Completed,E3033
+S7248,C4331,,Oil Change,2026-02-11,49291,611.8,204.17,1.3,Customer Pay,Completed,E3036
+S7249,C4383,,Transmission Service,2025-08-08,96680,463.94,183.63,0.5,Customer Pay,Completed,E3033
+S7250,C4383,,Recall Repair - Fuel Pump,2025-02-21,80317,0.0,0.0,0.9,Warranty,Completed,E3032
+S7251,C4383,,Tire Replacement (Set of 4),2026-07-13,97610,766.54,239.1,3.7,Customer Pay,Completed,E3036
+S7252,C4362,,Battery Replacement,2026-07-06,86091,630.03,212.17,3.3,Customer Pay,Completed,E3032
+S7253,C4463,,Multi-Point Inspection,2026-06-21,54996,676.5,296.05,4.1,Customer Pay,Completed,E3034
+S7254,C4463,,Wiper Blade Replacement,2026-06-20,37643,539.53,199.43,2.6,Customer Pay,Completed,E3032
+S7255,C4463,,Serpentine Belt Replacement,2026-06-16,94191,102.54,39.1,1.4,Customer Pay,Completed,E3036
+S7256,C4463,,Brake Pad Replacement,2026-06-26,80318,656.37,260.18,2.9,Customer Pay,Completed,E3034
+S7257,C4320,,Battery Replacement,2026-06-07,72567,315.91,108.22,3.1,Customer Pay,Completed,E3033
+S7258,C4320,,Wheel Alignment,2026-06-18,31813,574.54,237.57,1.2,Customer Pay,Completed,E3036
+S7259,C4320,,Battery Replacement,2025-07-05,89810,87.03,30.09,4.2,Customer Pay,Completed,E3036
+S7260,C4339,,Wiper Blade Replacement,2026-06-16,43821,215.49,74.99,2.6,Customer Pay,Completed,E3036
+S7261,C4339,,Recall Repair - Airbag Sensor,2026-07-04,58636,0.0,0.0,0.6,Warranty,Completed,E3033
+S7262,C4339,,Coolant Flush,2025-06-28,63302,862.33,343.23,3.7,Customer Pay,Completed,E3034
+S7263,C4360,,Transmission Service,2025-11-25,89537,156.13,55.13,3.5,Customer Pay,Completed,E3035
+S7264,C4360,,Oil Change,2026-03-22,53811,693.12,308.65,1.9,Customer Pay,Completed,E3034
+S7265,C4370,,Software/Firmware Update,2025-08-20,81474,286.46,99.77,3.7,Customer Pay,Completed,E3036
+S7266,C4396,,Serpentine Belt Replacement,2026-06-18,102801,775.06,260.78,1.8,Customer Pay,Completed,E3035
+S7267,C4396,,Recall Repair - Fuel Pump,2025-03-07,92523,0.0,0.0,0.9,Warranty,Completed,E3034
+S7268,C4396,,Tire Rotation,2026-02-07,61393,118.24,40.37,2.0,Customer Pay,Completed,E3035
+S7269,C4322,,AC System Service,2025-12-17,46395,747.14,290.24,2.8,Customer Pay,Completed,E3033
+S7270,C4355,,Tire Replacement (Set of 4),2025-10-12,39700,491.98,149.21,3.6,Customer Pay,Completed,E3034
+S7271,C4500,,Battery Replacement,2025-08-26,62818,309.49,109.66,1.3,Customer Pay,Completed,E3036
+S7272,C4500,,Recall Repair - Airbag Sensor,2025-02-11,88343,0.0,0.0,0.4,Warranty,Completed,E3035
+S7273,C4500,,Check Engine Light Diagnosis,2025-03-09,41227,82.44,29.35,2.8,Customer Pay,Completed,E3034
+S7274,C4500,,Wheel Alignment,2026-06-06,52647,530.08,217.42,2.8,Customer Pay,Completed,E3033
+S7275,C4417,,State Inspection,2025-04-18,86057,832.56,373.77,3.5,Customer Pay,Completed,E3035
+S7276,C4417,,Coolant Flush,2025-06-23,77878,93.52,32.82,2.6,Customer Pay,Completed,E3035
+S7277,C4417,,Recall Repair - Fuel Pump,2025-01-25,60584,0.0,0.0,0.3,Warranty,Completed,E3035
+S7278,C4393,,Tire Replacement (Set of 4),2025-12-19,85886,428.24,177.93,2.8,Customer Pay,Completed,E3033
+S7279,C4379,,Battery Replacement,2026-06-22,54885,117.77,52.02,0.7,Customer Pay,Completed,E3034
+S7280,C4436,,Wiper Blade Replacement,2025-12-07,58155,602.6,195.54,4.5,Customer Pay,Completed,E3034
+S7281,C4436,,Serpentine Belt Replacement,2026-07-11,60304,137.1,41.65,4.0,Customer Pay,Completed,E3032
+S7282,C4436,,Cabin Air Filter Replacement,2026-03-03,60053,208.89,88.19,0.9,Customer Pay,Completed,E3036
+S7283,C4436,,Battery Replacement,2025-05-23,75636,688.24,256.97,2.9,Customer Pay,Completed,E3033
+S7284,C4431,,Transmission Service,2026-06-29,84074,445.83,196.94,0.6,Customer Pay,Completed,E3035
+S7285,C4443,,Wheel Alignment,2026-06-24,44338,757.78,323.7,1.7,Customer Pay,Completed,E3035
+S7286,C4443,,Software/Firmware Update,2026-07-13,62246,664.77,203.96,3.9,Customer Pay,Completed,E3032
+S7287,C4443,,Recall Repair - Airbag Sensor,2026-06-17,27614,0.0,0.0,0.9,Warranty,Completed,E3036
+S7288,C4443,,Transmission Service,2025-11-15,93433,567.26,205.85,1.2,Customer Pay,Completed,E3033
+S7289,C4334,,Oil Change,2025-07-04,65777,462.86,182.27,4.1,Customer Pay,Completed,E3032
+S7290,C4334,,Oil Change,2025-12-24,44271,803.26,346.05,4.2,Internal,Completed,E3035
+S7291,C4449,,Battery Replacement,2025-07-11,32876,117.09,39.04,2.2,Customer Pay,Completed,E3035
+S7292,C4449,,Tire Replacement (Set of 4),2026-03-20,98306,413.15,174.11,0.5,Customer Pay,Completed,E3034
+S7293,C4449,,Tire Replacement (Set of 4),2026-07-04,50350,348.05,141.81,2.4,Customer Pay,Completed,E3033
+S7294,C4412,,Wiper Blade Replacement,2025-06-14,42476,603.5,245.98,1.6,Customer Pay,Completed,E3033
+S7295,C4412,,Wheel Alignment,2026-07-06,59775,315.89,126.44,2.6,Customer Pay,Completed,E3034
+S7296,C4361,,Recall Repair - Fuel Pump,2025-02-23,52407,0.0,0.0,0.9,Warranty,Completed,E3032
+S7297,C4361,,Wiper Blade Replacement,2026-06-14,71727,170.83,65.91,2.4,Customer Pay,Completed,E3036
+S7298,C4366,,Software/Firmware Update,2026-04-28,75768,504.91,172.63,3.6,Customer Pay,Completed,E3033
+S7299,C4366,,Spark Plug Replacement,2026-07-08,97148,701.64,220.65,3.9,Customer Pay,Completed,E3032
+S7300,C4336,,Tire Replacement (Set of 4),2025-02-14,63397,139.81,51.54,0.9,Customer Pay,Completed,E3034
+S7301,C4336,,Tire Replacement (Set of 4),2026-04-10,89349,886.34,381.17,2.5,Customer Pay,Completed,E3033
+S7302,C4336,,Wiper Blade Replacement,2026-07-04,58836,705.03,290.25,2.6,Customer Pay,Completed,E3036
+S7303,C4448,,Tire Replacement (Set of 4),2026-01-25,39052,230.46,87.49,2.0,Customer Pay,Completed,E3036
+S7304,C4448,,Recall Repair - Airbag Sensor,2026-07-12,82701,0.0,0.0,0.8,Warranty,Completed,E3034
+S7305,C4353,,Wheel Alignment,2026-03-05,67154,369.09,134.05,2.4,Customer Pay,Completed,E3034
+S7306,C4319,,Wheel Alignment,2026-06-30,78885,211.61,82.34,0.8,Customer Pay,Completed,E3033
+S7307,C4351,,Wiper Blade Replacement,2026-07-08,64562,370.37,134.39,2.9,Customer Pay,Completed,E3032
+S7308,C4351,,Software/Firmware Update,2026-07-13,47146,152.17,62.22,2.8,Customer Pay,Completed,E3035
+S7309,C4476,,Oil Change,2026-06-23,89857,583.97,221.11,3.6,Customer Pay,Completed,E3035
+S7310,C4388,,Serpentine Belt Replacement,2026-07-06,57507,163.69,67.63,3.4,Customer Pay,Completed,E3035
+S7311,C4480,,Serpentine Belt Replacement,2026-07-03,93909,400.53,162.8,4.0,Customer Pay,Completed,E3033
+S7312,C4480,,Transmission Service,2025-04-19,91002,239.91,89.77,3.3,Customer Pay,Completed,E3032
+S7313,C4480,,Software/Firmware Update,2025-11-01,65118,817.11,285.44,3.2,Customer Pay,Completed,E3032
+S7314,C4338,,Wiper Blade Replacement,2026-05-31,102817,539.62,197.0,1.6,Customer Pay,Completed,E3036
+S7315,C4371,,Recall Repair - Fuel Pump,2026-07-04,53973,0.0,0.0,0.3,Warranty,Completed,E3032
+S7316,C4371,,Wiper Blade Replacement,2025-05-19,73414,343.8,149.75,2.2,Customer Pay,Completed,E3034
+S7317,C4371,,Serpentine Belt Replacement,2026-04-14,77936,528.8,233.22,3.8,Customer Pay,Completed,E3033
+S7318,C4439,,Coolant Flush,2026-07-13,65478,115.95,48.73,3.4,Customer Pay,Completed,E3034
+S7319,C4439,,Software/Firmware Update,2025-09-30,60256,418.02,154.14,4.5,Internal,Completed,E3033
+S7320,C4460,,Recall Repair - Fuel Pump,2025-12-14,59429,0.0,0.0,1.0,Warranty,Completed,E3032
+S7321,C4460,,Coolant Flush,2025-09-09,77807,750.94,306.6,3.1,Customer Pay,Completed,E3033
+S7322,C4369,,Spark Plug Replacement,2026-07-10,53167,335.01,145.52,3.5,Customer Pay,Completed,E3032
+S7323,C4369,,Wheel Alignment,2026-07-01,56858,820.67,315.2,3.5,Customer Pay,Completed,E3036
+S7324,C4369,,Multi-Point Inspection,2025-08-10,59796,108.76,46.93,2.1,Customer Pay,Completed,E3034
+S7325,C4315,,Brake Pad Replacement,2026-02-17,41886,765.15,330.14,3.7,Customer Pay,Completed,E3033
+S7326,C4315,,Wiper Blade Replacement,2025-03-01,57240,506.74,172.83,2.5,Customer Pay,Completed,E3033
+S7327,C4380,,Oil Change,2025-06-16,91617,288.2,123.53,2.4,Customer Pay,Completed,E3036
+S7328,C4380,,AC System Service,2025-08-03,79806,191.86,69.06,2.8,Customer Pay,Completed,E3034
+S7329,C4433,,Transmission Service,2026-06-24,48668,813.04,282.96,1.9,Customer Pay,Completed,E3033
+S7330,C4433,,Brake Pad Replacement,2025-05-30,65023,883.47,332.29,2.4,Customer Pay,Completed,E3036
+S7331,C4433,,Tire Replacement (Set of 4),2026-06-24,95172,744.33,253.35,3.8,Customer Pay,Completed,E3035
+S7332,C4425,,Oil Change,2026-06-18,41971,517.15,159.61,1.9,Customer Pay,Completed,E3034
+S7333,C4425,,Software/Firmware Update,2026-07-06,98948,525.68,215.09,3.4,Customer Pay,Completed,E3033
+S7334,C4498,,Wheel Alignment,2026-06-27,100419,498.39,174.23,2.8,Customer Pay,Completed,E3033
+S7335,C4498,,Oil Change,2025-12-07,31891,874.66,361.38,2.8,Customer Pay,Completed,E3036
+S7336,C4498,,Cabin Air Filter Replacement,2025-07-03,45221,246.45,101.99,1.2,Customer Pay,Completed,E3035
+S7337,C4498,,Multi-Point Inspection,2025-12-24,86415,111.91,45.34,3.2,Customer Pay,Completed,E3035
+S7338,C4397,,Wheel Alignment,2025-04-27,53227,338.98,146.39,2.5,Customer Pay,Completed,E3035
+S7339,C4469,,Coolant Flush,2025-04-12,46737,422.99,143.25,4.0,Customer Pay,Completed,E3032
+S7340,C4478,,Check Engine Light Diagnosis,2026-06-13,71903,40.93,14.16,3.7,Customer Pay,Completed,E3033
+S7341,C4478,,Spark Plug Replacement,2026-07-02,53033,188.14,66.19,4.0,Customer Pay,Completed,E3036
+S7342,C4392,,Check Engine Light Diagnosis,2025-07-19,46477,159.49,48.57,0.7,Customer Pay,Completed,E3034
+S7343,C4429,,Battery Replacement,2026-07-03,79621,813.19,317.57,4.5,Customer Pay,Completed,E3036
+S7344,C4318,,Tire Replacement (Set of 4),2025-05-18,90996,86.94,27.93,4.3,Customer Pay,Completed,E3035
+S7345,C4318,,Spark Plug Replacement,2026-06-14,50481,735.48,298.71,3.9,Customer Pay,Completed,E3032
+S7346,C4318,,Check Engine Light Diagnosis,2025-12-13,56094,519.8,196.61,3.5,Customer Pay,Completed,E3034
+S7347,C4357,,AC System Service,2025-11-14,81032,381.68,142.58,2.5,Customer Pay,Completed,E3035
+S7348,C4446,,Tire Rotation,2025-11-09,53499,488.96,216.13,1.7,Internal,Completed,E3032
+S7349,C4446,,Wheel Alignment,2025-03-08,94017,364.85,138.89,3.8,Customer Pay,Completed,E3036
+S7350,C4389,,Cabin Air Filter Replacement,2025-03-05,36734,115.82,50.25,3.3,Customer Pay,Completed,E3035
+S7351,C4389,,Oil Change,2026-07-03,58723,69.34,30.17,1.0,Customer Pay,Completed,E3033
+S7352,C4389,,Battery Replacement,2025-12-23,31475,888.75,316.19,3.9,Customer Pay,Completed,E3033
+S7353,C4387,,AC System Service,2025-10-10,69640,621.93,270.73,1.7,Customer Pay,Completed,E3032
+S7354,C4387,,Recall Repair - Fuel Pump,2026-03-18,61334,0.0,0.0,0.6,Warranty,Completed,E3034
+S7355,C4317,,Tire Rotation,2026-02-27,39269,635.51,253.85,1.4,Customer Pay,Completed,E3033
+S7356,C4317,,Multi-Point Inspection,2026-06-03,82025,189.51,83.67,1.5,Customer Pay,Completed,E3036
+S7357,C4441,,Brake Pad Replacement,2025-10-13,50016,692.05,299.55,1.3,Customer Pay,Completed,E3035
+S7358,C4313,,Spark Plug Replacement,2025-02-24,33666,446.56,136.52,2.1,Customer Pay,Completed,E3033
+S7359,C4365,,Serpentine Belt Replacement,2025-06-14,52163,549.38,241.75,3.6,Internal,Completed,E3034
+S7360,C4365,,Recall Repair - Airbag Sensor,2026-06-13,59124,0.0,0.0,0.6,Warranty,Completed,E3034
+S7361,C4473,,Recall Repair - Fuel Pump,2025-03-17,75314,0.0,0.0,0.6,Warranty,Completed,E3032
+S7362,C4473,,Cabin Air Filter Replacement,2026-07-03,70033,322.21,97.89,2.3,Customer Pay,Completed,E3034
+S7363,C4327,,Coolant Flush,2026-07-13,53311,79.33,28.68,2.6,Customer Pay,Completed,E3034
+S7364,C4327,,Brake Pad Replacement,2026-07-11,89870,625.35,187.93,0.7,Internal,Completed,E3032
+S7365,C4475,,State Inspection,2025-02-24,80355,504.65,213.77,2.4,Internal,Completed,E3036
+S7366,C4475,,Spark Plug Replacement,2025-09-19,55455,562.96,252.32,2.3,Customer Pay,Completed,E3036
+S7367,C4475,,Recall Repair - Airbag Sensor,2025-09-05,56080,0.0,0.0,0.6,Warranty,Completed,E3034
+S7368,C4419,,AC System Service,2025-02-09,63431,730.73,269.63,3.3,Customer Pay,Completed,E3033
+S7369,C4419,,Cabin Air Filter Replacement,2026-01-15,91409,849.43,308.05,3.4,Customer Pay,Completed,E3035
+S7370,C4419,,Recall Repair - Fuel Pump,2025-12-18,96706,0.0,0.0,0.4,Warranty,Completed,E3033
+S7371,C4316,,Transmission Service,2026-06-19,67721,813.3,337.19,2.1,Customer Pay,Completed,E3035
+S7372,C4461,,Serpentine Belt Replacement,2026-07-03,33703,291.27,121.22,3.0,Customer Pay,Completed,E3033
+S7373,C4454,,Check Engine Light Diagnosis,2026-02-16,52045,405.64,123.14,1.3,Customer Pay,Completed,E3036
+S7374,C4398,,Recall Repair - Airbag Sensor,2025-08-09,89968,0.0,0.0,0.7,Warranty,Completed,E3033
+S7375,C4398,,Coolant Flush,2026-06-01,28307,561.0,212.95,3.0,Customer Pay,Completed,E3032
+S7376,C4398,,Tire Rotation,2026-06-13,47218,318.4,140.01,1.9,Customer Pay,Completed,E3034
+S7377,C4405,,State Inspection,2025-12-08,63571,816.92,286.57,1.2,Customer Pay,Completed,E3036
+S7378,C4405,,Recall Repair - Airbag Sensor,2026-07-11,53466,0.0,0.0,0.4,Warranty,Completed,E3036
+S7379,C4405,,Software/Firmware Update,2026-05-14,54299,630.26,281.36,3.2,Customer Pay,Completed,E3032
+S7380,C4452,,Spark Plug Replacement,2026-06-25,82446,360.04,109.09,3.3,Customer Pay,Completed,E3036
+S7381,C4452,,Oil Change,2026-04-22,43765,874.15,336.56,4.0,Customer Pay,Completed,E3032
+S7382,C4452,,Wheel Alignment,2026-07-02,56846,619.3,196.1,4.2,Customer Pay,Completed,E3034
+S7383,C4483,,Transmission Service,2025-04-14,80792,554.44,167.66,4.1,Customer Pay,Completed,E3034
+S7384,C4483,,Check Engine Light Diagnosis,2025-08-03,44077,273.8,119.76,2.5,Customer Pay,Completed,E3033
+S7385,C4483,,Serpentine Belt Replacement,2025-10-15,83171,896.64,305.69,4.5,Customer Pay,Completed,E3034
+S7386,C4492,,Oil Change,2026-07-12,83035,669.13,238.95,4.1,Internal,Completed,E3032
+S7387,C4492,,Recall Repair - Fuel Pump,2025-10-22,101595,0.0,0.0,0.6,Warranty,Completed,E3035
+S7388,C4450,,Software/Firmware Update,2026-06-24,42054,510.56,173.59,4.2,Customer Pay,Completed,E3036
+S7389,C4450,,Recall Repair - Airbag Sensor,2025-02-11,42492,0.0,0.0,1.0,Warranty,Completed,E3032
+S7390,C4450,,Recall Repair - Airbag Sensor,2026-06-15,54419,0.0,0.0,0.8,Warranty,Completed,E3032
+S7391,C4337,,Coolant Flush,2026-07-08,91735,787.03,254.55,3.0,Customer Pay,Completed,E3032
+S7392,C4482,,Cabin Air Filter Replacement,2026-06-17,32629,828.65,271.66,3.4,Customer Pay,Completed,E3035
+S7393,C4482,,Cabin Air Filter Replacement,2025-09-14,89361,73.49,25.58,2.6,Customer Pay,Completed,E3035
+S7394,C4408,,State Inspection,2026-06-22,50027,782.55,256.47,0.5,Customer Pay,Completed,E3034
+S7395,C4408,,State Inspection,2026-06-30,55547,876.26,355.26,0.8,Customer Pay,Completed,E3033
+S7396,C4403,,AC System Service,2025-11-18,69443,470.78,171.35,3.8,Customer Pay,Completed,E3032
+S7397,C4495,,Wheel Alignment,2025-10-03,42510,686.23,212.33,1.9,Customer Pay,Completed,E3032
+S7398,C4495,,Oil Change,2026-04-20,70037,880.13,306.07,3.6,Customer Pay,Completed,E3036
+S7399,C4453,,Transmission Service,2026-04-25,79475,675.7,253.36,3.6,Customer Pay,Completed,E3033
+S7400,C4497,,Transmission Service,2026-07-05,88545,386.46,134.74,3.7,Customer Pay,Completed,E3035
+S7401,C4494,,Recall Repair - Fuel Pump,2026-07-07,28276,0.0,0.0,0.7,Warranty,Completed,E3034
+S7402,C4494,,Recall Repair - Fuel Pump,2025-06-20,83096,0.0,0.0,0.6,Warranty,Completed,E3033
+S7403,C4462,,Oil Change,2026-06-16,77097,370.41,129.86,0.6,Customer Pay,Completed,E3034
+S7404,C4462,,Wiper Blade Replacement,2025-10-30,57417,195.24,73.19,2.2,Customer Pay,Completed,E3032
+S7405,C4445,,Coolant Flush,2026-07-13,92370,644.23,206.94,2.6,Customer Pay,Completed,E3035
+S7406,C4445,,Battery Replacement,2025-11-30,54819,324.56,127.48,2.9,Customer Pay,Completed,E3034
+S7407,C4363,,Transmission Service,2025-05-30,59621,521.83,157.94,2.0,Customer Pay,Completed,E3034
+S7408,C4411,,Spark Plug Replacement,2025-12-05,50142,714.51,276.22,1.8,Customer Pay,Completed,E3034
+S7409,C4411,,State Inspection,2025-09-10,33313,560.16,188.98,2.8,Customer Pay,Completed,E3036
+S7410,C4323,,Coolant Flush,2025-06-19,57559,100.73,39.32,4.1,Customer Pay,Completed,E3035
+S7411,C4323,,Software/Firmware Update,2025-08-04,49872,649.35,270.56,2.4,Customer Pay,Completed,E3034
+S7412,C4323,,Tire Replacement (Set of 4),2026-05-28,52888,157.11,54.68,4.4,Customer Pay,Completed,E3036
+S7413,C4468,,Cabin Air Filter Replacement,2026-06-14,31700,485.44,163.71,2.0,Customer Pay,Completed,E3034
+S7414,C4468,,Oil Change,2026-06-22,54484,55.06,20.0,2.0,Customer Pay,Completed,E3035
+S7415,C4422,,Brake Pad Replacement,2025-12-06,63161,845.1,278.6,2.9,Customer Pay,Completed,E3036
+S7416,C4422,,Oil Change,2026-07-13,74110,137.8,52.76,2.0,Customer Pay,Completed,E3036
+S7417,C4341,,Recall Repair - Fuel Pump,2025-12-16,34296,0.0,0.0,0.5,Warranty,Completed,E3034
+S7418,C4345,,Tire Rotation,2026-06-26,43804,658.81,246.73,4.2,Customer Pay,Completed,E3032
+S7419,C4345,,Multi-Point Inspection,2025-09-16,45755,686.54,240.79,2.2,Customer Pay,Completed,E3035
+S7420,C4349,,Recall Repair - Airbag Sensor,2026-02-28,39018,0.0,0.0,0.8,Warranty,Completed,E3035
+S7421,C4349,,Software/Firmware Update,2026-07-07,65744,227.82,91.7,0.6,Customer Pay,Completed,E3032
+S7422,C4474,,Recall Repair - Airbag Sensor,2025-06-24,75527,0.0,0.0,0.8,Warranty,Completed,E3035
+S7423,C4418,,Oil Change,2026-06-07,32062,612.58,234.31,0.7,Customer Pay,Completed,E3033
+S7424,C4340,,Multi-Point Inspection,2026-07-05,53378,535.97,233.03,1.2,Customer Pay,Completed,E3036
+S7425,C4340,,Wheel Alignment,2026-07-03,65050,261.1,93.54,3.8,Customer Pay,Completed,E3033

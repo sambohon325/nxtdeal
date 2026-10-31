@@ -1,0 +1,4 @@
+{
+  "extends": "./tsconfig.json",
+  "include": ["components/InventoryAdvertisingBoard.tsx", "lib/inventoryAdvertising.ts", "lib/api.ts", "lib/auth.ts"]
+}

@@ -1,0 +1,13 @@
+{
+  "extends": "./tsconfig.json",
+  "include": [
+    "next-env.d.ts",
+    "components/VinLookupWidget.tsx",
+    "lib/vinDecoder.ts",
+    "components/BrandAngles.tsx",
+    "app/workspace/page.tsx",
+    "app/admin/page.tsx",
+    "app/network/page.tsx",
+    "app/readiness/page.tsx"
+  ]
+}

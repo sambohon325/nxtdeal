@@ -1,0 +1,8 @@
+{
+  "extends": "./tsconfig.json",
+  "include": [
+    "components/OperationsWorkflowV2Board.tsx",
+    "lib/workflowEngineV2.ts",
+    "components/MenuDashPanel.tsx"
+  ]
+}

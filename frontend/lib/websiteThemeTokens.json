@@ -1,0 +1,202 @@
+{
+  "afterhours": {
+    "bg": "#0e141c",
+    "surface": "#182330",
+    "ink": "#edf4fa",
+    "muted": "#a4b3c4",
+    "accent": "#b6e1f2",
+    "buttonInk": "#142734",
+    "line": "#344353",
+    "radius": "10px"
+  },
+  "apex": {
+    "bg": "#f4f3ed",
+    "surface": "#fffef8",
+    "ink": "#20221f",
+    "muted": "#686b63",
+    "accent": "#333a29",
+    "buttonInk": "#fffff6",
+    "line": "#cccec2",
+    "radius": "4px"
+  },
+  "conexion": {
+    "bg": "#fbf9f3",
+    "surface": "#fff",
+    "ink": "#194d49",
+    "muted": "#627471",
+    "accent": "#145e56",
+    "buttonInk": "#fff",
+    "line": "#d4ded5",
+    "radius": "20px"
+  },
+  "daybreak": {
+    "bg": "#fffaf2",
+    "surface": "#fbfbf9",
+    "ink": "#232c2b",
+    "muted": "#737371",
+    "accent": "#a63c1c",
+    "buttonInk": "#f7f7f5",
+    "line": "#ddcbb9",
+    "radius": "22px"
+  },
+  "evergreen": {
+    "bg": "#eaf0eb",
+    "surface": "#f9fcf8",
+    "ink": "#193c32",
+    "muted": "#62786e",
+    "accent": "#224d3e",
+    "buttonInk": "#f3f9ef",
+    "line": "#bfcfc4",
+    "radius": "18px"
+  },
+  "fieldwork": {
+    "bg": "#f2f0e7",
+    "surface": "#fffdf7",
+    "ink": "#2b3026",
+    "muted": "#65655f",
+    "accent": "#49543d",
+    "buttonInk": "#fff",
+    "line": "#c9cbbd",
+    "radius": "8px"
+  },
+  "foundry": {
+    "bg": "#161616",
+    "surface": "#1d1d1d",
+    "ink": "#efefef",
+    "muted": "#adadad",
+    "accent": "#dfaa78",
+    "buttonInk": "#181818",
+    "line": "#333333",
+    "radius": "5px"
+  },
+  "harbor": {
+    "bg": "#f2f8fc",
+    "surface": "#fff",
+    "ink": "#17394d",
+    "muted": "#647f8e",
+    "accent": "#1769a0",
+    "buttonInk": "#fff",
+    "line": "#c7dce8",
+    "radius": "20px"
+  },
+  "high-mesa": {
+    "bg": "#eee7da",
+    "surface": "#f9f4e9",
+    "ink": "#322d26",
+    "muted": "#736d60",
+    "accent": "#77523a",
+    "buttonInk": "#fff8e9",
+    "line": "#c9c0ae",
+    "radius": "8px"
+  },
+  "lone-star": {
+    "bg": "#0c1726",
+    "surface": "#142337",
+    "ink": "#f4f6fa",
+    "muted": "#aebdce",
+    "accent": "#b8d3ff",
+    "buttonInk": "#10253e",
+    "line": "#283b50",
+    "radius": "24px"
+  },
+  "metroline": {
+    "bg": "#f1f2f4",
+    "surface": "#f7f9ff",
+    "ink": "#20242c",
+    "muted": "#6f7177",
+    "accent": "#2457ec",
+    "buttonInk": "#f3f5fb",
+    "line": "#cbd0da",
+    "radius": "8px"
+  },
+  "pacific": {
+    "bg": "#f4f2eb",
+    "surface": "#fffdf7",
+    "ink": "#20211f",
+    "muted": "#65655f",
+    "accent": "#e54c1b",
+    "buttonInk": "#fff",
+    "line": "#d1cec4",
+    "radius": "4px"
+  },
+  "rally": {
+    "bg": "#f6f5f0",
+    "surface": "#fffefa",
+    "ink": "#242422",
+    "muted": "#757570",
+    "accent": "#b7352d",
+    "buttonInk": "#fff",
+    "line": "#d6d4cb",
+    "radius": "12px"
+  },
+  "redline": {
+    "bg": "#f1f0ec",
+    "surface": "#fff",
+    "ink": "#252525",
+    "muted": "#73716c",
+    "accent": "#ba261f",
+    "buttonInk": "#fff",
+    "line": "#d5d2ca",
+    "radius": "6px"
+  },
+  "sterling": {
+    "bg": "#f3f3ef",
+    "surface": "#fbfbf9",
+    "ink": "#242623",
+    "muted": "#737371",
+    "accent": "#303431",
+    "buttonInk": "#f7f7f5",
+    "line": "#c9cbc4",
+    "radius": "6px"
+  },
+  "switch": {
+    "bg": "#f5f5f7",
+    "surface": "#fff",
+    "ink": "#202127",
+    "muted": "#6d6c78",
+    "accent": "#5936df",
+    "buttonInk": "#fff",
+    "line": "#dcdae7",
+    "radius": "24px"
+  },
+  "tempo": {
+    "bg": "#101112",
+    "surface": "#1b1d1f",
+    "ink": "#f1f2f3",
+    "muted": "#b0b4b8",
+    "accent": "#e0e3e5",
+    "buttonInk": "#17191b",
+    "line": "#3b3e41",
+    "radius": "14px"
+  },
+  "union": {
+    "bg": "#f0ede5",
+    "surface": "#fffdf6",
+    "ink": "#17283a",
+    "muted": "#56616b",
+    "accent": "#ba343b",
+    "buttonInk": "#fff8eb",
+    "line": "#cbc9c1",
+    "radius": "6px"
+  },
+  "vector": {
+    "bg": "#f7f9f8",
+    "surface": "#fff",
+    "ink": "#202b28",
+    "muted": "#687a73",
+    "accent": "#254e42",
+    "buttonInk": "#fff",
+    "line": "#cad7d1",
+    "radius": "12px"
+  },
+  "waypoint": {
+    "bg": "#f2eade",
+    "surface": "#fff9ee",
+    "ink": "#181919",
+    "muted": "#807365",
+    "accent": "#181919",
+    "buttonInk": "#fff5e5",
+    "line": "#d4c6b4",
+    "radius": "8px"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "kind": "Customer",
+  "object_type": "customers",
+  "fields": {
+    "first_name": {
+      "source": "name",
+      "transform": "text"
+    },
+    "email": {
+      "source": "email",
+      "transform": "lower"
+    }
+  }
+}

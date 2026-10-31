@@ -1,0 +1,4 @@
+{
+  "extends": "./tsconfig.json",
+  "include": ["components/SuccessCenterBoard.tsx", "lib/successCenter.ts", "lib/api.ts", "lib/auth.ts"]
+}

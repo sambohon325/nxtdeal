@@ -1,0 +1,3 @@
+external_id	modified_at	ledger_account_id	account_code	journal_id	entry_side	amount	currency	occurred_at
+debit-synthetic	2026-10-04T12:00:00Z	cash-synthetic	1000	synthetic-journal	debit	100.00	USD	2026-10-01T12:00:00Z
+credit-synthetic	2026-10-04T12:00:00Z	receivable-synthetic	1200	synthetic-journal	credit	100.00	USD	2026-10-01T12:00:00Z

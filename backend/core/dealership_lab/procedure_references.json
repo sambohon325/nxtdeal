@@ -1,0 +1,34 @@
+{
+  "sources": {
+    "used": [
+      "FTC Used Car Rule",
+      "https://www.ftc.gov/business-guidance/resources/dealers-guide-used-car-rule"
+    ],
+    "security": [
+      "FTC auto dealer Safeguards guidance",
+      "https://www.ftc.gov/business-guidance/resources/automobile-dealers-ftcs-safeguards-rule-frequently-asked-questions"
+    ],
+    "tx": [
+      "Texas OCCC motor vehicle sales finance",
+      "https://occc.texas.gov/industry/motor-vehicle-sales-finance-mvsf/"
+    ],
+    "on": [
+      "OMVIC advertising guidance",
+      "https://www.omvic.ca/selling/dealer-guidelines-and-resources/advertising-guideline/"
+    ],
+    "repair": [
+      "Ontario auto repair business guide",
+      "https://www.ontario.ca/page/guide-auto-repair-businesses"
+    ],
+    "privacy": [
+      "OPC consent guidance",
+      "https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-personal-information-protection-and-electronic-documents-act-pipeda/p_principle/principles/p_consent/"
+    ],
+    "safety": [
+      "OSHA auto repair resources",
+      "https://www.osha.gov/publications/bytopic/auto-repair-and-refinishing"
+    ]
+  },
+  "checked": "2026-09-16",
+  "source_sha256": "efd35aa2ad7aac517fa0ce27b65e3900e8f238e088716605c704549a13d7e76a"
+}

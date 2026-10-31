@@ -1,0 +1,7 @@
+{
+  "extends": "./tsconfig.json",
+  "include": [
+    "components/ProspectsBoard.tsx",
+    "components/InlineEntityFields.tsx"
+  ]
+}

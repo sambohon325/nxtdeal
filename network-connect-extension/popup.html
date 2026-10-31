@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>DealerOS Network Connect</title>
+<link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <div class="app">
+
+    <header class="topbar">
+      <img src="icons/icon32.png" alt="" class="brand-mark" />
+      <div class="brand-text">
+        <div class="brand-title">Network Connect</div>
+        <div class="brand-sub" id="brandSub">Free dealer intelligence</div>
+      </div>
+      <button id="signOutBtn" class="link-btn hidden" title="Sign out (clears locally stored credentials only)">Sign out</button>
+    </header>
+
+    <div id="banner" class="banner hidden"></div>
+
+    <!-- ===================== SIGNUP SCREEN ===================== -->
+    <section id="signupScreen" class="screen">
+      <p class="intro">
+        Benchmark your dealership against the DealerOS Network for free.
+        No CRM connection required to get started -- just tell us who you
+        are and start submitting a few KPIs.
+      </p>
+
+      <form id="signupForm">
+        <label>Company name
+          <input type="text" id="suCompanyName" required placeholder="Example Motors" />
+        </label>
+        <label>Contact email
+          <input type="email" id="suContactEmail" required placeholder="you@example.com" />
+        </label>
+        <label>Contact name <span class="optional">(optional)</span>
+          <input type="text" id="suContactName" placeholder="Jane Smith" />
+        </label>
+        <label>Contact phone <span class="optional">(optional)</span>
+          <input type="tel" id="suContactPhone" placeholder="(555) 555-1234" />
+        </label>
+
+        <button type="submit" class="primary-btn" id="signupSubmitBtn">Create free account</button>
+      </form>
+
+      <details class="settings-inline">
+        <summary>API endpoint (advanced)</summary>
+        <label>Hub API base URL
+          <input type="text" id="suApiBase" placeholder="http://127.0.0.1:9000" />
+        </label>
+        <button id="suSaveApiBase" class="secondary-btn">Save endpoint</button>
+      </details>
+    </section>
+
+    <!-- ===================== SIGNUP RESULT (SAVE YOUR SECRETS) ===================== -->
+    <section id="signupResultScreen" class="screen hidden">
+      <div class="callout warn">
+        <strong>Save these now.</strong> They are shown exactly once and can
+        never be retrieved again. This extension has already stored them
+        locally for you, but write them down somewhere safe too.
+      </div>
+      <label>Account ID
+        <input type="text" id="srAccountId" readonly />
+      </label>
+      <label>Account token
+        <input type="text" id="srAccountToken" readonly />
+      </label>
+      <label>Pseudonym (anonymous benchmark identity)
+        <input type="text" id="srPseudonym" readonly />
+      </label>
+      <button id="signupContinueBtn" class="primary-btn">Continue to Dashboard</button>
+    </section>
+
+    <!-- ===================== MAIN APP (TABBED) ===================== -->
+    <section id="mainScreen" class="screen hidden">
+
+      <nav class="tabs">
+        <button class="tab-btn active" data-tab="dashboard">Dashboard</button>
+        <button class="tab-btn" data-tab="connectors">Connectors</button>
+        <button class="tab-btn" data-tab="submit">Submit KPIs</button>
+        <button class="tab-btn" data-tab="settings">Settings</button>
+      </nav>
+
+      <!-- DASHBOARD TAB -->
+      <div class="tab-panel active" id="tab-dashboard">
+        <div class="panel-toolbar">
+          <button id="refreshBenchmarkBtn" class="secondary-btn">Refresh</button>
+        </div>
+        <div id="dashboardContent"><p class="muted">Loading...</p></div>
+      </div>
+
+      <!-- CONNECTORS TAB -->
+      <div class="tab-panel" id="tab-connectors">
+        <p class="muted small">
+          Tell us which systems you use today. This is self-reported (no
+          real login/OAuth to these providers happens here) -- it's used to
+          show your Migration Readiness to a NXTDeal specialist, and to
+          understand which systems Network Connect should build a real data
+          connector for next.
+        </p>
+        <div id="connectorsContent"><p class="muted">Loading...</p></div>
+      </div>
+
+      <!-- SUBMIT KPIS TAB -->
+      <div class="tab-panel" id="tab-submit">
+        <p class="muted small">
+          Enter this month's real numbers. Values are bucketed (rounded) on
+          submission before they ever leave your browser, and are stored
+          under your anonymous pseudonym only -- never tied back to your
+          company name.
+        </p>
+        <div id="kpiFormContent"><p class="muted">Loading...</p></div>
+        <button id="submitKpisBtn" class="primary-btn">Submit snapshot</button>
+        <div id="submitKpisResult"></div>
+      </div>
+
+      <!-- SETTINGS TAB -->
+      <div class="tab-panel" id="tab-settings">
+        <label>Company name
+          <input type="text" id="setCompanyName" readonly />
+        </label>
+        <label>Account ID
+          <input type="text" id="setAccountId" readonly />
+        </label>
+        <label>Hub API base URL
+          <input type="text" id="setApiBase" />
+        </label>
+        <button id="saveSettingsBtn" class="secondary-btn">Save</button>
+
+        <div class="divider"></div>
+
+        <details>
+          <summary>Show account token &amp; pseudonym</summary>
+          <label>Account token
+            <input type="text" id="setAccountToken" readonly />
+          </label>
+          <label>Pseudonym
+            <input type="text" id="setPseudonym" readonly />
+          </label>
+        </details>
+      </div>
+
+    </section>
+
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+{
+  "kind": "JournalEntry",
+  "object_type": "journal_lines",
+  "fields": {
+    "account_code": {
+      "source": "account_code",
+      "transform": "text"
+    },
+    "journal_id": {
+      "source": "journal_id",
+      "transform": "text"
+    },
+    "entry_side": {
+      "source": "entry_side",
+      "transform": "text"
+    },
+    "amount": {
+      "source": "amount",
+      "transform": "text"
+    },
+    "currency": {
+      "source": "currency",
+      "transform": "text"
+    },
+    "occurred_at": {
+      "source": "occurred_at",
+      "transform": "text"
+    }
+  }
+}

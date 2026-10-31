@@ -1,0 +1,6 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": { "incremental": false },
+  "include": ["next-env.d.ts", "app/agents/**/*.tsx", "components/CommandCenter.tsx"],
+  "exclude": ["node_modules", ".next/dev/types/validator.ts"]
+}

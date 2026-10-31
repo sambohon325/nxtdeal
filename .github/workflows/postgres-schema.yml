@@ -1,0 +1,42 @@
+name: PostgreSQL schema
+on:
+  pull_request:
+    paths:
+      - 'backend/db/**'
+      - 'backend/requirements-postgres.txt'
+      - '.github/workflows/postgres-schema.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  migrations:
+    name: PostgreSQL migration and isolation tests
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    services:
+      postgres:
+        image: postgres:17
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: disposable-ci-password
+          POSTGRES_DB: postgres
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U postgres"
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 10
+    defaults:
+      run:
+        working-directory: backend
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install -r requirements-postgres.txt pytest
+      - name: Run isolated real-database tests
+        env:
+          NXTDEAL_TEST_ADMIN_DSN: postgresql://postgres:disposable-ci-password@localhost:5432/postgres
+        run: python -m pytest db/tests -v

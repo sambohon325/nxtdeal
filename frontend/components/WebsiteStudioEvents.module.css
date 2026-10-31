@@ -1,0 +1,16 @@
+.banner{display:flex;flex-direction:column;gap:4px;color:white;background-size:cover;background-position:center;padding:14px max(6%,24px);text-align:left;text-decoration:none}
+.banner strong{font-size:20px;line-height:1.2}.banner span,.banner small{font-size:12px;line-height:1.5}
+.events{max-width:1280px;margin:0 auto;padding:32px 24px}
+.event{color:white;border-radius:12px;margin:24px 0;overflow:hidden;scroll-margin-top:90px}
+.story{display:grid;grid-template-columns:1fr 1fr;align-items:center}
+.story>div{padding:36px}.story>div>span{font-size:10px;letter-spacing:.15em}
+.story h2{font-size:clamp(26px,3vw,44px);line-height:1.12;font-weight:700;margin:16px 0}
+.story p{font-size:15px;line-height:1.7}.story small{font-size:12px}
+.story>img{width:100%;height:320px;object-fit:cover}
+.inventory{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;padding:24px}
+.vehicle{background:#ffffff12;border:1px solid #ffffff26;border-radius:8px;overflow:hidden;text-decoration:none;color:inherit;display:flex;flex-direction:column}
+.vehicle>img,.placeholder{width:100%;height:190px;object-fit:cover}.placeholder{display:grid;place-items:center;background:#0002;font-size:12px}
+.vehicle>div:not(.placeholder){padding:18px;display:flex;flex:1;flex-direction:column;justify-content:space-between;gap:18px}
+.vehicle strong{font-size:15px}.vehicle span{font-size:12px}
+.terms{padding:0 24px 24px;font-size:11px;line-height:1.7;opacity:.8}
+@media(max-width:700px){.story,.inventory{grid-template-columns:1fr}.story>img{height:230px}.story>div{padding:24px}.events{padding:16px}.banner strong{font-size:17px}}

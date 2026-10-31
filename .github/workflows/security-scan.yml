@@ -1,0 +1,83 @@
+name: Security Scan
+
+# Closes the "Vulnerability Management" gap in docs/SECURITY_ARCHITECTURE.md (Tier 2)
+# -- previously NOT BUILT ("No CI pipeline exists in this repo to run
+# pip-audit/npm audit/trivy/Dependabot against"). This is that pipeline.
+#
+# Scope: dependency vulnerability scanning only (pip-audit for Python, npm audit for
+# JS/TS). Container/image scanning (trivy) is not applicable yet -- there's no
+# Dockerfile/container build in this repo to scan (deploys are Coolify/Nixpacks
+# buildpacks against source, not a hand-maintained Dockerfile). If that changes, add a
+# trivy step here rather than a separate workflow.
+#
+# Runs on every push/PR to main, plus a weekly schedule so a newly-disclosed CVE against
+# an already-merged dependency still gets caught even with no new commits.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  schedule:
+    # Every Monday 08:00 UTC.
+    - cron: "0 8 * * 1"
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+jobs:
+  python-dependencies:
+    name: pip-audit (${{ matrix.target }})
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        target: [backend, hub]
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install pip-audit
+        run: pip install --quiet pip-audit
+
+      - name: Run pip-audit against ${{ matrix.target }}/requirements.txt
+        # --strict: also fail on a resolution error (e.g. a dependency that no
+        # longer exists on PyPI), not just a real reported vulnerability -- both
+        # are worth a human noticing.
+        run: pip-audit -r ${{ matrix.target }}/requirements.txt --strict
+
+  javascript-dependencies:
+    name: npm audit (${{ matrix.target }})
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        # Only frontend has a tracked npm manifest in this repository.
+        # The historical dealeros-ui directory is absent, not an excluded audit.
+        target: [frontend]
+    defaults:
+      run:
+        working-directory: ${{ matrix.target }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: ${{ matrix.target }}/package-lock.json
+
+      - name: npm ci
+        run: npm ci
+
+      - name: npm audit (fail on high/critical only)
+        # Moderate-and-below findings are surfaced for visibility but don't fail
+        # the build -- some (like the current next/postcss finding, see
+        # docs/SECURITY_ARCHITECTURE.md) have no fix available yet upstream and
+        # shouldn't block every PR on a framework release we don't control.
+        # A high/critical finding does fail the build.
+        run: npm audit --audit-level=high

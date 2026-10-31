@@ -1,0 +1,326 @@
+{
+  "version": 1,
+  "steps": [
+    {
+      "source": "synthetic-dms",
+      "mapping": {
+        "kind": "Customer",
+        "object_type": "customers",
+        "fields": {
+          "first_name": {
+            "source": "first_name",
+            "transform": "text"
+          }
+        }
+      },
+      "export": "customers.csv",
+      "format": "csv",
+      "expectations": {
+        "row_count": 1
+      }
+    },
+    {
+      "source": "synthetic-dms",
+      "mapping": {
+        "kind": "FinanceContract",
+        "object_type": "contracts",
+        "fields": {
+          "customer_id": {
+            "source": "customer_id",
+            "transform": "external_id",
+            "object_type": "customers"
+          },
+          "currency": {
+            "source": "currency",
+            "transform": "text"
+          },
+          "principal": {
+            "source": "principal",
+            "transform": "text"
+          }
+        }
+      },
+      "export": "contracts.tsv",
+      "format": "tsv",
+      "expectations": {
+        "row_count": 1
+      }
+    },
+    {
+      "source": "synthetic-dms",
+      "mapping": {
+        "kind": "LoanAccount",
+        "object_type": "accounts",
+        "fields": {
+          "customer_id": {
+            "source": "customer_id",
+            "transform": "external_id",
+            "object_type": "customers"
+          },
+          "contract_id": {
+            "source": "contract_id",
+            "transform": "external_id",
+            "object_type": "contracts"
+          },
+          "currency": {
+            "source": "currency",
+            "transform": "text"
+          },
+          "balance": {
+            "source": "balance",
+            "transform": "text"
+          }
+        }
+      },
+      "export": "accounts.json",
+      "format": "json",
+      "expectations": {
+        "row_count": 1
+      }
+    },
+    {
+      "source": "synthetic-dms",
+      "mapping": {
+        "kind": "Payment",
+        "object_type": "payments",
+        "fields": {
+          "account_id": {
+            "source": "account_id",
+            "transform": "external_id",
+            "object_type": "accounts"
+          },
+          "amount": {
+            "source": "amount",
+            "transform": "text"
+          },
+          "currency": {
+            "source": "currency",
+            "transform": "text"
+          },
+          "paid_at": {
+            "source": "paid_at",
+            "transform": "text"
+          },
+          "status": {
+            "source": "status",
+            "transform": "text"
+          },
+          "principal_amount": {
+            "source": "principal_amount",
+            "transform": "text"
+          },
+          "interest_amount": {
+            "source": "interest_amount",
+            "transform": "text"
+          },
+          "fee_amount": {
+            "source": "fee_amount",
+            "transform": "text"
+          }
+        }
+      },
+      "export": "payments.csv",
+      "format": "csv",
+      "expectations": {
+        "row_count": 1,
+        "totals": [
+          {
+            "field": "amount",
+            "currency": "USD",
+            "amount": "100.00"
+          }
+        ]
+      }
+    },
+    {
+      "source": "synthetic-dms",
+      "mapping": {
+        "kind": "Payment",
+        "object_type": "reversals",
+        "fields": {
+          "account_id": {
+            "source": "account_id",
+            "transform": "external_id",
+            "object_type": "accounts"
+          },
+          "amount": {
+            "source": "amount",
+            "transform": "text"
+          },
+          "currency": {
+            "source": "currency",
+            "transform": "text"
+          },
+          "paid_at": {
+            "source": "paid_at",
+            "transform": "text"
+          },
+          "status": {
+            "source": "status",
+            "transform": "text"
+          },
+          "principal_amount": {
+            "source": "principal_amount",
+            "transform": "text"
+          },
+          "interest_amount": {
+            "source": "interest_amount",
+            "transform": "text"
+          },
+          "fee_amount": {
+            "source": "fee_amount",
+            "transform": "text"
+          },
+          "reverses_payment_id": {
+            "source": "reverses_payment_id",
+            "transform": "external_id",
+            "object_type": "payments"
+          }
+        }
+      },
+      "export": "reversals.json",
+      "format": "json",
+      "expectations": {
+        "row_count": 1,
+        "totals": [
+          {
+            "field": "amount",
+            "currency": "USD",
+            "amount": "-100.00"
+          }
+        ]
+      }
+    },
+    {
+      "source": "synthetic-dms",
+      "mapping": {
+        "kind": "PaymentSchedule",
+        "object_type": "schedule",
+        "fields": {
+          "account_id": {
+            "source": "account_id",
+            "transform": "external_id",
+            "object_type": "accounts"
+          },
+          "due_at": {
+            "source": "due_at",
+            "transform": "text"
+          },
+          "amount": {
+            "source": "amount",
+            "transform": "text"
+          },
+          "currency": {
+            "source": "currency",
+            "transform": "text"
+          },
+          "principal_amount": {
+            "source": "principal_amount",
+            "transform": "text"
+          },
+          "interest_amount": {
+            "source": "interest_amount",
+            "transform": "text"
+          },
+          "fee_amount": {
+            "source": "fee_amount",
+            "transform": "text"
+          },
+          "status": {
+            "source": "status",
+            "transform": "text"
+          }
+        }
+      },
+      "export": "schedule.csv",
+      "format": "csv",
+      "expectations": {
+        "row_count": 1,
+        "totals": [
+          {
+            "field": "amount",
+            "currency": "USD",
+            "amount": "100.00"
+          }
+        ]
+      }
+    },
+    {
+      "source": "synthetic-accounting",
+      "mapping": {
+        "kind": "AccountingAccount",
+        "object_type": "chart",
+        "fields": {
+          "name": {
+            "source": "name",
+            "transform": "text"
+          },
+          "account_code": {
+            "source": "account_code",
+            "transform": "text"
+          },
+          "currency": {
+            "source": "currency",
+            "transform": "text"
+          }
+        }
+      },
+      "export": "chart.csv",
+      "format": "csv",
+      "expectations": {
+        "row_count": 2
+      }
+    },
+    {
+      "source": "synthetic-accounting",
+      "mapping": {
+        "kind": "JournalEntry",
+        "object_type": "journal",
+        "fields": {
+          "ledger_account_id": {
+            "source": "ledger_account_id",
+            "transform": "external_id",
+            "object_type": "chart"
+          },
+          "account_code": {
+            "source": "account_code",
+            "transform": "text"
+          },
+          "journal_id": {
+            "source": "journal_id",
+            "transform": "text"
+          },
+          "entry_side": {
+            "source": "entry_side",
+            "transform": "text"
+          },
+          "amount": {
+            "source": "amount",
+            "transform": "text"
+          },
+          "currency": {
+            "source": "currency",
+            "transform": "text"
+          },
+          "occurred_at": {
+            "source": "occurred_at",
+            "transform": "text"
+          }
+        }
+      },
+      "export": "journal.tsv",
+      "format": "tsv",
+      "expectations": {
+        "row_count": 2,
+        "balanced_journals": true,
+        "totals": [
+          {
+            "field": "amount",
+            "currency": "USD",
+            "amount": "200.00"
+          }
+        ]
+      }
+    }
+  ]
+}

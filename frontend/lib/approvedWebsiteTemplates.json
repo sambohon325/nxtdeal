@@ -1,0 +1,242 @@
+{
+  "lone-star": {
+    "name": "Lone Star",
+    "defaults": {
+      "name": "Lone Star Auto",
+      "headline": "Big plans. Meet your next truck.",
+      "intro": "Find the truck, SUV, or everyday car that fits your life. Explore your options with a local team.",
+      "hero": "/website-studio/assets/lone-star-truck-hero.png",
+      "story": "A dealership\u2019s story starts with its people. Use this space to share how your business began, the community you serve, and what customers can expect when they walk through your doors.",
+      "teamPhoto": "/website-studio/assets/lone-star-about-team.png"
+    },
+    "path": "/website-studio/lone-star-preview"
+  },
+  "union": {
+    "name": "Union",
+    "defaults": {
+      "name": "UNION MOTOR",
+      "headline": "TAKE THE LONG WAY HOME.",
+      "intro": "For the daily drive. The dirt road. And everything you\u2019ve got planned next.",
+      "hero": "/website-studio/assets/union-offroad-hero.png",
+      "story": "Your story belongs here. Tell customers how your dealership got its start, the community you call home, and what keeps people coming back.",
+      "teamPhoto": "/website-studio/assets/lone-star-about-team.png"
+    },
+    "path": "/website-studio/approved/union"
+  },
+  "conexion": {
+    "name": "Conexion",
+    "defaults": {
+      "name": "Conexi\u00f3n Auto",
+      "headline": "Your next chapter. Your kind of car.",
+      "intro": "Big plans or everyday moments. Let\u2019s find a vehicle that feels right for you.",
+      "hero": "/website-studio/assets/conexion-hero.png",
+      "story": "A dealership\u2019s story starts with its people. Use this space to share how your business began, the community you serve, and what customers can expect when they walk through your doors.",
+      "teamPhoto": "/website-studio/assets/lone-star-about-team.png"
+    },
+    "path": "/website-studio/approved/conexion"
+  },
+  "high-mesa": {
+    "name": "High Mesa",
+    "defaults": {
+      "name": "High Mesa Motors",
+      "headline": "A little farther. A little freer.",
+      "intro": "Find a truck, SUV, or everyday car that fits the way you live.",
+      "hero": "/website-studio/assets/high-mesa-hero.png",
+      "story": "A dealership\u2019s story starts with its people. Use this space to share how your business began, the community you serve, and what customers can expect when they walk through your doors.",
+      "teamPhoto": "/website-studio/assets/lone-star-about-team.png"
+    },
+    "path": "/website-studio/approved/high-mesa"
+  },
+  "evergreen": {
+    "name": "Evergreen",
+    "defaults": {
+      "name": "Evergreen Auto",
+      "headline": "Outside is calling .",
+      "intro": "For the everyday miles. And the ones you take just for you.",
+      "hero": "/website-studio/assets/evergreen-hero.png",
+      "story": "A dealership\u2019s story starts with its people. Use this space to share how your business began, the community you serve, and what customers can expect when they walk through your doors.",
+      "teamPhoto": "/website-studio/assets/lone-star-about-team.png"
+    },
+    "path": "/website-studio/approved/evergreen"
+  },
+  "metroline": {
+    "name": "Metroline",
+    "defaults": {
+      "name": "Metroline Auto",
+      "headline": "Your city. Your next.",
+      "intro": "A different way to move. Find the car that fits your life, and the people to help you get there.",
+      "hero": "/website-studio/assets/metroline-hero.png",
+      "story": "A dealership\u2019s story starts with its people. Use this space to share how your business began, the community you serve, and what customers can expect when they walk through your doors.",
+      "teamPhoto": "/website-studio/assets/lone-star-about-team.png"
+    },
+    "path": "/website-studio/approved/metroline"
+  },
+  "sterling": {
+    "name": "Sterling",
+    "defaults": {
+      "name": "Sterling Motor Co.",
+      "headline": "A little more extraordinary.",
+      "intro": "Find something you love to drive. We\u2019ll take care of the next step.",
+      "hero": "/website-studio/assets/sterling-hero.png",
+      "story": "A dealership\u2019s story starts with its people. Use this space to share how your business began, the community you serve, and what customers can expect when they walk through your doors.",
+      "teamPhoto": "/website-studio/assets/lone-star-about-team.png"
+    },
+    "path": "/website-studio/approved/sterling"
+  },
+  "daybreak": {
+    "name": "Daybreak",
+    "defaults": {
+      "name": "Daybreak Auto",
+      "headline": "GOOD THINGS AHEAD.",
+      "intro": "New job. New plans. Just because. Find a car for your kind of next.",
+      "hero": "/website-studio/assets/daybreak-hero.png",
+      "story": "A dealership\u2019s story starts with its people. Use this space to share how your business began, the community you serve, and what customers can expect when they walk through your doors.",
+      "teamPhoto": "/website-studio/assets/lone-star-about-team.png"
+    },
+    "path": "/website-studio/approved/daybreak"
+  },
+  "afterhours": {
+    "name": "Afterhours",
+    "defaults": {
+      "name": "Afterhours Auto",
+      "headline": "Make the everyday anything but.",
+      "intro": "The right car changes the journey. Find yours. We\u2019ll help with what comes next.",
+      "hero": "/website-studio/assets/afterhours-hero.png",
+      "story": "A dealership\u2019s story starts with its people. Use this space to share how your business began, the community you serve, and what customers can expect when they walk through your doors.",
+      "teamPhoto": "/website-studio/assets/lone-star-about-team.png"
+    },
+    "path": "/website-studio/approved/afterhours"
+  },
+  "apex": {
+    "name": "Apex",
+    "defaults": {
+      "name": "Apex Auto",
+      "headline": "Find your next gear.",
+      "intro": "Everyday practical. Weekend possible. A great drive starts with the right people.",
+      "hero": "/website-studio/assets/apex-hero.png",
+      "story": "A dealership\u2019s story starts with its people. Use this space to share how your business began, the community you serve, and what customers can expect when they walk through your doors.",
+      "teamPhoto": "/website-studio/assets/lone-star-about-team.png"
+    },
+    "path": "/website-studio/approved/apex"
+  },
+  "harbor": {
+    "name": "Harbor",
+    "defaults": {
+      "name": "Harbor Auto",
+      "headline": "Life, with more open road.",
+      "intro": "For everyday plans. And the ones you haven\u2019t made yet.",
+      "hero": "/website-studio/assets/harbor-hero.png",
+      "story": "A dealership\u2019s story starts with its people. Use this space to share how your business began, the community you serve, and what customers can expect when they walk through your doors.",
+      "teamPhoto": "/website-studio/assets/lone-star-about-team.png"
+    },
+    "path": "/website-studio/approved/harbor"
+  },
+  "foundry": {
+    "name": "Foundry",
+    "defaults": {
+      "name": "Foundry Auto",
+      "headline": "YOUR DRIVE. YOUR STORY.",
+      "intro": "From the workday to the weekend. Find the vehicle that moves your life forward.",
+      "hero": "/website-studio/assets/foundry-hero.png",
+      "story": "A dealership\u2019s story starts with its people. Use this space to share how your business began, the community you serve, and what customers can expect when they walk through your doors.",
+      "teamPhoto": "/website-studio/assets/lone-star-about-team.png"
+    },
+    "path": "/website-studio/approved/foundry"
+  },
+  "vector": {
+    "name": "Vector",
+    "defaults": {
+      "name": "Vector Auto",
+      "headline": "Good things. Up ahead.",
+      "intro": "A new route. A familiar routine. Find a vehicle for wherever life takes you.",
+      "hero": "/website-studio/assets/vector-hero.png",
+      "story": "A dealership\u2019s story starts with its people. Use this space to share how your business began, the community you serve, and what customers can expect when they walk through your doors.",
+      "teamPhoto": "/website-studio/assets/lone-star-about-team.png"
+    },
+    "path": "/website-studio/approved/vector"
+  },
+  "rally": {
+    "name": "Rally",
+    "defaults": {
+      "name": "Rally Auto",
+      "headline": "GO FIND YOUR EVERYDAY.",
+      "intro": "Good cars. Real people. Something to look forward to.",
+      "hero": "/website-studio/assets/rally-hero.png",
+      "story": "A dealership\u2019s story starts with its people. Use this space to share how your business began, the community you serve, and what customers can expect when they walk through your doors.",
+      "teamPhoto": "/website-studio/assets/lone-star-about-team.png"
+    },
+    "path": "/website-studio/approved/rally"
+  },
+  "waypoint": {
+    "name": "Waypoint",
+    "defaults": {
+      "name": "Waypoint Motor Co.",
+      "headline": "A little further. A lot more you.",
+      "intro": "Good company. Open roads. Find the car for your kind of journey.",
+      "hero": "/website-studio/assets/waypoint-hero.png",
+      "story": "A dealership\u2019s story starts with its people. Use this space to share how your business began, the community you serve, and what customers can expect when they walk through your doors.",
+      "teamPhoto": "/website-studio/assets/lone-star-about-team.png"
+    },
+    "path": "/website-studio/approved/waypoint"
+  },
+  "switch": {
+    "name": "Switch",
+    "defaults": {
+      "name": "Switch Auto",
+      "headline": "Make your next move. \u2197",
+      "intro": "NEW CAR ENERGY. YOUR KIND OF DRIVE.",
+      "hero": "/website-studio/assets/switch-hero.png",
+      "story": "A dealership\u2019s story starts with its people. Use this space to share how your business began, the community you serve, and what customers can expect when they walk through your doors.",
+      "teamPhoto": "/website-studio/assets/lone-star-about-team.png"
+    },
+    "path": "/website-studio/approved/switch"
+  },
+  "redline": {
+    "name": "Redline",
+    "defaults": {
+      "name": "Redline Auto",
+      "headline": "FEEL THE GOOD MILES.",
+      "intro": "More than getting there. Find a car you love driving.",
+      "hero": "/website-studio/assets/redline-hero.png",
+      "story": "A dealership\u2019s story starts with its people. Use this space to share how your business began, the community you serve, and what customers can expect when they walk through your doors.",
+      "teamPhoto": "/website-studio/assets/lone-star-about-team.png"
+    },
+    "path": "/website-studio/approved/redline"
+  },
+  "pacific": {
+    "name": "Pacific",
+    "defaults": {
+      "name": "Pacific Auto",
+      "headline": "FOR THE LOVE OF THE DRIVE.",
+      "intro": "Not just your next car. Your next reason to get out there.",
+      "hero": "/website-studio/assets/pacific-editorial-hero.png",
+      "story": "A dealership\u2019s story starts with its people. Use this space to share how your business began, the community you serve, and what customers can expect when they walk through your doors.",
+      "teamPhoto": "/website-studio/assets/lone-star-about-team.png"
+    },
+    "path": "/website-studio/approved/pacific"
+  },
+  "tempo": {
+    "name": "Tempo",
+    "defaults": {
+      "name": "Tempo Auto",
+      "headline": "Exceptional. By every measure.",
+      "intro": "A considered collection. A more personal experience.",
+      "hero": "/website-studio/assets/tempo-luxury-hero.png",
+      "story": "A dealership\u2019s story starts with its people. Use this space to share how your business began, the community you serve, and what customers can expect when they walk through your doors.",
+      "teamPhoto": "/website-studio/assets/lone-star-about-team.png"
+    },
+    "path": "/website-studio/approved/tempo"
+  },
+  "fieldwork": {
+    "name": "Fieldwork",
+    "defaults": {
+      "name": "Fieldwork Auto",
+      "headline": "More life. Less limits.",
+      "intro": "Dependable vehicles. Real conversations. A little more room for what matters.",
+      "hero": "/website-studio/assets/fieldwork-hero.png",
+      "story": "A dealership\u2019s story starts with its people. Use this space to share how your business began, the community you serve, and what customers can expect when they walk through your doors.",
+      "teamPhoto": "/website-studio/assets/lone-star-about-team.png"
+    },
+    "path": "/website-studio/approved/fieldwork"
+  }
+}

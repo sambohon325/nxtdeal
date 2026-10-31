@@ -1,0 +1,93 @@
+/* Shared geometry for reviewed dealership themes; keep each theme's visual identity. */
+body.ls-review{--inventory-border:#3b526b;--inventory-hover:#6685a5}
+body.um-review{--inventory-border:#c8c8be;--inventory-hover:#69798b}
+body.cx-review{--inventory-border:#d4ddd0;--inventory-hover:#69978b}
+body.mesa-review{--inventory-border:#d1c4aa;--inventory-hover:#8f8067}
+body.ev-review{--inventory-border:#c4d4c5;--inventory-hover:#8da992}
+body.mt-review{--inventory-border:#d7dce5;--inventory-hover:#8b9ab8}
+body.st-review{--inventory-border:#c9cbc4;--inventory-hover:#9b9f96}
+body.ls-review .inventorygrid .vehicle{border-color:var(--inventory-border)!important;min-width:0}
+body.ls-review .inventorygrid .vehicle:hover,body.ls-review .inventorygrid .vehicle:focus-within{border-color:var(--inventory-hover)!important;transform:none!important}
+body.ls-review .inventorygrid .vehicle .vehiclephoto{position:relative;width:100%;aspect-ratio:3/2;min-height:0;overflow:hidden;flex:none}
+body.ls-review .inventorygrid :is(.vehicle,.vehicle:first-child) .vehiclephoto img{position:absolute;inset:0;display:block;width:100%!important;height:100%!important;min-height:0;max-height:none;aspect-ratio:auto;object-fit:cover;object-position:center;transform:none!important}
+body.ls-review:not(.mesa-review) .inventorygrid .vehicle{display:flex;flex-direction:column}
+body.ls-review:not(.mesa-review) .inventorygrid .vehiclebody{display:flex;flex-direction:column;flex:1}
+body.ls-review:not(.mesa-review) .inventorygrid .vehiclebottom{margin-top:auto}
+body.ls-review .ls-event-vehicle>img{width:100%;height:auto!important;aspect-ratio:3/2;object-fit:cover}
+@media(min-width:1101px){body.mesa-review .inventorygrid .vehicle .vehiclephoto{aspect-ratio:auto;min-height:290px;align-self:stretch}}
+@media(min-width:1101px){body.mesa-review .inventorygrid{grid-auto-rows:1fr}}
+body.db-review{--inventory-border:#dfd0b8;--inventory-hover:#af9674}
+/* Gallery frames follow the same theme tokens as inventory, including thumbnails. */
+body.ls-review{--inventory-image-radius:24px}
+body.um-review{--inventory-image-radius:10px}
+body.cx-review{--inventory-image-radius:18px}
+body.mesa-review{--inventory-image-radius:6px}
+body.ev-review{--inventory-image-radius:23px}
+body.mt-review{--inventory-image-radius:8px}
+body.st-review{--inventory-image-radius:8px}
+body.db-review{--inventory-image-radius:14px}
+body.ls-review .richdialog .gallery-main{border:1px solid var(--inventory-border);border-radius:var(--inventory-image-radius);background:transparent;box-sizing:border-box;object-fit:cover;overflow:hidden}
+body.ls-review .gallery-thumbs{padding:5px 3px 12px;gap:10px}
+body.ls-review .gallery-thumbs button{padding:0;border:1px solid var(--inventory-border);border-radius:min(8px,var(--inventory-image-radius));background:transparent;overflow:hidden;line-height:0;box-sizing:border-box;box-shadow:none}
+body.ls-review .gallery-thumbs button img{display:block;width:100%;height:auto;aspect-ratio:3/2;object-fit:cover;border:0;border-radius:0;margin:0}
+body.ls-review .gallery-thumbs button[aria-current=true]{border-color:var(--inventory-hover);outline:2px solid var(--inventory-hover);outline-offset:1px}
+body.ls-review .gallery-thumbs button:focus-visible{outline:2px solid var(--ink);outline-offset:3px}
+body.ls-review .gallery-nav button,body.ls-review .gallery-tabs button{border:1px solid var(--inventory-border);border-radius:min(8px,var(--inventory-image-radius));background:transparent;color:inherit}
+body.ls-review .richdialog .gallery-main{height:auto!important;aspect-ratio:3/2}
+body.ah-review{--inventory-border:#344353;--inventory-hover:#718fa5;--inventory-image-radius:10px}
+/* Interaction colors follow the active theme, never the inherited Lone Star skin.
+   New reviewed themes inherit these rules through this shared stylesheet. */
+body.ls-review{--interaction-accent:var(--accent);--interaction-ink:var(--buttonInk)}
+body.ls-review :is(.vehicle,.person,.service-feature,.ls-event-vehicle):is(:hover,:focus-within){border-color:var(--inventory-hover)!important}
+body.ls-review :is(button,a,input,select,textarea,[tabindex]):focus-visible{outline:2px solid var(--interaction-accent)!important;outline-offset:3px}
+body.ls-review input:is([type=checkbox],[type=radio],[type=range]){accent-color:var(--interaction-accent)}
+body.ls-review .compare-toggle{border-color:var(--inventory-border);color:var(--ink)}
+body.ls-review .compare-toggle:is([aria-checked=true],[aria-pressed=true]){border-color:var(--interaction-accent)!important;background:var(--interaction-accent)!important;color:var(--interaction-ink)!important}
+body.ls-review .payment-tabs button[aria-selected=true]{background:var(--interaction-accent)!important;color:var(--interaction-ink)!important;border-color:var(--interaction-accent)}
+body.ls-review .choice:has(input:checked){border-color:var(--interaction-accent);box-shadow:0 0 0 1px var(--interaction-accent)}
+body.ls-review .sfsteps li.current{border-color:var(--interaction-accent)}
+body.ls-review .gallery-thumbs button[aria-current=true]{border-color:var(--interaction-accent);outline-color:var(--interaction-accent)}
+body.ax-review{--inventory-border:#cdd2be;--inventory-hover:#7d8d5c;--inventory-image-radius:4px}
+body.hb-review{--inventory-border:#c8dce8;--inventory-hover:#6ca9c9;--inventory-image-radius:18px}
+body.fd-review{--inventory-border:#393939;--inventory-hover:#ac9270;--inventory-image-radius:8px}
+body.vx-review{--inventory-border:#cddbd3;--inventory-hover:#79ac91;--inventory-image-radius:18px}
+body.ra-review{--inventory-border:#d5d0c1;--inventory-hover:#b98c7b;--inventory-image-radius:10px}
+/* Shared navigation geometry and form rhythm for all reviewed themes. */
+body.ls-review{--nav-radius:24px}body.um-review{--nav-radius:5px}body.cx-review{--nav-radius:12px}body.mesa-review{--nav-radius:4px}body.ev-review{--nav-radius:14px}body.mt-review{--nav-radius:6px}body.st-review{--nav-radius:5px}body.db-review{--nav-radius:8px}body.ah-review{--nav-radius:5px}body.ax-review{--nav-radius:3px}body.hb-review{--nav-radius:24px}body.fd-review{--nav-radius:5px}body.vx-review{--nav-radius:12px}body.ra-review{--nav-radius:7px}
+body.ls-review .nav .navlinks{border-radius:calc(var(--nav-radius) + 5px)!important;column-gap:3px;row-gap:10px}
+body.ls-review .nav .navlinks>a,body.ls-review .nav .navlinks .jelly-blob,body.ls-review .nav .mobilemenu,body.ls-review .nav .language-switch select{border-radius:var(--nav-radius)!important}
+body.ls-review .nav .navlinks>a.button{margin-inline-start:16px!important;flex-shrink:0}
+body.ls-review :is(.lead-contact,.lead-dialog,.richdialog) .inquiryfields{gap:22px 20px;align-items:end;margin-bottom:22px}
+body.ls-review :is(.lead-contact,.lead-dialog,.richdialog) .inquiryfields>div{min-width:0;display:flex;flex-direction:column}
+body.ls-review :is(.lead-contact,.lead-dialog,.richdialog) .inquiryfields>div>label{font-size:12px;line-height:1.45;min-height:2.9em;display:flex;align-items:flex-end;margin:0 0 9px;letter-spacing:normal}
+body.ls-review :is(.lead-contact,.lead-dialog,.richdialog) .inquiryfields :is(input:not([type=checkbox]):not([type=radio]),select){min-height:46px;width:100%;box-sizing:border-box;margin:0}
+body.ls-review :is(.lead-contact,.lead-dialog,.richdialog) .inquiryfields textarea{margin:0;box-sizing:border-box}
+body.ls-review #generalContactForm>div:has(>select[name=preferredLocation]),body.ls-review #vehicleLeadForm>div:has(>select[name=preferredLocation]){margin-bottom:22px}
+body.ls-review :is(.lead-contact,.lead-dialog,.richdialog) .inquiry-consent{display:flex;align-items:flex-start;gap:10px;line-height:1.5;margin:16px 0 20px}
+body.ls-review :is(.lead-contact,.lead-dialog,.richdialog) .inquiry-consent input{flex:0 0 16px;width:16px;height:16px;margin:2px 0 0}
+body.ls-review .inquiryfields>.inquiry-consent{align-self:end;min-height:46px;margin:0;align-items:center}
+@media(max-width:1350px){body.ls-review .nav{flex-wrap:wrap}body.ls-review .nav .mobilemenu{display:block;margin-left:auto}body.ls-review .nav .navlinks{display:none;width:100%;order:5;flex-wrap:wrap;justify-content:flex-start}body.ls-review .nav .navlinks.open{display:flex}}
+@media(max-width:1550px){html[lang=es] body.ls-review .nav{flex-wrap:wrap}html[lang=es] body.ls-review .nav .mobilemenu{display:block;margin-left:auto}html[lang=es] body.ls-review .nav .navlinks{display:none;width:100%;order:5;flex-wrap:wrap;justify-content:flex-start}html[lang=es] body.ls-review .nav .navlinks.open{display:flex}}
+@media(max-width:700px){body.ls-review :is(.lead-contact,.lead-dialog,.richdialog) .inquiryfields{grid-template-columns:1fr;gap:20px}body.ls-review :is(.lead-contact,.lead-dialog,.richdialog) .inquiryfields>div>label{min-height:0}body.ls-review .nav .navlinks>a.button{margin-inline-start:0!important;margin-top:4px}}
+body.ls-review :is(#generalContactForm,#vehicleLeadForm)>div>select{min-height:46px;box-sizing:border-box}
+body.wp-review{--nav-radius:6px;--inventory-border:#d4c6b4;--inventory-hover:#9c7352;--inventory-image-radius:6px}
+body.sw-review{--nav-radius:18px;--inventory-border:#d9d6e5;--inventory-hover:#8468ea;--inventory-image-radius:18px}
+body.rl-review{--nav-radius:6px;--inventory-border:#d3d0c8;--inventory-hover:#b84d43;--inventory-image-radius:6px}
+
+body.pc-review{--nav-radius:14px;--inventory-border:#d0dfeb;--inventory-hover:#1266d8;--inventory-image-radius:14px}
+
+body.pc-review{--nav-radius:8px;--inventory-border:#d1cec4;--inventory-hover:#e54c1b;--inventory-image-radius:8px}
+
+body.tp-review{--nav-radius:18px;--inventory-border:#cdd6e8;--inventory-hover:#2451d1;--inventory-image-radius:16px}
+
+body.tp-review{--nav-radius:22px;--inventory-border:#3b3e41;--inventory-hover:#a9b2b9;--inventory-image-radius:14px}
+
+body.fw-review{--nav-radius:8px;--inventory-border:#c9cbbd;--inventory-hover:#687755;--inventory-image-radius:8px}
+/* Compact contact-form rhythm; keep full-size touch targets. */
+body.ls-review #generalContactForm .inquiryfields{gap:12px 16px;margin-bottom:12px}
+body.ls-review #generalContactForm .inquiryfields>div>label{min-height:0;margin-bottom:6px}
+body.ls-review #generalContactForm>div:has(>select[name=preferredLocation]){margin-bottom:12px}
+body.ls-review #generalContactForm .inquiry-consent{margin:10px 0 14px}
+body.ls-review #generalContactForm .inquiryfields>.inquiry-consent{margin:0;min-height:46px;align-items:center}
+
+body.ls-review .inventorygrid .vehicle[hidden]{display:none!important}

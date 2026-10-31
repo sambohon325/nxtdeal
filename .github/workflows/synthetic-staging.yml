@@ -1,0 +1,95 @@
+name: Synthetic staging containers
+on:
+  pull_request:
+    paths:
+      - 'compose.synthetic.yaml'
+      - 'deploy/synthetic/**'
+      - 'scripts/*synthetic*'
+      - 'scripts/staging_container.py'
+      - 'backend/**'
+      - 'hub/**'
+      - 'frontend/**'
+      - '.github/workflows/synthetic-staging.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: synthetic-staging-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  containers:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    env:
+      COMPOSE_FILE: compose.synthetic.yaml
+    steps:
+      - uses: actions/checkout@v4
+      - name: Record the exact checkout used for image labels
+        run: echo "SOURCE_COMMIT=$(git rev-parse HEAD)" >> "$GITHUB_ENV"
+      - name: Build and start isolated fixture
+        run: docker compose up --build --wait --wait-timeout 180
+      - name: Verify image source labels and retain content IDs
+        run: python scripts/check_synthetic_provenance.py --expected-revision "$SOURCE_COMMIT" --output "$RUNNER_TEMP/synthetic-images-before.json"
+      - name: Verify isolation and HTTP workflows
+        run: |
+          python scripts/check_synthetic_stack.py create "$RUNNER_TEMP/stack-state.json"
+          docker network inspect nxtdeal-synthetic_isolated --format '{{.Internal}}' | grep -x true
+          for service in gateway; do
+            docker inspect "$(docker compose ps -q "$service")" --format '{{json .HostConfig.PortBindings}}' | python -c 'import json,sys; bindings=json.load(sys.stdin); assert bindings; assert all(b["HostIp"] == "127.0.0.1" for values in bindings.values() for b in values)'
+          done
+          for service in dealer hub web; do
+            docker inspect "$(docker compose ps -q "$service")" --format '{{json .NetworkSettings.Networks}}' | python -c 'import json,sys; assert list(json.load(sys.stdin)) == ["nxtdeal-synthetic_isolated"]'
+          done
+          docker compose exec -T dealer python -c 'import socket; s=socket.socket(); s.settimeout(3); result=s.connect_ex(("1.1.1.1",443)); s.close(); assert result != 0, "Unexpected external network access"'
+      - name: Recreate containers and verify persistent records
+        run: |
+          docker compose down
+          docker compose up --wait --wait-timeout 180
+          python scripts/check_synthetic_stack.py verify "$RUNNER_TEMP/stack-state.json"
+          python scripts/check_synthetic_provenance.py --expected-revision "$SOURCE_COMMIT" --baseline "$RUNNER_TEMP/synthetic-images-before.json" --output "$RUNNER_TEMP/synthetic-images-after.json"
+          # Verification must preserve records and remain repeatable.
+          python scripts/check_synthetic_stack.py verify "$RUNNER_TEMP/stack-state.json"
+      - name: Detect a synthetic Hub outage and recovery
+        run: |
+          python scripts/monitor_synthetic_stack.py > "$RUNNER_TEMP/monitor-healthy.json"
+          docker compose stop hub
+          if python scripts/monitor_synthetic_stack.py > "$RUNNER_TEMP/monitor-outage.json"; then
+            echo "Monitor missed the stopped synthetic Hub"
+            exit 1
+          fi
+          python -c 'import json,os; r=json.load(open(os.environ["RUNNER_TEMP"]+"/monitor-outage.json")); assert r["checks"]["hub"] == "unavailable"; assert r["checks"]["dealer"] == "healthy"'
+          docker compose up -d --wait --wait-timeout 180 hub
+          python scripts/monitor_synthetic_stack.py > "$RUNNER_TEMP/monitor-recovered.json"
+      - name: Detect a synthetic web outage while APIs remain healthy
+        run: |
+          docker compose stop web
+          if python scripts/monitor_synthetic_stack.py > "$RUNNER_TEMP/monitor-web-outage.json"; then
+            echo "Monitor missed the stopped synthetic frontend"
+            exit 1
+          fi
+          python -c 'import json,os; r=json.load(open(os.environ["RUNNER_TEMP"]+"/monitor-web-outage.json")); assert r["checks"]["web"] == "unavailable"; assert r["checks"]["dealer"] == r["checks"]["hub"] == "healthy"; assert r["checks"]["delivery"] == "disabled"'
+          docker compose up -d --wait --wait-timeout 180 web
+          python scripts/monitor_synthetic_stack.py > "$RUNNER_TEMP/monitor-web-recovered.json"
+      - name: Retain synthetic image source evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: synthetic-image-source-evidence
+          path: ${{ runner.temp }}/synthetic-images-*.json
+          retention-days: 14
+      - name: Retain monitoring drill evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: synthetic-monitoring-drill
+          path: ${{ runner.temp }}/monitor-*.json
+          retention-days: 14
+      - name: Show service status
+        if: always()
+        run: docker compose ps -a
+      - name: Show startup diagnostics on failure
+        if: failure()
+        run: docker compose logs --tail 60
+      - name: Stop disposable services
+        if: always()
+        run: docker compose down

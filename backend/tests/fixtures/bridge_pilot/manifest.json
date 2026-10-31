@@ -1,0 +1,82 @@
+{
+  "version": 1,
+  "steps": [
+    {
+      "source": "synthetic-dms",
+      "mapping": {
+        "kind": "Customer",
+        "object_type": "customers",
+        "fields": {
+          "first_name": {
+            "source": "first_name",
+            "transform": "text"
+          }
+        }
+      },
+      "export": "customers.csv",
+      "format": "csv",
+      "expectations": {
+        "row_count": 1
+      }
+    },
+    {
+      "source": "synthetic-dms",
+      "mapping": {
+        "kind": "FinanceContract",
+        "object_type": "contracts",
+        "fields": {
+          "customer_id": {
+            "source": "customer_id",
+            "transform": "external_id",
+            "object_type": "customers"
+          },
+          "currency": {
+            "source": "currency",
+            "transform": "text"
+          },
+          "principal": {
+            "source": "principal",
+            "transform": "text"
+          }
+        }
+      },
+      "export": "contracts.tsv",
+      "format": "tsv",
+      "expectations": {
+        "row_count": 1
+      }
+    },
+    {
+      "source": "synthetic-dms",
+      "mapping": {
+        "kind": "LoanAccount",
+        "object_type": "accounts",
+        "fields": {
+          "customer_id": {
+            "source": "customer_id",
+            "transform": "external_id",
+            "object_type": "customers"
+          },
+          "contract_id": {
+            "source": "contract_id",
+            "transform": "external_id",
+            "object_type": "contracts"
+          },
+          "currency": {
+            "source": "currency",
+            "transform": "text"
+          },
+          "balance": {
+            "source": "balance",
+            "transform": "text"
+          }
+        }
+      },
+      "export": "accounts.json",
+      "format": "json",
+      "expectations": {
+        "row_count": 1
+      }
+    }
+  ]
+}

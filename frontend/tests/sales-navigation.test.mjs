@@ -1,0 +1,30 @@
+import {workControls} from './work-controls-stub.mjs';
+import {test} from 'node:test';
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import vm from 'node:vm';
+import ts from 'typescript';
+import * as jsx from 'react/jsx-runtime';
+const elements=e=>!e||typeof e!=='object'?[]:[e,...[e.props?.children].flat(Infinity).flatMap(elements)];
+test('customer detail returns to the same CRM filters and page',()=>{
+ const state=[];let cursor=0,external=0;
+ const source=ts.transpileModule(fs.readFileSync(new URL('../components/sales/SalesCrmWorkspace.tsx',import.meta.url),'utf8'),{compilerOptions:{module:ts.ModuleKind.CommonJS,jsx:ts.JsxEmit.ReactJSX}}).outputText;
+ const scope={exports:{},require:name=>{if(name.endsWith('/WorkspaceUi'))return workControls;
+  if(name==='@/lib/departmentWork'){const module={exports:{}};vm.runInNewContext(ts.transpileModule(fs.readFileSync(new URL('../lib/departmentWork.ts',import.meta.url),'utf8'),{compilerOptions:{module:ts.ModuleKind.CommonJS}}).outputText,module);return module.exports;}
+  if(name==='react/jsx-runtime')return jsx;
+  if(name==='react')return {useEffect:()=>{},useState:initial=>{const i=cursor++;if(!(i in state))state[i]=initial;return [state[i],v=>{state[i]=typeof v==='function'?v(state[i]):v;}];}};
+  if(name==='next/dynamic')return {default:()=> 'advanced'};
+  if(name.endsWith('.css'))return {default:{}};
+  if(name==='@/lib/salesCrm')return {defaultFilters:{kind:'Customer',q:'Fictional',owner:'',stage:'',source:'',sort:'newest'},stageLabel:v=>v};
+  if(name==='@/components/EntityDashPanel')return {EntityDashPanel:'entity'};
+  return {};
+ }};
+ vm.runInNewContext(source,scope);
+ const render=()=>{cursor=0;return elements(scope.exports.SalesCrmWorkspace({session:{employeeId:'SYN',role:'SALES'},items:[{key:'customers',label:'Contacts'}],initialItem:'contacts',onOpenEntity:()=>external++}));};
+ render();state[4]={records:[{id:'SYN-C',kind:'Customer',name:'Fictional Customer',vehicles:[],open_tasks:0,overdue_tasks:0}],total:101,owners:[],sources:[],states:[],stage_counts:{},transitions:{},observed_at:'2026-10-11T12:00:00Z'};state[5]=50;
+ let tree=render();tree.find(e=>e.type==='button'&&e.props.children==='Fictional Customer').props.onClick();
+ tree=render();assert.equal(tree.find(e=>e.type==='entity').props.entityId,'SYN-C');assert.equal(external,0);
+ tree.find(e=>e.type==='entity').props.onClose();tree=render();
+ assert.equal(state[2].q,'Fictional');assert.equal(state[5],50);assert.equal(external,0);
+ assert.ok(tree.some(e=>e.type==='button'&&e.props.children==='Fictional Customer'));
+});

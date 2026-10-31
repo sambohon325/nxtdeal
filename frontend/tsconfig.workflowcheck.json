@@ -1,0 +1,21 @@
+{
+  "extends": "./tsconfig.json",
+  "include": [
+    "next-env.d.ts",
+    "components/EntityProfile.tsx",
+    "components/Customer360Panel.tsx",
+    "components/InlineEntityFields.tsx",
+    "components/ProspectsBoard.tsx",
+    "components/EntityDashPanel.tsx",
+    "app/profile/[id]/page.tsx",
+    "app/panel/entity/page.tsx",
+    "lib/**/*.ts",
+    "components/MenuDashPanel.tsx",
+    "components/DealDeskBoard.tsx",
+    "components/RepairOrderWorkspaceBoard.tsx",
+    "components/ConnectionsExplorer.tsx",
+    "components/BrandAngles.tsx",
+    ".next/types/**/*.ts",
+    ".next/dev/types/**/*.ts"
+  ]
+}

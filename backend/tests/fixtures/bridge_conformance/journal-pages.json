@@ -1,0 +1,62 @@
+{
+  "page_expectations": [
+    {
+      "row_count": 3,
+      "balanced_journals": true,
+      "totals": [
+        {
+          "field": "amount",
+          "currency": "USD",
+          "amount": "0.60"
+        }
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "records": [
+        {
+          "object_type": "journal_lines",
+          "external_id": "fixture-line-1",
+          "modified_at": "2026-10-04T12:00:00Z",
+          "values": {
+            "account_code": "1000",
+            "journal_id": "synthetic-journal",
+            "entry_side": "debit",
+            "amount": "0.30",
+            "currency": "USD",
+            "occurred_at": "2026-10-04T10:00:00Z"
+          }
+        },
+        {
+          "object_type": "journal_lines",
+          "external_id": "fixture-line-2",
+          "modified_at": "2026-10-04T12:00:00Z",
+          "values": {
+            "account_code": "2000",
+            "journal_id": "synthetic-journal",
+            "entry_side": "credit",
+            "amount": "0.10",
+            "currency": "USD",
+            "occurred_at": "2026-10-04T10:00:00Z"
+          }
+        },
+        {
+          "object_type": "journal_lines",
+          "external_id": "fixture-line-3",
+          "modified_at": "2026-10-04T12:00:00Z",
+          "values": {
+            "account_code": "2000",
+            "journal_id": "synthetic-journal",
+            "entry_side": "credit",
+            "amount": "0.20",
+            "currency": "USD",
+            "occurred_at": "2026-10-04T10:00:00Z"
+          }
+        }
+      ],
+      "cursor": null,
+      "complete": true
+    }
+  ]
+}

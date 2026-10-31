@@ -1,0 +1,12 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "incremental": false
+  },
+  "include": [
+    "lib/hubApi.ts",
+    "components/hub/DealerManagementSection.tsx",
+    "components/hub/DealerRecordView.tsx",
+    "components/hub/CreateDealerForm.tsx"
+  ]
+}

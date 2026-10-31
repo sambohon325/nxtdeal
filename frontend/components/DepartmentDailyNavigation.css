@@ -1,0 +1,12 @@
+[data-nxt-glass] .page-top{flex-wrap:wrap;gap:16px;align-items:flex-start}
+.department-daily-navigation{display:flex;flex-wrap:wrap;align-items:center;justify-content:flex-end;gap:8px;flex:1;min-width:260px}
+.department-daily-navigation .daily-work-label{font-size:12px;color:var(--muted);margin-right:4px}
+.department-daily-navigation button{font-size:14px;min-height:44px;white-space:normal;text-align:left}
+.workflow-workspace{display:grid;gap:20px;min-width:0}
+.workflow-section-navigation{display:flex;flex-wrap:wrap;gap:8px;padding-bottom:16px;border-bottom:1px solid var(--line,rgba(128,128,128,.2))}
+.workflow-section-content,.workflow-overview{display:grid;gap:20px;min-width:0}
+.workflow-stage-list{display:flex;flex-wrap:wrap;gap:8px 28px;margin:0;padding:0 0 0 20px;font-size:14px}
+.workflow-start-form{display:grid;gap:16px;padding:20px;margin-bottom:20px;border:1px solid var(--line,rgba(128,128,128,.2));border-radius:12px}
+.workflow-start-form label{display:grid;gap:8px;font-size:14px}
+@media(max-width:900px){.department-daily-navigation{flex-basis:100%;justify-content:flex-start}.department-daily-navigation .daily-work-label{width:100%}}
+.workflow-start-form fieldset{display:grid;gap:16px;min-width:0;border:0;padding:0;margin:0}

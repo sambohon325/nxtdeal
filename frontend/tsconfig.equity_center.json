@@ -1,0 +1,4 @@
+{
+  "extends": "./tsconfig.json",
+  "include": ["components/EquityCenterBoard.tsx", "lib/equityCenter.ts", "lib/api.ts", "lib/auth.ts"]
+}

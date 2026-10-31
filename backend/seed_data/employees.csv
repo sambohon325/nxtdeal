@@ -1,0 +1,46 @@
+EmployeeID,FirstName,LastName,Department,Title,Email
+E3001,Alicia,Ramirez,Operations,General Manager,alicia.ramirez@example.com
+E3002,Grant,Whitfield,Operations,Assistant General Manager,grant.whitfield@example.com
+E3003,Renee,Ostrowski,Operations,Comptroller,renee.ostrowski@example.com
+E3004,Malik,Freeman,Operations,HR Coordinator,malik.freeman@example.com
+E3005,Dana,Whitfield,Operations,Title & Registration Clerk,dana.whitfield@example.com
+E3044,Sonya,Blackwood,Operations,Front Desk Receptionist,sonya.blackwood@example.com
+E3045,Grady,Pham,Operations,Receptionist / Cashier,grady.pham@example.com
+E3006,Derek,Coleman,Sales,Sales Manager,derek.coleman@example.com
+E3007,Trevor,Aldana,Sales,Used Car Sales Manager,trevor.aldana@example.com
+E3008,Priya,Nair,Sales,Sales Consultant,priya.nair@example.com
+E3009,Marcus,Bell,Sales,Sales Consultant,marcus.bell@example.com
+E3010,Grace,Kim,Sales,Sales Consultant,grace.kim@example.com
+E3011,Omar,Farouk,Sales,Sales Consultant,omar.farouk@example.com
+E3012,Isabella,Cruz,Sales,Sales Consultant,isabella.cruz@example.com
+E3013,Trent,Whitaker,Sales,Sales Consultant,trent.whitaker@example.com
+E3014,Nadia,Volkov,Sales,Sales Consultant,nadia.volkov@example.com
+E3015,Corey,Banks,Sales,Used Car Sales Consultant,corey.banks@example.com
+E3016,Selena,Marsh,Sales,Used Car Sales Consultant,selena.marsh@example.com
+E3017,Hannah,Osei,Sales,Internet Sales / BDC Rep,hannah.osei@example.com
+E3018,Julian,Pratt,Sales,Internet Sales / BDC Rep,julian.pratt@example.com
+E3019,Vince,Delgado,Sales,Lot Attendant,vince.delgado@example.com
+E3020,Denise,Walsh,Finance,F&I Director,denise.walsh@example.com
+E3021,Harold,Ibekwe,Finance,F&I Manager,harold.ibekwe@example.com
+E3022,Simone,Aguilar,Finance,F&I Manager,simone.aguilar@example.com
+E3023,Wesley,Trant,Finance,BHPH Underwriter,wesley.trant@example.com
+E3024,Carmen,Lugo,Finance,Collections Specialist,carmen.lugo@example.com
+E3025,Bryce,Dunham,Finance,Collections Specialist,bryce.dunham@example.com
+E3026,Patricia,Yun,Finance,Finance Administrator,patricia.yun@example.com
+E3027,Curtis,Boone,Service,Service Manager,curtis.boone@example.com
+E3028,Yolanda,Price,Service,Service Advisor,yolanda.price@example.com
+E3029,Miguel,Santoro,Service,Service Advisor,miguel.santoro@example.com
+E3030,Keisha,Alford,Service,Service Advisor,keisha.alford@example.com
+E3031,Owen,Radcliffe,Service,Shop Foreman,owen.radcliffe@example.com
+E3032,Andre,Fontaine,Service,Master Technician,andre.fontaine@example.com
+E3033,Lucia,Beltran,Service,Technician,lucia.beltran@example.com
+E3034,Nate,Higgins,Service,Technician,nate.higgins@example.com
+E3035,Rosalind,Achebe,Service,Technician,rosalind.achebe@example.com
+E3036,Trey,Simmons,Service,Apprentice Technician,trey.simmons@example.com
+E3037,Faye,Donahue,Service,Parts Manager,faye.donahue@example.com
+E3038,Ben,Okafor,Service,Parts Counterperson,ben.okafor@example.com
+E3039,Colleen,Vasquez,Service,Parts Counterperson,colleen.vasquez@example.com
+E3040,Felix,Ortega,Marketing,Marketing Manager,felix.ortega@example.com
+E3041,Aisha,Thornton,Marketing,Marketing Coordinator,aisha.thornton@example.com
+E3042,Devon,Marsh,Marketing,Social Media & Content Specialist,devon.marsh@example.com
+E3043,Layla,Fitzgerald,Marketing,Digital Advertising Specialist,layla.fitzgerald@example.com

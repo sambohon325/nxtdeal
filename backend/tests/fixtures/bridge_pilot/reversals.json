@@ -1,0 +1,15 @@
+[
+  {
+    "external_id": "reversal-synthetic-1",
+    "modified_at": "2026-10-04T12:00:00Z",
+    "account_id": "accounts-synthetic-1",
+    "amount": "-100.00",
+    "currency": "USD",
+    "paid_at": "2026-10-02T12:00:00Z",
+    "status": "reversed",
+    "principal_amount": "-90.00",
+    "interest_amount": "-8.00",
+    "fee_amount": "-2.00",
+    "reverses_payment_id": "payment-synthetic-1"
+  }
+]

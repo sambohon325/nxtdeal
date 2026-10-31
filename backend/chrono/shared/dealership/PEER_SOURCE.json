@@ -1,0 +1,11 @@
+{
+  "repository": "https://github.com/sambohon325/dealercomposite",
+  "commit": "263e1c77223ab9f70ad1ce4fd055be00ec5fea7a",
+  "files": {
+    "peers.py": "28d26d6aade8be86b733da8bf567a59410950cf0d9a50cc6291df98016c1770c",
+    "peer_data.json": "6fbe91b780eec5b9b16b1ab7948d5b3fe84f5680a68661238cc5de5295f13523"
+  },
+  "adaptations": [
+    "Relative package imports only. Historical reference comparison is read-only; no adoption or simulation execution."
+  ]
+}

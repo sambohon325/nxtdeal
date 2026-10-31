@@ -1,0 +1,14 @@
+{
+  "extends": "./tsconfig.json",
+  "include": [
+    "next-env.d.ts",
+    "components/EntityDashPanel.tsx",
+    "app/panel/entity/page.tsx",
+    "app/profile/[id]/page.tsx",
+    "components/ProspectsBoard.tsx",
+    "components/Customer360Panel.tsx",
+    "components/EntityProfile.tsx",
+    ".next/types/**/*.ts",
+    ".next/dev/types/**/*.ts"
+  ]
+}

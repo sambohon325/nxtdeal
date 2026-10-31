@@ -1,0 +1,4 @@
+**
+!deploy/
+!deploy/synthetic/
+!deploy/synthetic/nginx.conf

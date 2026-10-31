@@ -1,0 +1,6 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {"incremental": false},
+  "include": ["next-env.d.ts", "components/WebsiteBuilderBoard.tsx", "components/WebsiteDesignSettings.tsx", "components/WebsiteStudioEvents.tsx", "app/website-studio-lab/**/*.tsx", "app/site/[id]/page.tsx", "lib/websites.ts"],
+  "exclude": ["node_modules", "node_modules_partial"]
+}

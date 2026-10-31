@@ -1,0 +1,73 @@
+"use client";
+import { WorkButton, WorkSelect, WorkInput, WorkTextarea } from "./../WorkspaceUi";
+import {RecordCollection} from "../RecordCollection";
+import {useEffect,useState} from "react";
+import {crmRequest} from "@/lib/salesCrm";
+import styles from "../bdc/BdcWorkspace.module.css";
+
+type Choice={id:string;name:string};
+type Work={id:string;revision:number;person_id:string;person_name:string;campaign_id:string;campaign_name?:string;link_issues?:string[];department:string;owner_id:string;due_at:string;next_step:string;reason:string;stage:string;closed:boolean;overdue:boolean;appointment_id?:string;appointment_status?:string;outcome_id?:string;outcome_status?:string;recorded_value:number|null;currency:string|null;contact_restricted:boolean;history:{at:string;event:string;detail:string}[]};
+type Data={cases:Work[];briefs:Choice[];owners:Choice[];signal_count:number;automation:string};
+const path="/marketing/workflow";
+const label=(s:string)=>s.replaceAll("_"," ");
+const localTime=(s:string)=>{const d=new Date(s);return new Date(d.getTime()-d.getTimezoneOffset()*60000).toISOString().slice(0,16)};
+const blankSignal=()=>({brief_id:"",person_id:"",kind:"reply",event_key:"",evidence:""});
+
+export function CampaignWorkflow({onDraftOpenChange,onSavingChange,onOpen}:{onDraftOpenChange?:(v:boolean)=>void;onSavingChange?:(v:boolean)=>void;onOpen?:(id:string)=>void}){
+ const [data,setData]=useState<Data|null>(null),[error,setError]=useState(""),[busy,setBusy]=useState(false),[signal,setSignal]=useState<ReturnType<typeof blankSignal>|null>(null),[query,setQuery]=useState(""),[people,setPeople]=useState<Choice[]>([]),[selected,setSelected]=useState<string|null>(null),[filter,setFilter]=useState("open"),[pending,setPending]=useState<{event_id:string;reason:string}[]>([]),[childDirty,setChildDirty]=useState(false);
+ const dirty=Boolean(signal)||childDirty;
+ useEffect(()=>{onDraftOpenChange?.(dirty);return()=>onDraftOpenChange?.(false)},[dirty,onDraftOpenChange]);
+ useEffect(()=>{onSavingChange?.(busy);return()=>onSavingChange?.(false)},[busy,onSavingChange]);
+ async function load(sync=false){setBusy(true);setError("");try{if(sync){const r=await crmRequest<{pending:{event_id:string;reason:string}[]}>(path+"/sync",{method:"POST"});setPending(r.pending)}setData(await crmRequest<Data>(path))}catch(e){setError((e as Error).message)}finally{setBusy(false)}}
+ useEffect(()=>{void load(true)},[]);
+ async function saveSignal(){if(!signal)return;setBusy(true);setError("");try{await crmRequest(path+"/signals",{method:"POST",body:JSON.stringify(signal)});setSignal(null);setQuery("");setPeople([]);await load()}catch(e){setError((e as Error).message)}finally{setBusy(false)}}
+ async function search(){setBusy(true);setError("");try{setPeople(await crmRequest<Choice[]>(path+"/people?q="+encodeURIComponent(query)))}catch(e){setError((e as Error).message)}finally{setBusy(false)}}
+ const rows=data?.cases||[];
+ const groups=Array.from(new Set(rows.map(c=>c.campaign_id))).map(id=>{const all=rows.filter(c=>c.campaign_id===id);const completed=all.filter(c=>c.stage==="sale_completed"||c.stage==="service_completed");const values:Record<string,number>={};for(const c of completed)if(c.recorded_value!==null)values[c.currency||"Unspecified"]=(values[c.currency||"Unspecified"]||0)+c.recorded_value;return{id,all,completed,values}});
+ const current=rows.find(c=>c.id===selected);
+ return <section className={styles.workspace} aria-label="Campaign response workflow">
+  <h3>Campaign → conversation → appointment → outcome</h3><p>{data?.automation||"Loading campaign response work…"}</p>
+  <p>Recorded sales and service values come from linked funded deals and completed repair orders. They show association, not incremental revenue or profit. Missing values and currency remain unknown.</p>
+  {error&&<p role="alert">{error}</p>}
+  <div className={styles.row}><WorkButton type="submit" disabled={busy||dirty} onClick={()=>void load(true)}>Refresh & sync replies</WorkButton><WorkButton type="submit" disabled={busy||dirty} onClick={()=>setSignal({...blankSignal(),event_key:crypto.randomUUID()})}>Record campaign response</WorkButton><span>{data?.signal_count??0} recorded signals · {rows.filter(c=>c.overdue&&!c.closed).length} overdue actions</span></div>
+  {pending.length>0&&<section className={styles.panel}><h4>Replies needing routing setup</h4>{pending.map(p=><p key={p.event_id}>{p.event_id}: {p.reason}</p>)}</section>}
+  <div className={styles.cards}>{groups.map(g=><section className={styles.panel} key={g.id}><h4>{g.all[0]?.campaign_name||g.id}</h4><p>{g.all.length} response threads · {g.all.filter(c=>c.appointment_id).length} responses with appointments · {g.completed.length} completed outcomes</p>{Object.entries(g.values).map(([currency,value])=><p key={currency}>Recorded value: {value.toLocaleString()} · {currency}</p>)}<p>{g.completed.filter(c=>c.recorded_value===null).length} completed outcomes with value unknown</p></section>)}</div>
+  {signal&&<form className={styles.panel} onSubmit={e=>{e.preventDefault();void saveSignal()}}><h4>Record a response on the existing customer record</h4><fieldset disabled={busy}>
+   <label>Campaign brief<WorkSelect required value={signal.brief_id} onChange={e=>setSignal({...signal,brief_id:e.target.value})}><option value="">Choose linked campaign brief</option>{data?.briefs.map(b=><option key={b.id} value={b.id}>{b.name}</option>)}</WorkSelect></label>
+   <p>Briefs need an existing campaign and a response owner. Configure them in Planning & budgets.</p>
+   <label>Find customer or lead<WorkInput value={query} onChange={e=>setQuery(e.target.value)}/></label><WorkButton type="button" disabled={query.trim().length<2} onClick={()=>void search()}>Find existing person</WorkButton>
+   <label>Customer or lead<WorkSelect required value={signal.person_id} onChange={e=>setSignal({...signal,person_id:e.target.value})}><option value="">Choose existing record</option>{people.map(p=><option key={p.id} value={p.id}>{p.name} · {p.id}</option>)}</WorkSelect></label>
+   <label>Response type<WorkSelect value={signal.kind} onChange={e=>setSignal({...signal,kind:e.target.value})}>{["reply","call","booking_request","open","click"].map(k=><option key={k} value={k}>{label(k)}</option>)}</WorkSelect></label>
+   <label>Unique response reference<WorkInput required maxLength={150} value={signal.event_key} onChange={e=>setSignal({...signal,event_key:e.target.value})}/></label>
+   <label>Evidence and customer request<WorkTextarea required minLength={10} maxLength={1500} value={signal.evidence} onChange={e=>setSignal({...signal,evidence:e.target.value})}/></label><p>Use the message or call reference to prevent duplicate entry. Opens and clicks stay signals only. A qualifying response stops pending nurture for this person and creates assigned work.</p>
+   <WorkButton type="submit">Save response</WorkButton><WorkButton type="button" onClick={()=>setSignal(null)}>Discard response</WorkButton>
+  </fieldset></form>}
+  <label>Show responses<WorkSelect disabled={dirty||busy} value={filter} onChange={e=>setFilter(e.target.value)}><option value="open">Open</option><option value="all">All</option><option value="overdue">Overdue</option></WorkSelect></label>
+  <div className={styles.cards}><RecordCollection busy={busy||dirty} key={filter}>{rows.filter(c=>filter==="all"||filter==="overdue"?filter==="all"||c.overdue:!c.closed).map(c=><button disabled={busy||dirty} key={c.id} onClick={()=>setSelected(c.id)}><strong>{c.person_name}</strong><span>{c.department} · {label(c.stage)}{c.overdue?" · OVERDUE":""}</span><small>{c.next_step}</small><small>Due {new Date(c.due_at).toLocaleString()}</small></button>)}</RecordCollection></div>
+  {data&&!rows.length&&<p>No actionable campaign responses recorded yet.</p>}
+  {current&&<WorkDetail key={current.id+":"+current.revision} work={current} owners={data!.owners} onDirty={setChildDirty} onBusy={setBusy} onOpen={onOpen} onSaved={()=>void load()} onClose={()=>setSelected(null)}/>}
+ </section>;
+}
+
+function WorkDetail({work:w,owners,onDirty,onBusy,onSaved,onClose,onOpen}:{work:Work;owners:Choice[];onDirty:(b:boolean)=>void;onBusy:(b:boolean)=>void;onSaved:()=>void;onClose:()=>void;onOpen?: (id:string)=>void}){
+ const [mode,setMode]=useState(""),[error,setError]=useState(""),[busy,setBusy]=useState(false),[choices,setChoices]=useState<Record<string,{id:string;label:string}[]>>({appointment:[],outcome:[]}),[record,setRecord]=useState(""),[evidence,setEvidence]=useState(""),[owner,setOwner]=useState(w.owner_id),[due,setDue]=useState(localTime(w.due_at)),[next,setNext]=useState(w.next_step),[closed,setClosed]=useState(w.closed),[start,setStart]=useState(""),[end,setEnd]=useState(""),[appointmentStatus,setAppointmentStatus]=useState("confirmed"),[kind,setKind]=useState(w.department==="Service"?"service":"showroom_visit");
+ useEffect(()=>{onDirty(Boolean(mode));return()=>onDirty(false)},[mode,onDirty]);
+ useEffect(()=>{onBusy(busy);return()=>onBusy(false)},[busy,onBusy]);
+ async function action(suffix:string,body:object,method="POST"){setBusy(true);setError("");try{await crmRequest(path+"/"+w.id+suffix,{method,body:JSON.stringify({revision:w.revision,...body})});setMode("");onSaved()}catch(e){setError((e as Error).message)}finally{setBusy(false)}}
+ async function begin(m:string){setError("");setRecord("");setEvidence("");setMode(m);if(m.startsWith("link")){setBusy(true);try{setChoices(await crmRequest(path+"/"+w.id+"/links"))}catch(e){setError((e as Error).message)}finally{setBusy(false)}}}
+ function submit(){if(mode==="status")return action("/appointment-status",{expected_status:w.appointment_status,status:appointmentStatus});if(mode==="edit")return action("",{owner_id:owner,due_at:new Date(due).toISOString(),next_step:next,closed,evidence},"PUT");if(mode==="book")return action("/book",{scheduled_start:new Date(start).toISOString(),scheduled_end:new Date(end).toISOString(),assigned_to:owner,appointment_type:kind});const [operation,type]=mode.split(":");return action("/"+operation+"/"+type,{record_id:operation==="unlink"?(type==="appointment"?w.appointment_id:w.outcome_id):record,evidence})}
+ return <section className={styles.panel} aria-label="Response details"><h4>{w.person_name} · {label(w.stage)}</h4>{error&&<p role="alert">{error}</p>}<p>Campaign {w.campaign_id} · Reason: {label(w.reason)} · Owner: {owners.find(o=>o.id===w.owner_id)?.name||w.owner_id}</p><p>Next step: {w.stage==="recover_appointment"?"Review the missed or cancelled appointment and agree the next step.":w.stage==="awaiting_outcome"?"Link the resulting deal or repair order.":w.next_step}</p>
+ {w.link_issues?.map(issue=><p key={issue} role="alert">{issue}. Remove or correct the attribution link.</p>)}{w.contact_restricted&&<p role="status">Contact restrictions are recorded. Review consent and the customer request before any outreach.</p>}{onOpen&&<WorkButton type="submit" disabled={busy||Boolean(mode)} onClick={()=>onOpen(w.person_id)}>Open customer history</WorkButton>}
+ <p>Appointment: {w.appointment_id||"Not linked"} · {w.appointment_status||""}</p><p>Outcome: {w.outcome_id||"Not linked"} · {w.outcome_status||""}</p><p>Recorded value: {w.recorded_value===null?"Unknown or outcome not completed":w.recorded_value.toLocaleString()+" · "+w.currency}</p>
+ <div className={styles.row}>{[["edit","Update owner / next step"],["book","Book appointment"],["link:appointment","Link existing appointment"],["link:outcome","Link sale or service record"],...(w.appointment_id?[["status","Record appointment outcome"]]:[]),...(w.appointment_id?[["unlink:appointment","Remove appointment link"]]:[]),...(w.outcome_id?[["unlink:outcome","Remove outcome link"]]:[])].map(([m,title])=><WorkButton type="submit" disabled={busy||Boolean(mode)||(w.closed&&m!=="edit")} key={m} onClick={()=>void begin(m)}>{title}</WorkButton>)}<WorkButton type="submit" disabled={busy} onClick={onClose}>{mode?"Discard edits and close":"Close response"}</WorkButton></div>
+ {mode&&<form onSubmit={e=>{e.preventDefault();try{void submit()}catch{setError("Enter valid dates and times")}}}><fieldset disabled={busy}>
+  {(mode==="edit"||mode==="book")&&<label>{mode==="book"?"Appointment owner":"Response owner"}<WorkSelect required value={owner} onChange={e=>setOwner(e.target.value)}>{owners.map(o=><option key={o.id} value={o.id}>{o.name}</option>)}</WorkSelect></label>}
+  {mode==="edit"&&<><label>Next action due<WorkInput type="datetime-local" required value={due} onChange={e=>setDue(e.target.value)}/></label><label>Next action<WorkTextarea required minLength={3} value={next} onChange={e=>setNext(e.target.value)}/></label><label>Work status<WorkSelect value={String(closed)} onChange={e=>setClosed(e.target.value==="true")}><option value="false">Open</option><option value="true">Closed</option></WorkSelect></label></>}
+  {mode==="book"&&<><label>Appointment type<WorkSelect value={kind} onChange={e=>setKind(e.target.value)}>{(w.department==="Service"?["service","waiter","drop_off","recall","other"]:["showroom_visit","test_drive","delivery","paperwork","trade_appraisal","other"]).map(k=><option key={k} value={k}>{label(k)}</option>)}</WorkSelect></label><label>Starts at<WorkInput type="datetime-local" required value={start} onChange={e=>setStart(e.target.value)}/></label><label>Ends at<WorkInput type="datetime-local" required min={start} value={end} onChange={e=>setEnd(e.target.value)}/></label><p>Uses your local timezone. Existing bookings and overlapping employee appointments block duplicate booking. Confirm actual staffing availability with the department.</p></>}
+  {mode.startsWith("link:")&&<label>Matching record<WorkSelect required value={record} onChange={e=>setRecord(e.target.value)}><option value="">Choose existing record</option>{choices[mode.split(":")[1]]?.map(r=><option key={r.id} value={r.id}>{r.label}</option>)}</WorkSelect></label>}
+  {mode==="status"&&<label>Appointment status<WorkSelect value={appointmentStatus} onChange={e=>setAppointmentStatus(e.target.value)}>{["confirmed","arrived","completed","no_show","cancelled"].map(s=><option key={s} value={s}>{label(s)}</option>)}</WorkSelect></label>}{mode!=="book"&&mode!=="status"&&<label>Evidence / reason<WorkTextarea required minLength={10} maxLength={1000} value={evidence} onChange={e=>setEvidence(e.target.value)}/></label>}
+  <WorkButton type="submit">{busy?"Saving…":"Save workflow update"}</WorkButton><WorkButton data-work-view type="button" onClick={()=>setMode("")}>Discard edits</WorkButton>
+ </fieldset></form>}
+ <details><summary>Recorded history</summary>{w.history.map((h,i)=><p key={i}>{new Date(h.at).toLocaleString()} · {label(h.event)} · {h.detail}</p>)}</details>
+ </section>;
+}

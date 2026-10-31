@@ -1,0 +1,746 @@
+{
+  "quests": [
+    [
+      "daily-review",
+      "daily",
+      "Fresh eyes",
+      "review",
+      1,
+      50,
+      "Review and save one builder section."
+    ],
+    [
+      "daily-run",
+      "daily",
+      "Test a new angle",
+      "run",
+      1,
+      75,
+      "Save one simulation with a changed proposed plan."
+    ],
+    [
+      "weekly-review",
+      "weekly",
+      "Department rounds",
+      "review",
+      3,
+      200,
+      "Review three different builder sections this week."
+    ],
+    [
+      "weekly-run",
+      "weekly",
+      "Compare your options",
+      "run",
+      3,
+      300,
+      "Save three distinct changed scenario configurations this week."
+    ],
+    [
+      "monthly-review",
+      "monthly",
+      "Whole-store checkup",
+      "review",
+      8,
+      600,
+      "Review all eight builder sections this month."
+    ],
+    [
+      "monthly-run",
+      "monthly",
+      "Scenario explorer",
+      "run",
+      10,
+      1000,
+      "Save ten distinct changed scenario configurations this month."
+    ]
+  ],
+  "achievements": [
+    [
+      "first-review",
+      "First inspection",
+      "review",
+      1,
+      10
+    ],
+    [
+      "all-sections",
+      "Whole-store architect",
+      "review",
+      8,
+      100
+    ],
+    [
+      "first-run",
+      "What-if pioneer",
+      "run",
+      1,
+      25
+    ],
+    [
+      "ten-runs",
+      "Scenario strategist",
+      "run",
+      10,
+      100
+    ]
+  ],
+  "cosmetics": [
+    {
+      "id": "glacier",
+      "kind": "skin",
+      "name": "Glacier Glass",
+      "level": 1,
+      "description": "The original blue and white glass workspace."
+    },
+    {
+      "id": "lagoon",
+      "kind": "skin",
+      "name": "Lagoon Glass",
+      "level": 2,
+      "description": "Cool aqua accents and a teal glass sidebar."
+    },
+    {
+      "id": "indigo",
+      "kind": "skin",
+      "name": "Indigo Glass",
+      "level": 4,
+      "description": "Indigo accents with a deep blue sidebar."
+    },
+    {
+      "id": "terminal",
+      "kind": "skin",
+      "name": "Phosphor 80",
+      "level": 3,
+      "description": "Green-screen computing: monospaced type, phosphor accents and crisp terminal panels. Matching Phosphor N included."
+    },
+    {
+      "id": "desktop",
+      "kind": "skin",
+      "name": "Desktop 90",
+      "level": 5,
+      "description": "Classic desktop windows, silver bevels and cobalt title bars. Matching Desktop N included."
+    },
+    {
+      "id": "spacecats",
+      "kind": "skin",
+      "name": "Space Cats",
+      "level": 7,
+      "description": "Cosmic violet glass, star fields and an astronaut cat companion. Matching Cosmic Cat N included."
+    },
+    {
+      "id": "auto",
+      "kind": "logo",
+      "name": "Match my theme",
+      "level": 1,
+      "description": "Automatically use the matching logo for your equipped workspace skin."
+    },
+    {
+      "id": "logo-glacier",
+      "kind": "logo",
+      "name": "Glacier N",
+      "level": 1,
+      "description": "The original blue glass NXTDeal emblem."
+    },
+    {
+      "id": "logo-lagoon",
+      "kind": "logo",
+      "name": "Lagoon N",
+      "level": 2,
+      "description": "An aqua-green glass variation of the original emblem."
+    },
+    {
+      "id": "logo-indigo",
+      "kind": "logo",
+      "name": "Indigo N",
+      "level": 4,
+      "description": "A violet-blue glass variation of the original emblem."
+    },
+    {
+      "id": "logo-terminal",
+      "kind": "logo",
+      "name": "Phosphor N",
+      "level": 3,
+      "description": "A green pixel N inside a vintage monitor."
+    },
+    {
+      "id": "logo-desktop",
+      "kind": "logo",
+      "name": "Desktop N",
+      "level": 5,
+      "description": "A beveled silver desktop icon with a pixel N."
+    },
+    {
+      "id": "logo-spacecats",
+      "kind": "logo",
+      "name": "Cosmic Cat N",
+      "level": 7,
+      "description": "A tiny astronaut cat with a galaxy-glass N."
+    },
+    {
+      "id": "logo-channel",
+      "kind": "logo",
+      "name": "Channel Chaos",
+      "level": 8,
+      "description": "Neon graffiti, zebra stripes and music-video bumper energy."
+    },
+    {
+      "id": "logo-midnight",
+      "kind": "logo",
+      "name": "Midnight Oddity",
+      "level": 10,
+      "description": "A googly-eyed clay N with slime boots and late-night cartoon attitude."
+    },
+    {
+      "id": "silver",
+      "kind": "frame",
+      "name": "Silver Ring",
+      "level": 1,
+      "description": "A clean silver profile border."
+    },
+    {
+      "id": "aurora",
+      "kind": "frame",
+      "name": "Aurora Frame",
+      "level": 3,
+      "description": "An aqua and violet profile frame."
+    },
+    {
+      "id": "champion",
+      "kind": "frame",
+      "name": "Champion Frame",
+      "level": 6,
+      "description": "A gold-edged profile frame."
+    }
+  ],
+  "variants": [
+    {
+      "id": "midcentury-host",
+      "theme": "midcentury",
+      "theme_name": "Mid-century Executives",
+      "base": "host",
+      "title": "Showroom Socialite",
+      "rarity": "Common",
+      "image": "/public/variant-midcentury-host.png"
+    },
+    {
+      "id": "midcentury-principal",
+      "theme": "midcentury",
+      "theme_name": "Mid-century Executives",
+      "base": "principal",
+      "title": "Boardroom Captain",
+      "rarity": "Common",
+      "image": "/public/variant-midcentury-principal.png"
+    },
+    {
+      "id": "midcentury-marketing",
+      "theme": "midcentury",
+      "theme_name": "Mid-century Executives",
+      "base": "marketing",
+      "title": "Madison Avenue Creative",
+      "rarity": "Uncommon",
+      "image": "/public/variant-midcentury-marketing.png"
+    },
+    {
+      "id": "midcentury-finance",
+      "theme": "midcentury",
+      "theme_name": "Mid-century Executives",
+      "base": "finance",
+      "title": "Ledger Executive",
+      "rarity": "Rare",
+      "image": "/public/variant-midcentury-finance.png"
+    },
+    {
+      "id": "midcentury-champion",
+      "theme": "midcentury",
+      "theme_name": "Mid-century Executives",
+      "base": "champion",
+      "title": "Golden-era Visionary",
+      "rarity": "Legendary",
+      "image": "/public/variant-midcentury-champion.png"
+    },
+    {
+      "id": "larp-inventory",
+      "theme": "larp",
+      "theme_name": "Quest of the Forecourt",
+      "base": "inventory",
+      "title": "Wagon Ranger",
+      "rarity": "Common",
+      "image": "/public/variant-larp-inventory.png"
+    },
+    {
+      "id": "larp-service",
+      "theme": "larp",
+      "theme_name": "Quest of the Forecourt",
+      "base": "service",
+      "title": "Workshop Paladin",
+      "rarity": "Common",
+      "image": "/public/variant-larp-service.png"
+    },
+    {
+      "id": "larp-analyst",
+      "theme": "larp",
+      "theme_name": "Quest of the Forecourt",
+      "base": "analyst",
+      "title": "Ledger Mage",
+      "rarity": "Uncommon",
+      "image": "/public/variant-larp-analyst.png"
+    },
+    {
+      "id": "larp-caller",
+      "theme": "larp",
+      "theme_name": "Quest of the Forecourt",
+      "base": "caller",
+      "title": "Signal Bard",
+      "rarity": "Rare",
+      "image": "/public/variant-larp-caller.png"
+    },
+    {
+      "id": "larp-people",
+      "theme": "larp",
+      "theme_name": "Quest of the Forecourt",
+      "base": "people",
+      "title": "Guild Architect",
+      "rarity": "Legendary",
+      "image": "/public/variant-larp-people.png"
+    },
+    {
+      "id": "motorsport-host",
+      "theme": "motorsport",
+      "theme_name": "Grid Legends",
+      "base": "host",
+      "title": "Grand Prix Driver",
+      "rarity": "Common",
+      "image": "/public/variant-motorsport-host.png"
+    },
+    {
+      "id": "motorsport-inventory",
+      "theme": "motorsport",
+      "theme_name": "Grid Legends",
+      "base": "inventory",
+      "title": "Stock-car Charger",
+      "rarity": "Common",
+      "image": "/public/variant-motorsport-inventory.png"
+    },
+    {
+      "id": "motorsport-marketing",
+      "theme": "motorsport",
+      "theme_name": "Grid Legends",
+      "base": "marketing",
+      "title": "Indy Pace Setter",
+      "rarity": "Common",
+      "image": "/public/variant-motorsport-marketing.png"
+    },
+    {
+      "id": "motorsport-technician",
+      "theme": "motorsport",
+      "theme_name": "Grid Legends",
+      "base": "technician",
+      "title": "Pit-lane Precision",
+      "rarity": "Common",
+      "image": "/public/variant-motorsport-technician.png"
+    },
+    {
+      "id": "motorsport-systems",
+      "theme": "motorsport",
+      "theme_name": "Grid Legends",
+      "base": "systems",
+      "title": "Race Engineer",
+      "rarity": "Uncommon",
+      "image": "/public/variant-motorsport-systems.png"
+    },
+    {
+      "id": "motorsport-principal",
+      "theme": "motorsport",
+      "theme_name": "Grid Legends",
+      "base": "principal",
+      "title": "Team Principal",
+      "rarity": "Rare",
+      "image": "/public/variant-motorsport-principal.png"
+    },
+    {
+      "id": "motorsport-champion",
+      "theme": "motorsport",
+      "theme_name": "Grid Legends",
+      "base": "champion",
+      "title": "Endurance Commander",
+      "rarity": "Legendary",
+      "image": "/public/variant-motorsport-champion.png"
+    },
+    {
+      "id": "football-caller",
+      "theme": "football",
+      "theme_name": "Sunday Playbook",
+      "base": "caller",
+      "title": "Pocket Signal",
+      "rarity": "Common",
+      "image": "/public/variant-football-caller.png"
+    },
+    {
+      "id": "football-people",
+      "theme": "football",
+      "theme_name": "Sunday Playbook",
+      "base": "people",
+      "title": "Sideline Architect",
+      "rarity": "Common",
+      "image": "/public/variant-football-people.png"
+    },
+    {
+      "id": "football-finance",
+      "theme": "football",
+      "theme_name": "Sunday Playbook",
+      "base": "finance",
+      "title": "Line Captain",
+      "rarity": "Uncommon",
+      "image": "/public/variant-football-finance.png"
+    },
+    {
+      "id": "football-service",
+      "theme": "football",
+      "theme_name": "Sunday Playbook",
+      "base": "service",
+      "title": "Breakaway Guardian",
+      "rarity": "Rare",
+      "image": "/public/variant-football-service.png"
+    },
+    {
+      "id": "football-technician",
+      "theme": "football",
+      "theme_name": "Sunday Playbook",
+      "base": "technician",
+      "title": "Ironwall Ace",
+      "rarity": "Legendary",
+      "image": "/public/variant-football-technician.png"
+    },
+    {
+      "id": "soccer-host",
+      "theme": "soccer",
+      "theme_name": "Pitch Legends",
+      "base": "host",
+      "title": "Showtime Striker",
+      "rarity": "Common",
+      "image": "/public/variant-soccer-host.png"
+    },
+    {
+      "id": "soccer-analyst",
+      "theme": "soccer",
+      "theme_name": "Pitch Legends",
+      "base": "analyst",
+      "title": "Goalkeeper of Numbers",
+      "rarity": "Common",
+      "image": "/public/variant-soccer-analyst.png"
+    },
+    {
+      "id": "soccer-inventory",
+      "theme": "soccer",
+      "theme_name": "Pitch Legends",
+      "base": "inventory",
+      "title": "Turn Captain",
+      "rarity": "Uncommon",
+      "image": "/public/variant-soccer-inventory.png"
+    },
+    {
+      "id": "soccer-systems",
+      "theme": "soccer",
+      "theme_name": "Pitch Legends",
+      "base": "systems",
+      "title": "Midfield Connector",
+      "rarity": "Rare",
+      "image": "/public/variant-soccer-systems.png"
+    },
+    {
+      "id": "soccer-marketing",
+      "theme": "soccer",
+      "theme_name": "Pitch Legends",
+      "base": "marketing",
+      "title": "Wing Alchemist",
+      "rarity": "Legendary",
+      "image": "/public/variant-soccer-marketing.png"
+    },
+    {
+      "id": "hockey-service",
+      "theme": "hockey",
+      "theme_name": "Ice Legends",
+      "base": "service",
+      "title": "Crease Guardian",
+      "rarity": "Common",
+      "image": "/public/variant-hockey-service.png"
+    },
+    {
+      "id": "hockey-people",
+      "theme": "hockey",
+      "theme_name": "Ice Legends",
+      "base": "people",
+      "title": "Bench Architect",
+      "rarity": "Common",
+      "image": "/public/variant-hockey-people.png"
+    },
+    {
+      "id": "hockey-finance",
+      "theme": "hockey",
+      "theme_name": "Ice Legends",
+      "base": "finance",
+      "title": "Ice Captain",
+      "rarity": "Uncommon",
+      "image": "/public/variant-hockey-finance.png"
+    },
+    {
+      "id": "hockey-technician",
+      "theme": "hockey",
+      "theme_name": "Ice Legends",
+      "base": "technician",
+      "title": "Blue-line Ace",
+      "rarity": "Rare",
+      "image": "/public/variant-hockey-technician.png"
+    },
+    {
+      "id": "hockey-champion",
+      "theme": "hockey",
+      "theme_name": "Ice Legends",
+      "base": "champion",
+      "title": "Championship Center",
+      "rarity": "Legendary",
+      "image": "/public/variant-hockey-champion.png"
+    }
+  ],
+  "cards": [
+    {
+      "id": "host",
+      "name": "First Impression",
+      "job": "Showroom host",
+      "role": "sales",
+      "dept": "Sales",
+      "rarity": "Starter",
+      "cost": 2,
+      "stats": [
+        3,
+        5,
+        4
+      ],
+      "move": "Welcome & qualify",
+      "lesson": "A clear handoff keeps a shopper from falling between departments."
+    },
+    {
+      "id": "caller",
+      "name": "Signal Scout",
+      "job": "BDC coordinator",
+      "role": "bdc",
+      "dept": "BDC",
+      "rarity": "Starter",
+      "cost": 2,
+      "stats": [
+        5,
+        4,
+        3
+      ],
+      "move": "Follow-up cadence",
+      "lesson": "Track response, appointments and shows separately."
+    },
+    {
+      "id": "analyst",
+      "name": "Number Keeper",
+      "job": "Junior analyst",
+      "role": "controller",
+      "dept": "Finance",
+      "rarity": "Starter",
+      "cost": 2,
+      "stats": [
+        6,
+        2,
+        4
+      ],
+      "move": "Check the source",
+      "lesson": "Separate recorded results from assumptions before comparing them."
+    },
+    {
+      "id": "principal",
+      "name": "Horizon Captain",
+      "job": "Dealer principal / GM",
+      "role": "gm",
+      "dept": "Leadership",
+      "rarity": "Rare",
+      "cost": 3,
+      "stats": [
+        7,
+        5,
+        6
+      ],
+      "mission": "identity",
+      "move": "Whole-store view",
+      "lesson": "A department gain can create a cost somewhere else."
+    },
+    {
+      "id": "inventory",
+      "name": "Turn Tactician",
+      "job": "Used vehicle director",
+      "role": "sales",
+      "dept": "Sales",
+      "rarity": "Rare",
+      "cost": 3,
+      "stats": [
+        7,
+        7,
+        3
+      ],
+      "mission": "inventory",
+      "move": "Margin versus velocity",
+      "lesson": "Compare holding cost, turn and gross together."
+    },
+    {
+      "id": "people",
+      "name": "Roster Architect",
+      "job": "GSM / team leader",
+      "role": "gm",
+      "dept": "Leadership",
+      "rarity": "Rare",
+      "cost": 3,
+      "stats": [
+        4,
+        7,
+        6
+      ],
+      "mission": "team",
+      "move": "Right-sized coverage",
+      "lesson": "More staff help only where demand and capacity support them."
+    },
+    {
+      "id": "service",
+      "name": "Bay Guardian",
+      "job": "Fixed operations director",
+      "role": "service",
+      "dept": "Service",
+      "rarity": "Rare",
+      "cost": 3,
+      "stats": [
+        5,
+        8,
+        4
+      ],
+      "mission": "facility",
+      "move": "Clear the bottleneck",
+      "lesson": "Bookings, advisors and technician hours must work together."
+    },
+    {
+      "id": "systems",
+      "name": "Circuit Specialist",
+      "job": "Systems / CRM manager",
+      "role": "bdc",
+      "dept": "BDC",
+      "rarity": "Rare",
+      "cost": 3,
+      "stats": [
+        7,
+        6,
+        4
+      ],
+      "mission": "software",
+      "move": "Clean handoff",
+      "lesson": "Software savings require adoption; time saved is not automatically cash saved."
+    },
+    {
+      "id": "marketing",
+      "name": "Demand Alchemist",
+      "job": "Marketing director",
+      "role": "marketing",
+      "dept": "Marketing",
+      "rarity": "Rare",
+      "cost": 3,
+      "stats": [
+        7,
+        5,
+        5
+      ],
+      "mission": "campaigns",
+      "move": "Quality over volume",
+      "lesson": "Evaluate delivered sales and cost, not lead volume alone."
+    },
+    {
+      "id": "technician",
+      "name": "Precision Ace",
+      "job": "Master technician",
+      "role": "service",
+      "dept": "Service",
+      "rarity": "Rare",
+      "cost": 3,
+      "stats": [
+        3,
+        9,
+        5
+      ],
+      "mission": "work",
+      "move": "First-time fix",
+      "lesson": "Workload and available productive hours reveal capacity pressure."
+    },
+    {
+      "id": "finance",
+      "name": "Trust Custodian",
+      "job": "F&I director / controller",
+      "role": "fi",
+      "dept": "Finance",
+      "rarity": "Rare",
+      "cost": 3,
+      "stats": [
+        7,
+        3,
+        7
+      ],
+      "mission": "economics",
+      "move": "Transparent economics",
+      "lesson": "Gross, cash and profit answer different questions."
+    },
+    {
+      "id": "champion",
+      "name": "NXT Commander",
+      "job": "Whole-store strategist",
+      "role": "gm",
+      "dept": "Leadership",
+      "rarity": "Legendary",
+      "cost": 4,
+      "stats": [
+        8,
+        8,
+        8
+      ],
+      "move": "Connected decisions",
+      "lesson": "Test a change, inspect the assumptions, then assign a measurable action."
+    }
+  ],
+  "challenges": [
+    {
+      "id": "lead-rush",
+      "name": "The Monday lead rush \u00b7 Intro",
+      "dept": "BDC",
+      "stat": 1,
+      "target": 15,
+      "story": "New inquiries are arriving faster than the team can follow up. Assemble a crew that can execute a consistent handoff.",
+      "tip": "In your simulation, test lead capacity and response rate before increasing advertising."
+    },
+    {
+      "id": "aged-stock",
+      "name": "The aging inventory puzzle \u00b7 Intermediate",
+      "dept": "Sales",
+      "stat": 0,
+      "target": 23,
+      "story": "Several vehicles have stopped attracting attention. Balance insight with inventory expertise to choose your next move.",
+      "tip": "Create a scenario comparing gross per sale, carrying cost and vehicle turn."
+    },
+    {
+      "id": "service-peak",
+      "name": "The service-lane surge \u00b7 Advanced",
+      "dept": "Service",
+      "stat": 1,
+      "target": 25,
+      "story": "The service schedule is filling up. Protect throughput without overloading your advisors and technicians.",
+      "tip": "Compare completed ROs, lost ROs and productive technician hours."
+    },
+    {
+      "id": "month-end",
+      "name": "The month-end council \u00b7 Expert",
+      "dept": "Finance",
+      "stat": 2,
+      "target": 24,
+      "story": "The managers have competing plans. Build trust in the numbers before committing the store.",
+      "tip": "Check costs and source labels, then save a comparison and a Success Workbook action."
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+# Only needed for opt-in migration tooling and its dedicated CI job.
+psycopg[binary]==3.3.6

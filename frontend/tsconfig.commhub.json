@@ -1,0 +1,4 @@
+{
+  "extends": "./tsconfig.json",
+  "include": ["components/OperationsCommunicationsBoard.tsx", "lib/communicationsHub.ts", "lib/unifiedCommunications.ts", "components/MenuDashPanel.tsx"]
+}

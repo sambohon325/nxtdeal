@@ -1,0 +1,3 @@
+# Optional trusted-startup SFTP export adapter. No automatic connection or credential configuration.
+# Verified against the already-installed local runtime during synthetic adapter tests.
+paramiko==5.0.0

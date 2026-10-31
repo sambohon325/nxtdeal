@@ -1,0 +1,13 @@
+{
+  "extends": "./tsconfig.json",
+  "include": [
+    "next-env.d.ts",
+    "lib/enterpriseRiskCenter.ts",
+    "components/EnterpriseRiskCenterBoard.tsx",
+    "components/MenuDashPanel.tsx",
+    "components/BusinessHealthBoard.tsx",
+    "lib/businessHealth.ts",
+    "lib/api.ts",
+    "lib/auth.ts"
+  ]
+}

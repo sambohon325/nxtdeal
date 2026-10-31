@@ -1,0 +1,16 @@
+{
+  "extends": "./tsconfig.json",
+  "include": [
+    "app/hub-console/page.tsx",
+    "lib/hubApi.ts",
+    "lib/api.ts",
+    "lib/auth.ts",
+    "components/hub/DealerManagementSection.tsx",
+    "components/hub/InfrastructureSection.tsx",
+    "components/hub/NetworkConnectSection.tsx",
+    "components/hub/CodeAuditorSection.tsx",
+    "components/hub/AiKillSwitchSection.tsx",
+    "components/hub/CreateDealerForm.tsx",
+    "components/hub/DealerRecordView.tsx"
+  ]
+}

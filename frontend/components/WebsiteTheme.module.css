@@ -1,0 +1,34 @@
+.root{background:var(--site-bg);color:var(--site-ink);font-family:Arial,Helvetica,sans-serif;min-height:100%;accent-color:var(--site-accent);scrollbar-width:none}
+.root.root *{scrollbar-width:none}
+.root.root *::-webkit-scrollbar{display:none}
+.root.root :global(.site-section){background:var(--site-bg);color:var(--site-ink);padding-block:clamp(48px,6vw,88px)}
+.root.root :global(.site-section.bg-zinc-50){background:var(--site-surface)}
+.root.root :global(.site-section) h2{font-family:inherit;font-size:clamp(28px,3.4vw,48px);line-height:1.12;letter-spacing:-.035em;font-weight:600;margin-bottom:28px;color:var(--site-ink)}
+.root.root :global(.text-zinc-900),.root.root :global(.text-zinc-800),.root.root :global(.text-zinc-700){color:var(--site-ink)}
+.root.root :global(.text-zinc-600),.root.root :global(.text-zinc-500),.root.root :global(.text-zinc-400){color:var(--site-muted)}
+.root.root :global(.bg-white),.root.root :global(.bg-zinc-100),.root.root :global(.bg-zinc-50){background-color:var(--site-surface)}
+.root.root :global(.border-zinc-200),.root.root :global(.border-zinc-300){border-color:var(--site-line)}
+.root.root :global(.site-section) input,.root.root :global(.site-section) select,.root.root :global(.site-section) textarea{background:var(--site-surface);color:var(--site-ink);border-color:var(--site-line);border-radius:calc(var(--site-radius)*.6);font:inherit;font-size:14px}
+.root.root input::placeholder,.root.root textarea::placeholder{color:var(--site-muted);opacity:1}
+.root.root input:focus-visible,.root.root select:focus-visible,.root.root textarea:focus-visible,.root.root button:focus-visible,.root.root a:focus-visible{outline:2px solid var(--site-accent);outline-offset:4px}
+.root.root :global(.site-section) button,.root.root :global(.site-section) :global(.bg-zinc-900){border-radius:calc(var(--site-radius)*.6)}
+.root.root :global(.bg-zinc-900),.root.root :global(.bg-brand-teal){background-color:var(--site-accent);color:var(--site-buttonInk)}
+.root.root :global(.site-vehicle-card){border-color:var(--site-line);border-radius:var(--site-radius);background:var(--site-surface);height:100%;display:flex;flex-direction:column;transition:transform .2s ease,box-shadow .2s ease}
+.root.root :global(.site-vehicle-card):hover{transform:translateY(-4px);box-shadow:0 14px 35px #0002}
+.root.root :global(.site-vehicle-card)>div:first-child{flex:none;aspect-ratio:4/3;background:var(--site-bg)}
+.root.root :global(.site-vehicle-card)>div:last-child{padding:22px}
+.root.root :global(.site-vehicle-card) img{height:100%;width:100%;object-fit:cover}
+.root.root :global(.site-gallery-image){border-radius:var(--site-radius);border:1px solid var(--site-line)}
+.root.root :global(.site-header){background:var(--site-surface);color:var(--site-ink);border:1px solid var(--site-line);border-radius:var(--site-radius);margin:14px auto;max-width:1440px;width:calc(100% - 32px)}
+.root.root :global(.site-header) button{border-radius:calc(var(--site-radius)*.6)}
+.root.root :global(.site-header) nav button[aria-current=page]{color:var(--site-accent);box-shadow:0 2px var(--site-accent)}
+.root.root :global(.site-header) :global(.rounded-full){border-radius:calc(var(--site-radius)*.6)}
+.root.root :global(.site-footer){background:var(--site-surface);color:var(--site-muted);padding:48px 24px;border:0}
+.root.root :global(.site-footer) a{color:var(--site-ink)}
+.root[data-website-theme=tempo] :global(.site-header),.root[data-website-theme=tempo] :global(.site-vehicle-card){background:linear-gradient(135deg,#ffffff10,#ffffff03),var(--site-surface);backdrop-filter:blur(20px);box-shadow:inset 0 1px #ffffff16}
+.root[data-website-theme=union] :global(.site-section) h2,.root[data-website-theme=redline] :global(.site-section) h2{text-transform:uppercase;font-weight:800;letter-spacing:-.045em}
+.root[data-website-theme=pacific] :global(.site-section) h2{text-align:left;font-size:clamp(32px,4.2vw,64px)}
+.root[data-website-theme=sterling] :global(.site-section) h2,.root[data-website-theme=tempo] :global(.site-section) h2{font-weight:400}
+@media(prefers-reduced-motion:reduce){.root.root *{scroll-behavior:auto!important;transition:none!important;animation:none!important}.root.root :global(.site-vehicle-card):hover{transform:none}}
+
+.root.root :global(.site-gallery-image)[aria-pressed=true]{border-color:var(--site-accent);box-shadow:0 0 0 2px var(--site-accent)}
