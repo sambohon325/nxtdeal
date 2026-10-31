@@ -58,6 +58,30 @@ function CommunityHandoff() {
           </article>
         </section>
 
+        <section className={handoffStyles.overview} aria-labelledby="nxtapp-heading">
+          <p className={handoffStyles.eyebrow}>The product</p>
+          <h2 id="nxtapp-heading">What is NXTapp?</h2>
+          <p>NXTapp (NXTDeal) is an open-source dealership operations workspace: a shared place for teams to work across customer relationships, sales, inventory, service, marketing, finance and day-to-day operations. The project combines a web app, Python API and dealer administration Hub, with Chrono decision-support capabilities.</p>
+          <p>The source snapshot includes substantial product work across these areas. It is an unfinished project, and feature presence does not mean every workflow is complete, connected to a live provider, or ready for production.</p>
+          <div className={handoffStyles.capabilities}>
+            <article><h3>Customer and sales workflows</h3><p>CRM and BDC lead records, follow-up queues, appointments, customer journeys, deals and delivery workflows.</p></article>
+            <article><h3>Department workspaces</h3><p>Shared application surfaces for marketing, inventory, service and parts, finance, operations and administration.</p></article>
+            <article><h3>Planning and decision support</h3><p>Dealership Lab scenarios, reporting and forecasting concepts, plus Chrono components for structured analysis.</p></article>
+            <article><h3>Platform foundations</h3><p>FastAPI services, a Next.js interface, workflow and audit infrastructure, access controls, dealer Hub and integration scaffolding.</p></article>
+          </div>
+        </section>
+
+        <section className={handoffStyles.gallery} aria-labelledby="screenshots-heading">
+          <p className={handoffStyles.eyebrow}>A look inside</p>
+          <h2 id="screenshots-heading">Screens from the NXTapp</h2>
+          <p className={handoffStyles.galleryNote}>These captures show interface work and examples from the project. Some are sample-data demos; they do not establish that a live dealership deployment or integration is available.</p>
+          <div className={handoffStyles.shots}>
+            <figure><a href="/handoff/nxtdeal-home-real-product.jpg"><Image src="/handoff/nxtdeal-home-real-product.jpg" alt="NXTDeal sales workspace interface shown beside its daily overview and dealership workflow navigation" width={1280} height={720} loading="lazy" /></a><figcaption><strong>Sales workspace</strong><span>Follow-ups, appointments, vehicles and next actions in a shared workspace.</span></figcaption></figure>
+            <figure><a href="/handoff/nxtdeal-crm-report-demo.jpg"><Image src="/handoff/nxtdeal-crm-report-demo.jpg" alt="NXTDeal sample CRM workflow demo showing leads, appointments and appointment reporting" width={1280} height={720} loading="lazy" /></a><figcaption><strong>CRM workflow example</strong><span>A sample lead-to-appointment flow with a simple performance view.</span></figcaption></figure>
+            <figure><a href="/handoff/nxtdeal-lab-dashboard.jpg"><Image src="/handoff/nxtdeal-lab-dashboard.jpg" alt="Dealership Lab scenario screen with editable assumptions and modeled outcome comparison" width={1280} height={720} loading="lazy" /></a><figcaption><strong>Dealership Lab</strong><span>Scenario assumptions and modeled outcomes for planning conversations.</span></figcaption></figure>
+          </div>
+        </section>
+
         <footer className={handoffStyles.footer}>
           <span>NXTDeal · Community handoff</span>
           <a href={`${repository}/blob/main/CONTRIBUTING.md`}>Contributing on GitHub <span aria-hidden="true">↗</span></a>
