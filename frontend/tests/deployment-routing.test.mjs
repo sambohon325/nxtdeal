@@ -12,15 +12,16 @@ test('shared apps landing and deep links stay on the app suite', () => {
   }
 });
 
-test('Hub and marketing keep their own route boundaries', () => {
+test('Hub routing stays scoped and the marketing deployment is a one-page handoff', () => {
   assert.equal(deploymentRedirect('hub', '/'), '/hub-console');
   assert.equal(deploymentRedirect('hub', '/hub-console'), null);
   assert.equal(deploymentRedirect('hub', '/hub-console-other'), '/hub-console');
   assert.equal(deploymentRedirect('hub', '/apps'), '/hub-console');
-  for (const path of ['/pricing', '/app-suite', '/start-free', '/solutions']) {
-    assert.equal(deploymentRedirect('marketing', path), null);
+  assert.equal(deploymentRedirect('marketing', '/'), null);
+  for (const path of ['/pricing', '/app-suite', '/start-free', '/solutions', '/industries/sales', '/contact', '/workspace', '/api/demo']) {
+    assert.equal(deploymentRedirect('marketing', path), '/');
   }
-  for (const path of ['/workspace', '/apps', '/hub-console', '/pricing-other']) {
+  for (const path of ['/apps', '/hub-console', '/pricing-other']) {
     assert.equal(deploymentRedirect('marketing', path), '/');
   }
 });

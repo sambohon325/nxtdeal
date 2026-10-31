@@ -22,10 +22,13 @@ const geistMono = Geist_Mono({
 // stronger de-indexing signal, so both are set together). Same
 // NEXT_PUBLIC_ALLOW_INDEXING env var flips both at once, per-deployment.
 const ALLOW_INDEXING = process.env.NEXT_PUBLIC_ALLOW_INDEXING === "true";
+const IS_MARKETING_HANDOFF = process.env.NEXT_PUBLIC_DEPLOYMENT_MODE === "marketing";
 
 export const metadata: Metadata = {
-  title: "NXTDeal | Powered by Chrono",
-  description: "NXTDeal | Powered by Chrono — one connected operating system for your dealership.",
+  title: IS_MARKETING_HANDOFF ? "NXTDeal | Community Handoff" : "NXTDeal | Powered by Chrono",
+  description: IS_MARKETING_HANDOFF
+    ? "Active development of NXTDeal has concluded. Explore the open-source project and community handoff on GitHub."
+    : "NXTDeal | Powered by Chrono — one connected operating system for your dealership.",
   robots: ALLOW_INDEXING
     ? undefined
     : { index: false, follow: false, nocache: true },
@@ -41,12 +44,7 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      {/* h-full + overflow-hidden (not min-h-full) so the page can never grow past the
-          viewport and produce a page-level scrollbar — every route is designed to fit a
-          single 16:9 screen, with scrolling (where genuinely needed) handled by internal
-          regions inside each page instead. See BUILD_QUEUE.md's "Viewport Fit / No
-          Scrollbars" entry. */}
-      <body className="h-full overflow-hidden flex flex-col">
+      <body className={IS_MARKETING_HANDOFF ? "min-h-screen overflow-x-hidden flex flex-col" : "h-full overflow-hidden flex flex-col"}>
         <ApplicationAppearance>{children}</ApplicationAppearance>
         {/* AI Demo Platform overlay — renders nothing unless a demo session is active
             (isDemoActive), so it's inert on every normal page and every real tenant. */}

@@ -23,6 +23,8 @@ The legacy graph model stores dealership entities and relationships. JSON files 
 
 The project is an unfinished, broad product with incomplete workflows, integrations and release gates. Existing readiness notes contain dated candidate evidence, not a guarantee that the current snapshot is accepted or deployed. This package has not been validated by a clean install, full test run, browser acceptance, comprehensive security audit, or deployment rehearsal.
 
+The marketing deployment is now intentionally a one-page community handoff. With `NEXT_PUBLIC_DEPLOYMENT_MODE=marketing`, the root page points visitors to this GitHub repository and the handoff; other non-static paths redirect to `/`. This is a source change only. The public repository does not contain a production deployment workflow, so the operator of any existing hosted marketing site must deploy this snapshot separately for the live site to change.
+
 The seed generator in this package has been adjusted to use `example.com` employee emails and reserved fictional 555-0100–0199 phone numbers. Previously committed `backend/data/` CSVs are omitted. The bridge conformance customer-export fixture email was replaced with `customer@example.com`. Private domain routing configurations, deployment notes, internal release documents, planning notes, preview images, and selected private operational docs were also removed. This is targeted data cleanup, not certification that every remaining file is free of personal or proprietary material.
 
 ## Suggested order for maintainers
