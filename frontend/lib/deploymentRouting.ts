@@ -1,6 +1,6 @@
 // Deployment boundaries only. API authentication remains independently enforced.
 const within = (path: string, root: string) => path === root || path.startsWith(`${root}/`);
-const assets = (path: string) => ["/_next", "/brand", "/fonts"].some(root => within(path, root)) ||
+const assets = (path: string) => ["/_next", "/brand", "/fonts", "/handoff"].some(root => within(path, root)) ||
   ["/favicon.ico", "/icon.png", "/apple-icon.png", "/manifest.webmanifest", "/robots.txt"].includes(path);
 
 export function deploymentRedirect(mode: string | undefined, path: string): string | null {
